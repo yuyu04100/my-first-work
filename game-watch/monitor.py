@@ -209,6 +209,15 @@ def collect():
 
 def eligible(post, old):
     """Only numeric evidence from its ORIGINAL public platform qualifies for alert."""
+    # Do not alert on old posts rediscovered by a top-ranked search.
+    if not post.get("published"):
+        return None
+    try:
+        age_hours = (NOW - dt.datetime.fromisoformat(post["published"].replace("Z", "+00:00"))).total_seconds() / 3600
+        if age_hours < -1 or age_hours > 24 * 7:
+            return None
+    except (ValueError, TypeError):
+        return None
     if post["source"] == "bluesky":
         likes, rts = post.get("likes") or 0, post.get("reposts") or 0
         if (likes >= 600 and rts >= 100) or rts >= 250:
