@@ -352,6 +352,159 @@
           "count": 2
         }
       ]
+    },
+    {
+      "at": "2026-11-14T14:05:43Z",
+      "source_attempts": 24,
+      "source_ok": 24,
+      "unique_results": 55,
+      "alerts": [],
+      "routes": [
+        {
+          "source": "bluesky",
+          "query": "making a game/latest",
+          "status": "ok",
+          "count": 3
+        },
+        {
+          "source": "bluesky",
+          "query": "making a game/top",
+          "status": "ok",
+          "count": 4
+        },
+        {
+          "source": "bluesky",
+          "query": "game dev/latest",
+          "status": "ok",
+          "count": 5
+        },
+        {
+          "source": "bluesky",
+          "query": "game dev/top",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bluesky",
+          "query": "game concept/latest",
+          "status": "ok",
+          "count": 7
+        },
+        {
+          "source": "bluesky",
+          "query": "game concept/top",
+          "status": "ok",
+          "count": 15
+        },
+        {
+          "source": "bluesky",
+          "query": "horror game/latest",
+          "status": "ok",
+          "count": 6
+        },
+        {
+          "source": "bluesky",
+          "query": "horror game/top",
+          "status": "ok",
+          "count": 7
+        },
+        {
+          "source": "bluesky",
+          "query": "roblox game/latest",
+          "status": "ok",
+          "count": 3
+        },
+        {
+          "source": "bluesky",
+          "query": "roblox game/top",
+          "status": "ok",
+          "count": 3
+        },
+        {
+          "source": "bluesky",
+          "query": "fortnite creative/latest",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bluesky",
+          "query": "fortnite creative/top",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bing-x-index",
+          "query": "site:x.com/status \"ゲーム開発\"",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bing-x-index",
+          "query": "site:x.com/status \"ゲーム作った\"",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bing-x-index",
+          "query": "site:twitter.com/status \"indie game\"",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "bing-x-index",
+          "query": "site:x.com/status \"new game\" video",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "google-news",
+          "query": "\"game dev\" \"twitter\" when:7d",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "google-news",
+          "query": "\"インディーゲーム\" \"話題\" when:3d",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "google-news",
+          "query": "\"new game\" \"X post\" viral when:7d",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "source": "mastodon",
+          "query": "https://mastodon.gamedev.place/tags/indiedev.rss",
+          "status": "ok",
+          "count": 1
+        },
+        {
+          "source": "mastodon",
+          "query": "https://mastodon.gamedev.place/tags/gamedev.rss",
+          "status": "ok",
+          "count": 1
+        },
+        {
+          "source": "hacker-news",
+          "query": "game prototype",
+          "status": "ok",
+          "count": 1
+        },
+        {
+          "source": "hacker-news",
+          "query": "indie game",
+          "status": "ok",
+          "count": 2
+        },
+        {
+          "source": "hacker-news",
+          "query": "roblox",
+          "status": "ok",
+          "count": 2
+        }
+      ]
     }
   ],
   "posts": {
@@ -8827,8 +8980,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -8837,6 +8990,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 1,
+          "reposts": 0
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 1,
           "reposts": 0
         }
@@ -11076,15 +11234,15 @@
       "published": "2026-11-12T11:56:35Z",
       "source": "bluesky",
       "author": "gustawmackay.bsky.social",
-      "likes": 146,
+      "likes": 148,
       "reposts": 20,
       "replies": 10,
       "video": true,
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -11094,6 +11252,11 @@
         {
           "at": "2026-11-14T06:59:09Z",
           "likes": 146,
+          "reposts": 20
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 148,
           "reposts": 20
         }
       ],
@@ -11533,8 +11696,8 @@
       "image": true,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -11543,6 +11706,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 84,
+          "reposts": 14
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 84,
           "reposts": 14
         }
@@ -11664,8 +11832,8 @@
       "image": true,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -11674,6 +11842,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 30,
+          "reposts": 10
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 30,
           "reposts": 10
         }
@@ -14801,8 +14974,8 @@
       "image": true,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -14811,6 +14984,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 7,
+          "reposts": 0
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 7,
           "reposts": 0
         }
@@ -24886,8 +25064,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -24896,6 +25074,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 30,
+          "reposts": null
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 30,
           "reposts": null
         }
@@ -25016,8 +25199,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -25026,6 +25209,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 3,
+          "reposts": null
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 3,
           "reposts": null
         }
@@ -25121,8 +25309,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -25131,6 +25319,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 1,
+          "reposts": null
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 1,
           "reposts": null
         }
@@ -25453,8 +25646,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -25463,6 +25656,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 2,
+          "reposts": null
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 2,
           "reposts": null
         }
@@ -25608,8 +25806,8 @@
       "image": false,
       "x_posts": [],
       "first_seen": "2026-11-14T06:55:10Z",
-      "last_seen": "2026-11-14T06:59:09Z",
-      "prev_at": "2026-11-14T06:59:09Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
       "history": [
         {
           "at": "2026-11-14T06:55:10Z",
@@ -25618,6 +25816,11 @@
         },
         {
           "at": "2026-11-14T06:59:09Z",
+          "likes": 1,
+          "reposts": null
+        },
+        {
+          "at": "2026-11-14T14:05:43Z",
           "likes": 1,
           "reposts": null
         }
@@ -26049,6 +26252,1131 @@
           "at": "2026-11-14T06:59:09Z",
           "likes": 1,
           "reposts": 2
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/thelongfetch.bsky.social/post/3n2bo2elxzc24": {
+      "url": "https://bsky.app/profile/thelongfetch.bsky.social/post/3n2bo2elxzc24",
+      "title": "I built my own level editor, so making a level feels like drawing. Here's a beach level from the full game, start to finish, sped up. 🐾  Free demo: thelongfetch.itch.io/the-long-fe",
+      "text": "I built my own level editor, so making a level feels like drawing.\nHere's a beach level from the full game, start to finish, sped up. 🐾\n\nFree demo: thelongfetch.itch.io/the-long-fetch\n\n#ScreenshotSaturday #indiedev",
+      "published": "2026-11-14T14:03:00Z",
+      "source": "bluesky",
+      "author": "thelongfetch.bsky.social",
+      "likes": 2,
+      "reposts": 4,
+      "replies": 1,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 2,
+          "reposts": 4
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/winnertakestea.bsky.social/post/3n2bfy7qa3k23": {
+      "url": "https://bsky.app/profile/winnertakestea.bsky.social/post/3n2bfy7qa3k23",
+      "title": "We're making a board game where you grow your land, play cards, and collect tolls from your rivals. With the right deck: power up your land, then Giga Graviton pulls all three riva",
+      "text": "We're making a board game where you grow your land, play cards, and collect tolls from your rivals.\nWith the right deck: power up your land, then Giga Graviton pulls all three rivals in.\n#ScreenshotSaturday #indiegame #indiedev #gamedev #boardgame\nstore.steampowered.com/app/4980930/...",
+      "published": "2026-11-14T11:38:38Z",
+      "source": "bluesky",
+      "author": "winnertakestea.bsky.social",
+      "likes": 11,
+      "reposts": 5,
+      "replies": 1,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 11,
+          "reposts": 5
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/miguedorta.bsky.social/post/3n27mbw35wc2g": {
+      "url": "https://bsky.app/profile/miguedorta.bsky.social/post/3n27mbw35wc2g",
+      "title": "Satelital is finally available now and here is the release trailer.  A rule-discovery space puzzle game where you explore alien worlds and figure out their rules.  I hope you enjoy",
+      "text": "Satelital is finally available now and here is the release trailer.\n\nA rule-discovery space puzzle game where you explore alien worlds and figure out their rules.\n\nI hope you enjoy the game as much as I did making it.\n\n🛰️",
+      "published": "2026-11-13T18:26:06Z",
+      "source": "bluesky",
+      "author": "miguedorta.bsky.social",
+      "likes": 35,
+      "reposts": 17,
+      "replies": 1,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 35,
+          "reposts": 17
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/roughling.bsky.social/post/3n2573fwpls2i": {
+      "url": "https://bsky.app/profile/roughling.bsky.social/post/3n2573fwpls2i",
+      "title": "the thing about making a game where the child protagonist boy has a harem of kids and adults alike...",
+      "text": "the thing about making a game where the child protagonist boy has a harem of kids and adults alike...",
+      "published": "2026-11-12T19:24:30Z",
+      "source": "bluesky",
+      "author": "roughling.bsky.social",
+      "likes": 6,
+      "reposts": 0,
+      "replies": 1,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 6,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/sylviefluff.bsky.social/post/3n22rptq3b22q": {
+      "url": "https://bsky.app/profile/sylviefluff.bsky.social/post/3n22rptq3b22q",
+      "title": "I like when people play my game and say something nice about it, and that happened today, so I have to post my game again to see if more people play it.   I'm sorry that I'm just d",
+      "text": "I like when people play my game and say something nice about it, and that happened today, so I have to post my game again to see if more people play it. \n\nI'm sorry that I'm just doing things like playing Batrider and Balloon Trip and Get Star instead of making a new game.\n\nsylvie.itch.io/gmtk",
+      "published": "2026-11-11T20:20:04Z",
+      "source": "bluesky",
+      "author": "sylviefluff.bsky.social",
+      "likes": 48,
+      "reposts": 16,
+      "replies": 3,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 48,
+          "reposts": 16
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/s0kaba.bsky.social/post/3n2bntgc7fc24": {
+      "url": "https://bsky.app/profile/s0kaba.bsky.social/post/3n2bntgc7fc24",
+      "title": "I'm a solo indie dev with a strange approach to game design.  I made one game to help you relax.  I made another to punish you for getting comfortable.  One has a wizard who's bad",
+      "text": "I'm a solo indie dev with a strange approach to game design.\n\nI made one game to help you relax.\n\nI made another to punish you for getting comfortable.\n\nOne has a wizard who's bad at being evil.\n\nThe other has permadeath.\n\nBoth are free to explore.\n\ns0kaba.itch.io",
+      "published": "2026-11-14T13:59:07Z",
+      "source": "bluesky",
+      "author": "s0kaba.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/nygamesweek.bsky.social/post/3n2bjacehhs23": {
+      "url": "https://bsky.app/profile/nygamesweek.bsky.social/post/3n2bjacehhs23",
+      "title": "Zohran Mamdani launches Two Day GTA (Get There Already) themed Youth Game Jam here in NYC!   variety.com/2026/gaming/...",
+      "text": "Zohran Mamdani launches Two Day GTA (Get There Already) themed Youth Game Jam here in NYC! \n\nvariety.com/2026/gaming/...",
+      "published": "2026-11-14T12:36:50Z",
+      "source": "bluesky",
+      "author": "nygamesweek.bsky.social",
+      "likes": 5,
+      "reposts": 2,
+      "replies": 0,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 5,
+          "reposts": 2
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/dicecreation.bsky.social/post/3n2auogtiuk2h": {
+      "url": "https://bsky.app/profile/dicecreation.bsky.social/post/3n2auogtiuk2h",
+      "title": "I've translated DevLog Vol.004 into English!  This article covers the English translation process after additional development, as well as an easy way to automate ruby text process",
+      "text": "I've translated DevLog Vol.004 into English!\n\nThis article covers the English translation process after additional development, as well as an easy way to automate ruby text processing for the Japanese version only. 📝\n\ndicecreation.website/en/game-dev-...\n\n#IndieDev \n#GameDev",
+      "published": "2026-11-14T06:28:56Z",
+      "source": "bluesky",
+      "author": "dicecreation.bsky.social",
+      "likes": 5,
+      "reposts": 1,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 5,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/moonrift.bsky.social/post/3n2arayszfc2l": {
+      "url": "https://bsky.app/profile/moonrift.bsky.social/post/3n2arayszfc2l",
+      "title": "Their stance on generative ai is obviously against it. Absolutely shocking huh? Especially when the dev specifically makes a game where the story is about artists and their creatio",
+      "text": "Their stance on generative ai is obviously against it. Absolutely shocking huh? Especially when the dev specifically makes a game where the story is about artists and their creations.",
+      "published": "2026-11-14T05:27:44Z",
+      "source": "bluesky",
+      "author": "moonrift.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/tinytabbygames.bsky.social/post/3n2aiqkgkjs2n": {
+      "url": "https://bsky.app/profile/tinytabbygames.bsky.social/post/3n2aiqkgkjs2n",
+      "title": "After a long week, I finished and submitted my first game jam game. Even if I don't win anything, I'm counting finishing the game as a personal win for it. My shoulders can finally",
+      "text": "After a long week, I finished and submitted my first game jam game. Even if I don't win anything, I'm counting finishing the game as a personal win for it. My shoulders can finally relax, and I'm going to enjoy a well earned weekend off of game dev work #games #solodev\nitch.io/jam/gdevelop...",
+      "published": "2026-11-14T02:55:22Z",
+      "source": "bluesky",
+      "author": "tinytabbygames.bsky.social",
+      "likes": 3,
+      "reposts": 2,
+      "replies": 3,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 3,
+          "reposts": 2
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/badfucking.dog/post/3n2bk53gt5s2k": {
+      "url": "https://bsky.app/profile/badfucking.dog/post/3n2bk53gt5s2k",
+      "title": "way back a while ago my friend was building and testing a digital tcg where players would upload pictures of their sona and design their own cards and i made this example as a styl",
+      "text": "way back a while ago my friend was building and testing a digital tcg where players would upload pictures of their sona and design their own cards and i made this example as a style test for the game www.furaffinity.net/view/43003403/",
+      "published": "2026-11-14T12:52:56Z",
+      "source": "bluesky",
+      "author": "badfucking.dog",
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 1,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/mixing0.bsky.social/post/3n2aynucqsk2r": {
+      "url": "https://bsky.app/profile/mixing0.bsky.social/post/3n2aynucqsk2r",
+      "title": "Another song from my Kirby party game concept, this time for Meta Knight's board.  #kirby #music",
+      "text": "Another song from my Kirby party game concept, this time for Meta Knight's board.\n\n#kirby #music",
+      "published": "2026-11-14T07:40:12Z",
+      "source": "bluesky",
+      "author": "mixing0.bsky.social",
+      "likes": 7,
+      "reposts": 1,
+      "replies": 0,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 7,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/rozeeworld.bsky.social/post/3n2ak2f26rc2z": {
+      "url": "https://bsky.app/profile/rozeeworld.bsky.social/post/3n2ak2f26rc2z",
+      "title": "two kinds of “Trees” in a game concept I got They create underground nets and feed on small mammals and insects but can’t resist anything sweet",
+      "text": "two kinds of “Trees” in a game concept I got\nThey create underground nets and feed on small mammals and insects but can’t resist anything sweet",
+      "published": "2026-11-14T03:18:46Z",
+      "source": "bluesky",
+      "author": "rozeeworld.bsky.social",
+      "likes": 4,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 4,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/sufy.me/post/3n2agn7gnqc2s": {
+      "url": "https://bsky.app/profile/sufy.me/post/3n2agn7gnqc2s",
+      "title": "Hahaha now I’m thinking of a game concept where it does a byte-for-byte record of your actions, and on load, re-applies all of your actions, but to world/seed that has been fundame",
+      "text": "Hahaha now I’m thinking of a game concept where it does a byte-for-byte record of your actions, and on load, re-applies all of your actions, but to world/seed that has been fundamentally altered. So you’re cursed by everything you’ve done in your past",
+      "published": "2026-11-14T02:17:43Z",
+      "source": "bluesky",
+      "author": "sufy.me",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/perpetualploy.bsky.social/post/3n27bd4idxs26": {
+      "url": "https://bsky.app/profile/perpetualploy.bsky.social/post/3n27bd4idxs26",
+      "title": "\"Dwarves Will Eat Anything\" sounds like a cool board game concept.",
+      "text": "\"Dwarves Will Eat Anything\" sounds like a cool board game concept.",
+      "published": "2026-11-13T15:09:55Z",
+      "source": "bluesky",
+      "author": "perpetualploy.bsky.social",
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 1,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/trashygrrrl666.bsky.social/post/3n273ai4r722i": {
+      "url": "https://bsky.app/profile/trashygrrrl666.bsky.social/post/3n273ai4r722i",
+      "title": "Idk if this is oddly specific or not but your art style looks exactly like video game concept art",
+      "text": "Idk if this is oddly specific or not but your art style looks exactly like video game concept art",
+      "published": "2026-11-13T13:21:05Z",
+      "source": "bluesky",
+      "author": "trashygrrrl666.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/splendorr.bsky.social/post/3n22icrigd224": {
+      "url": "https://bsky.app/profile/splendorr.bsky.social/post/3n22icrigd224",
+      "title": "oops had a good game concept convo yesterday 👀",
+      "text": "oops had a good game concept convo yesterday 👀",
+      "published": "2026-11-11T17:31:41Z",
+      "source": "bluesky",
+      "author": "splendorr.bsky.social",
+      "likes": 6,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 6,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/astrozelda.bsky.social/post/3n22cyocg422b": {
+      "url": "https://bsky.app/profile/astrozelda.bsky.social/post/3n22cyocg422b",
+      "title": "I'm worried about the potential confusion as there is already a game concept pitched by a \"Dan\"",
+      "text": "I'm worried about the potential confusion as there is already a game concept pitched by a \"Dan\"",
+      "published": "2026-11-11T15:56:34Z",
+      "source": "bluesky",
+      "author": "astrozelda.bsky.social",
+      "likes": 8,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 8,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/queerlybee.bsky.social/post/3mzxvubo5qs2v": {
+      "url": "https://bsky.app/profile/queerlybee.bsky.social/post/3mzxvubo5qs2v",
+      "title": "so sad about this one too because it looks like a beautiful game concept but nooo we can't have anything nice these days :')",
+      "text": "so sad about this one too because it looks like a beautiful game concept but nooo we can't have anything nice these days :')",
+      "published": "2026-11-10T16:56:08Z",
+      "source": "bluesky",
+      "author": "queerlybee.bsky.social",
+      "likes": 21,
+      "reposts": 3,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 21,
+          "reposts": 3
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/ruins-of.bsky.social/post/3n25bs5x7ak27": {
+      "url": "https://bsky.app/profile/ruins-of.bsky.social/post/3n25bs5x7ak27",
+      "title": "game concept: adventure game where your main motive is to make cooler swords frick, maybe i can match this with my blacksmith dualblade char",
+      "text": "game concept: adventure game where your main motive is to make cooler swords\nfrick, maybe i can match this with my blacksmith dualblade char",
+      "published": "2026-11-12T20:13:01Z",
+      "source": "bluesky",
+      "author": "ruins-of.bsky.social",
+      "likes": 4,
+      "reposts": 1,
+      "replies": 3,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 4,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/mixing0.bsky.social/post/3n25rqwpgik2i": {
+      "url": "https://bsky.app/profile/mixing0.bsky.social/post/3n25rqwpgik2i",
+      "title": "A song for my Kirby party game concept. One half of the theme for Nightmare's board: Nightmare's Nexus.  #kirby #music",
+      "text": "A song for my Kirby party game concept. One half of the theme for Nightmare's board: Nightmare's Nexus.\n\n#kirby #music",
+      "published": "2026-11-13T00:58:40Z",
+      "source": "bluesky",
+      "author": "mixing0.bsky.social",
+      "likes": 5,
+      "reposts": 2,
+      "replies": 1,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 5,
+          "reposts": 2
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/witchcian.bsky.social/post/3mzvjrgwu4c2h": {
+      "url": "https://bsky.app/profile/witchcian.bsky.social/post/3mzvjrgwu4c2h",
+      "title": "These incredibly polished Concept Movies would end up being something of a hallmark of Nomura and his dev team, and reached the apex of with Final Fantasy Versus XIII, which was re",
+      "text": "These incredibly polished Concept Movies would end up being something of a hallmark of Nomura and his dev team, and reached the apex of with Final Fantasy Versus XIII, which was revealed with several very detailed and eye catching trailers while the actual game concept struggled to materialise",
+      "published": "2026-11-09T18:14:29Z",
+      "source": "bluesky",
+      "author": "witchcian.bsky.social",
+      "likes": 35,
+      "reposts": 0,
+      "replies": 2,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 35,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/norvid-studies.bsky.social/post/3mzxvzarz7c24": {
+      "url": "https://bsky.app/profile/norvid-studies.bsky.social/post/3mzxvzarz7c24",
+      "title": "concept: unreal engine style 1st person game where you walk the grocery store aisles trying to complete a given shopping list while the foods gradually golemize like this and chase",
+      "text": "concept: unreal engine style 1st person game where you walk the grocery store aisles trying to complete a given shopping list while the foods gradually golemize like this and chase you around the store at the speeds posted",
+      "published": "2026-11-10T16:58:55Z",
+      "source": "bluesky",
+      "author": "norvid-studies.bsky.social",
+      "likes": 38,
+      "reposts": 0,
+      "replies": 2,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 38,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/snutsrenutted.bsky.social/post/3mzt6qbzk5s26": {
+      "url": "https://bsky.app/profile/snutsrenutted.bsky.social/post/3mzt6qbzk5s26",
+      "title": "Day 676  game concept #art #artsky #gamedev #undertale",
+      "text": "Day 676\n\ngame concept\n#art #artsky #gamedev #undertale",
+      "published": "2026-11-08T19:51:39Z",
+      "source": "bluesky",
+      "author": "snutsrenutted.bsky.social",
+      "likes": 9,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 9,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/bird-games.bsky.social/post/3n242xfherc2n": {
+      "url": "https://bsky.app/profile/bird-games.bsky.social/post/3n242xfherc2n",
+      "title": "I Have been a bit late for Haloween but i made a small horror game. Its just a concept and im going to continue working on it so if you want to test it: difi001.itch.io/just-anothe",
+      "text": "I Have been a bit late for Haloween but i made a small horror game. Its just a concept and im going to continue working on it so if you want to test it:\ndifi001.itch.io/just-another...\n\nI like to see your comments\n\n#godot #indie #gamedev",
+      "published": "2026-11-12T08:38:01Z",
+      "source": "bluesky",
+      "author": "bird-games.bsky.social",
+      "likes": 11,
+      "reposts": 3,
+      "replies": 1,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 11,
+          "reposts": 3
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/hmnprsn.org/post/3mzy6z7f6a22o": {
+      "url": "https://bsky.app/profile/hmnprsn.org/post/3mzy6z7f6a22o",
+      "title": "A thread of my collectable creatures set: Naked Ungloids.  Anybody remember neonmob? it was a game where all you did was collect and trade digital trading cards. I strongly believe",
+      "text": "A thread of my collectable creatures set: Naked Ungloids.\n\nAnybody remember neonmob? it was a game where all you did was collect and trade digital trading cards. I strongly believe the concept could have worked if it had any kind of alternate game loops for earning more cards.",
+      "published": "2026-11-10T19:39:57Z",
+      "source": "bluesky",
+      "author": "hmnprsn.org",
+      "likes": 10,
+      "reposts": 0,
+      "replies": 1,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 10,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/patattiemurray.bsky.social/post/3mzx4sgpr422f": {
+      "url": "https://bsky.app/profile/patattiemurray.bsky.social/post/3mzx4sgpr422f",
+      "title": "I am making some of the best goddamn concept art I've ever made for our new game - not because it's gorgeous, but because it communicates an idea / emotion / function accurately.",
+      "text": "I am making some of the best goddamn concept art I've ever made for our new game - not because it's gorgeous, but because it communicates an idea / emotion / function accurately. \n\nIt's through the act of drawing it I work this shit out. \n\nIf you automate it, you don't think. You don't learn shit",
+      "published": "2026-11-10T09:27:43Z",
+      "source": "bluesky",
+      "author": "patattiemurray.bsky.social",
+      "likes": 42,
+      "reposts": 6,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 42,
+          "reposts": 6
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/steamreleasebot.bsky.social/post/3n2biuss35i2t": {
+      "url": "https://bsky.app/profile/steamreleasebot.bsky.social/post/3n2biuss35i2t",
+      "title": "Binding Order\r https://store.steampowered.com/app/5303180/\r $14.99\r \r Investigate the haunting. Identify the entity. Break its hold. Binding Order is a solo or up-to-six-player co-",
+      "text": "Binding Order\r\nhttps://store.steampowered.com/app/5303180/\r\n$14.99\r\n\r\nInvestigate the haunting. Identify the entity. Break its hold. Binding Order is a solo or up-to-six-player co-op horror game where gathering evidence is only the beginning. Explore haunted sites, survive hunts, and carry out...",
+      "published": "2026-11-14T12:30:25Z",
+      "source": "bluesky",
+      "author": "steamreleasebot.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2b6jhlzqb2o": {
+      "url": "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2b6jhlzqb2o",
+      "title": "Family Business by rage, KaPu $4.99  Family Business is a horror game where you work in your uncle’s burger shop. Prepare food, serve it to customers, make new friends and uncover",
+      "text": "Family Business by rage, KaPu\n$4.99\n\nFamily Business is a horror game where you work in your uncle’s burger shop. Prepare food, serve it to customers, make new friends and uncover the mystery surrounding your family.",
+      "published": "2026-11-14T09:25:07Z",
+      "source": "bluesky",
+      "author": "aifreesteamgames.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2b6h3nkg22x": {
+      "url": "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2b6h3nkg22x",
+      "title": "NODE ZERO by Static State $4.99  Investigate system failures, trace corrupted infrastructure, and keep the node alive before stability reaches zero. NODE ZERO is an interface-drive",
+      "text": "NODE ZERO by Static State\n$4.99\n\nInvestigate system failures, trace corrupted infrastructure, and keep the node alive before stability reaches zero. NODE ZERO is an interface-driven psychological horror game where something inside the system is learning how you work.",
+      "published": "2026-11-14T09:23:47Z",
+      "source": "bluesky",
+      "author": "aifreesteamgames.bsky.social",
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 1,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/mukuroshiki.bsky.social/post/3n2b2x76bes2k": {
+      "url": "https://bsky.app/profile/mukuroshiki.bsky.social/post/3n2b2x76bes2k",
+      "title": "【固定】 私が代表を務める同人サークル「新約荒神製作所 @teamsa.bsky.social 」にて開発中のホラーゲーム「夢見る脳髄 -Fragments of an eternal illusion-」の体験版が公開中です。  ※12/30に製品版公開予定。本編全て実況プレイ可。  #スーパーゲ制デー #ゲーム制作 #ゲーム開発 #ホラーゲーム #ind",
+      "text": "【固定】\n私が代表を務める同人サークル「新約荒神製作所 @teamsa.bsky.social 」にて開発中のホラーゲーム「夢見る脳髄 -Fragments of an eternal illusion-」の体験版が公開中です。\n\n※12/30に製品版公開予定。本編全て実況プレイ可。\n\n#スーパーゲ制デー #ゲーム制作 #ゲーム開発 #ホラーゲーム #indiedev #gamedev #horrorgame \n\nteam-shinyaku-aragami.itch.io/the-dreaming...",
+      "published": "2026-11-14T08:21:13Z",
+      "source": "bluesky",
+      "author": "mukuroshiki.bsky.social",
+      "likes": 9,
+      "reposts": 2,
+      "replies": 2,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 9,
+          "reposts": 2
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2ahgp2w3w2w": {
+      "url": "https://bsky.app/profile/aifreesteamgames.bsky.social/post/3n2ahgp2w3w2w",
+      "title": "Mimania by MuxGames $3.19  A survival horror game where you have to find Mimics, who are disguised as different objects, with danger lurking around every corner. Explore 5 levels,",
+      "text": "Mimania by MuxGames\n$3.19\n\nA survival horror game where you have to find Mimics, who are disguised as different objects, with danger lurking around every corner. Explore 5 levels, each featuring unique monster behaviors.",
+      "published": "2026-11-14T02:31:58Z",
+      "source": "bluesky",
+      "author": "aifreesteamgames.bsky.social",
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 1,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/joacosmusic.bsky.social/post/3n2agcmx3f226": {
+      "url": "https://bsky.app/profile/joacosmusic.bsky.social/post/3n2agcmx3f226",
+      "title": "Now I want to make a small experimental horror game where the soundtrack is just the game's own code...",
+      "text": "Now I want to make a small experimental horror game where the soundtrack is just the game's own code...",
+      "published": "2026-11-14T02:11:48Z",
+      "source": "bluesky",
+      "author": "joacosmusic.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/alpineshowtime.bsky.social/post/3n23dgidwxs25": {
+      "url": "https://bsky.app/profile/alpineshowtime.bsky.social/post/3n23dgidwxs25",
+      "title": "🩸💀Friday the 13th (10am EST) 💀🩸  I made this VTuber model just to play my Favourite Horror Game! SNEAK PEEK",
+      "text": "🩸💀Friday the 13th (10am EST) 💀🩸\n\nI made this VTuber model just to play my Favourite Horror Game! SNEAK PEEK",
+      "published": "2026-11-12T01:36:57Z",
+      "source": "bluesky",
+      "author": "alpineshowtime.bsky.social",
+      "likes": 75,
+      "reposts": 14,
+      "replies": 3,
+      "video": true,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 75,
+          "reposts": 14
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/judelizowski.bsky.social/post/3n2a74l4yec2q": {
+      "url": "https://bsky.app/profile/judelizowski.bsky.social/post/3n2a74l4yec2q",
+      "title": "I'm so sick of the grip FNAF has on horror games now like... i'm so sick of hearing about new horror games and it's \"what if there were colorful furries for kids BUT THEYRE SCARY!\"",
+      "text": "I'm so sick of the grip FNAF has on horror games now like... i'm so sick of hearing about new horror games and it's \"what if there were colorful furries for kids BUT THEYRE SCARY!\" If they announced a new horror game where u just shoot zombies or something it'd feel like a breath of fresh air atp",
+      "published": "2026-11-14T00:03:08Z",
+      "source": "bluesky",
+      "author": "judelizowski.bsky.social",
+      "likes": 18,
+      "reposts": 0,
+      "replies": 3,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 18,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/npurkeypile.bsky.social/post/3n27un5onlc2p": {
+      "url": "https://bsky.app/profile/npurkeypile.bsky.social/post/3n27un5onlc2p",
+      "title": "Happy Friday the 13th!🔪  just sitting here hard at work like a normal adult...  makin' my game where you can be the horror villain straight out of a 1980s horror movie  how's your",
+      "text": "Happy Friday the 13th!🔪\n\njust sitting here hard at work like a normal adult...\n\nmakin' my game where you can be the horror villain straight out of a 1980s horror movie\n\nhow's your adulting going?😆",
+      "published": "2026-11-13T20:55:33Z",
+      "source": "bluesky",
+      "author": "npurkeypile.bsky.social",
+      "likes": 11,
+      "reposts": 1,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 11,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/tinytabbygames.bsky.social/post/3n25pmqy7lc26": {
+      "url": "https://bsky.app/profile/tinytabbygames.bsky.social/post/3n25pmqy7lc26",
+      "title": "It's been a busy week so far between the game jam game I've been working on and my top down horror \"Cave Dwellers\" slowly coming together. It's been a hell of a learning experience",
+      "text": "It's been a busy week so far between the game jam game I've been working on and my top down horror \"Cave Dwellers\" slowly coming together. It's been a hell of a learning experience this week. #gamedev #solodev #indiedev",
+      "published": "2026-11-13T00:20:32Z",
+      "source": "bluesky",
+      "author": "tinytabbygames.bsky.social",
+      "likes": 15,
+      "reposts": 3,
+      "replies": 1,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 15,
+          "reposts": 3
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/alpineshowtime.bsky.social/post/3mzxs7w7z2s2p": {
+      "url": "https://bsky.app/profile/alpineshowtime.bsky.social/post/3mzxs7w7z2s2p",
+      "title": "📅NEXT: Friday 13th, 10am EST📅  \"I Made this NEW cute VTuber model with my Plushie, just to play my FAVOURITE HORROR game! The goal of this stream is to make the loveliest/fuzziest",
+      "text": "📅NEXT: Friday 13th, 10am EST📅\n\n\"I Made this NEW cute VTuber model with my Plushie, just to play my FAVOURITE HORROR game! The goal of this stream is to make the loveliest/fuzziest stream possible 💖with the DARKEST GAME imaginable 💀!\"\n\nWhat a better way to celebrate an unlucky day!",
+      "published": "2026-11-10T15:51:04Z",
+      "source": "bluesky",
+      "author": "alpineshowtime.bsky.social",
+      "likes": 17,
+      "reposts": 3,
+      "replies": 0,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 17,
+          "reposts": 3
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/sapidonalever.bsky.social/post/3n2axy76xus2a": {
+      "url": "https://bsky.app/profile/sapidonalever.bsky.social/post/3n2axy76xus2a",
+      "title": "Just played a Roblox game where the gameplay switches from RE7 to a fnaf-style office survival except both of them are underbaked and the whole thing is like three hours long",
+      "text": "Just played a Roblox game where the gameplay switches from RE7 to a fnaf-style office survival except both of them are underbaked and the whole thing is like three hours long",
+      "published": "2026-11-14T07:28:05Z",
+      "source": "bluesky",
+      "author": "sapidonalever.bsky.social",
+      "likes": 6,
+      "reposts": 0,
+      "replies": 1,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 6,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/thefunnyguy.bsky.social/post/3n27rqsfgqc2u": {
+      "url": "https://bsky.app/profile/thefunnyguy.bsky.social/post/3n27rqsfgqc2u",
+      "title": "Oh shit I realized it now been an entire year since I made a terminally online man-child That thinks that his friends group rp being interupted in a Roblox roleplay game is compara",
+      "text": "Oh shit I realized it now been an entire year since I made a terminally online man-child That thinks that his friends group rp being interupted in a Roblox roleplay game is comparable to real life stalking and harrasment. by comparing his oc to my old oc king shy boi\n\nThank god I left tha-",
+      "published": "2026-11-13T20:03:55Z",
+      "source": "bluesky",
+      "author": "thefunnyguy.bsky.social",
+      "likes": 1,
+      "reposts": 0,
+      "replies": 1,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 1,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/victormachiavelli.bsky.social/post/3n27ex55udk2a": {
+      "url": "https://bsky.app/profile/victormachiavelli.bsky.social/post/3n27ex55udk2a",
+      "title": "Hatch a Star: Real Sky Pets is live on Roblox 🌠 A kids' pet game my 11-year-old daughter and I made, where the events follow the real night sky. Leonids meteor shower in the game o",
+      "text": "Hatch a Star: Real Sky Pets is live on Roblox 🌠\nA kids' pet game my 11-year-old daughter and I made, where the events follow the real night sky. Leonids meteor shower in the game on Nov 16–17, Saturn opens Nov 21.\nwww.roblox.com/games/874923...",
+      "published": "2026-11-13T16:14:48Z",
+      "source": "bluesky",
+      "author": "victormachiavelli.bsky.social",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 0,
+          "reposts": 0
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/aetherworkzx.bsky.social/post/3n237qfv6gs2x": {
+      "url": "https://bsky.app/profile/aetherworkzx.bsky.social/post/3n237qfv6gs2x",
+      "title": "Hey Guys!  Working on a Roblox Sonic Asym Game called \"Yet Another Sonic ASYM\" (YASM for short)  Here are the models for it so far that I made!! Hope yall like 👍🏾   #sonicexe #robl",
+      "text": "Hey Guys!\n\nWorking on a Roblox Sonic Asym Game called \"Yet Another Sonic ASYM\" (YASM for short)\n\nHere are the models for it so far that I made!! Hope yall like 👍🏾 \n\n#sonicexe #roblox #robloxdev #asym #sonicthehedgehog #gamedev",
+      "published": "2026-11-12T00:30:55Z",
+      "source": "bluesky",
+      "author": "aetherworkzx.bsky.social",
+      "likes": 7,
+      "reposts": 1,
+      "replies": 1,
+      "video": false,
+      "image": true,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 7,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://bsky.app/profile/victormachiavelli.bsky.social/post/3mzukft6rtk2k": {
+      "url": "https://bsky.app/profile/victormachiavelli.bsky.social/post/3mzukft6rtk2k",
+      "title": "My 11-year-old daughter and I made a Roblox game where the sky is real.  Hatch a Star opens Fri 13 Nov. On 17 Nov the real Leonids meteor shower makes eggs rain on every server at",
+      "text": "My 11-year-old daughter and I made a Roblox game where the sky is real.\n\nHatch a Star opens Fri 13 Nov. On 17 Nov the real Leonids meteor shower makes eggs rain on every server at once.\n\nHow we built it: dev.to/victor_machi...\n\n#RobloxDev #gamedev",
+      "published": "2026-11-09T08:53:13Z",
+      "source": "bluesky",
+      "author": "victormachiavelli.bsky.social",
+      "likes": 10,
+      "reposts": 1,
+      "replies": 0,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": 10,
+          "reposts": 1
+        }
+      ],
+      "alerted": false
+    },
+    "https://fosstodon.org/@w84death/117614015382132482": {
+      "url": "https://fosstodon.org/@w84death/117614015382132482",
+      "title": "",
+      "text": " I joined the NRG section at Poznań Game Arena Expo. Here's my postmortem.  First booth as a solo dev. Kids picking the original Game Boy Color over a brand-new Chromatic. A pure-assembly RTS squeezed into 16 KiB.  Read more at =&gt;   https://  cyfrowynomada.com/blogs/devlog  /cyfrowy-nomada-x-nrg-x-pga-2026-postmortem     # GameDev    # IndieDev    # GameBoy    # MSDOS    # PGA2026   ",
+      "published": "2026-11-14T09:10:51Z",
+      "source": "mastodon",
+      "author": "",
+      "likes": null,
+      "reposts": null,
+      "replies": null,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": null,
+          "reposts": null
+        }
+      ],
+      "alerted": false
+    },
+    "https://mastodon.gamedev.place/@dawnbringergame/117615009472253563": {
+      "url": "https://mastodon.gamedev.place/@dawnbringergame/117615009472253563",
+      "title": "",
+      "text": " Change of plan for this devlog: every character in Dawnbringer just got a new drawing, so here&#39;s that. The old sprites were pixel art painted by scripts. The new ones are vector drawings cut into jointed parts that the game moves. I opened it on my phone and everyone was tiny, so fighters are now twice the size. It&#39;s still behind a switch while I test it.  Android beta, how to join:   https://  gmunaro.github.io/dawnbringer-  site/#beta     # roguelike    # indiegame    # gamedev   ",
+      "published": "2026-11-14T13:23:40Z",
+      "source": "mastodon",
+      "author": "",
+      "likes": null,
+      "reposts": null,
+      "replies": null,
+      "video": false,
+      "image": false,
+      "x_posts": [],
+      "first_seen": "2026-11-14T14:05:43Z",
+      "last_seen": "2026-11-14T14:05:43Z",
+      "prev_at": "2026-11-14T14:05:43Z",
+      "history": [
+        {
+          "at": "2026-11-14T14:05:43Z",
+          "likes": null,
+          "reposts": null
         }
       ],
       "alerted": false
