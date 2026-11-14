@@ -2,6 +2,9 @@ name: Free Game Signal Watch
 on:
   schedule:
     - cron: '13,43 * * * *'
+  push:
+    paths:
+      - 'game-watch/**'
   workflow_dispatch:
 permissions:
   contents: write
