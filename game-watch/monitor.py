@@ -95,8 +95,23 @@ def normalized_url(url):
 
 
 def relevant(text):
+    """Only flag an actual game concept, developer demonstration, or prototype.
+
+    This is intentionally conservative; the separate ChatGPT discovery task covers
+    broad low-information X videos and can manually promote strong exceptions.
+    """
     text = (text or "").lower()
-    return not any(s in text for s in EXCLUDE) and any(s in text for s in KEYS)
+    if any(s in text for s in EXCLUDE):
+        return False
+    if not any(s in text for s in ["game", "gameplay", "prototype", "gamedev", "indiedev", "roblox", "fortnite", "ゲーム", "ロブロックス", "フォートナイト"]):
+        return False
+    cues = [
+        r"\b(?:i|we|our team|my studio)\s+(?:just\s+)?(?:made|built|developed|created|am making|are making|am working on)\b",
+        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game)\b",
+        r"\b(?:game where|game that lets|play my game|playable demo|working on my game|working on our game|new game i made)\b",
+        r"(?:自作ゲーム|ゲーム開発|ゲーム制作|ゲームの試作|試作ゲーム|ゲームを作|ゲームを開発|作っているゲーム)",
+    ]
+    return any(re.search(pattern, text) for pattern in cues)
 
 
 def classify(post):
@@ -286,6 +301,22 @@ def create_github_issue(p):
             "**注意:** 取得できた数字は記載元サービスの数字のみ。Xの表示回数・X最古投稿・リーク真偽は別途検証が必要です。\n")
     owner = repo.split("/")[0]
     url = f"https://api.github.com/repos/{repo}/issues"
+    # Check all recent issues including closed ones. A failed data push must not
+    # produce duplicate notifications on the next run.
+    for page in (1, 2, 3):
+        check = f"{url}?state=all&per_page=100&page={page}"
+        req = urllib.request.Request(check, headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json", "User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                existing = json.load(resp)
+            for old_issue in existing:
+                if ("- 一次投稿: " + p["url"]) in (old_issue.get("body") or ""):
+                    return {"status": "already_exists", "issue_url": old_issue.get("html_url")}
+            if len(existing) < 100:
+                break
+        except Exception as e:
+            # Safer to skip this alert than create duplicates when issue search fails.
+            return {"status": "error", "error": "Issue dedup check failed: " + str(e)}
     payload = {"title": issue_title(p), "body": body, "assignees": [owner]}
     for attempt in range(2):
         req = urllib.request.Request(url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"), headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json", "Content-Type": "application/json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": USER_AGENT}, method="POST")
@@ -304,7 +335,7 @@ def create_github_issue(p):
 
 
 def report(state, run, alerts):
-    top = sorted(state["posts"].values(), key=lambda x: ((x.get("reposts") or 0) * 3 + (x.get("likes") or 0)), reverse=True)[:30]
+    top = sorted((p for p in state["posts"].values() if classify(p)), key=lambda x: ((x.get("reposts") or 0) * 3 + (x.get("likes") or 0)), reverse=True)[:30]
     lines = ["# Game Signal Watch — Latest", "", f"Last run (UTC): **{iso()}**", "", f"Sources OK: **{run['source_ok']}** / **{run['source_attempts']}**", f"Unique posts found this run: **{run['unique_results']}**", f"Alerts this run: **{len(alerts)}**", "", "## Top public-platform signals (not X views)", "", "| Source | Original link | Likes/points | Reposts | First seen |", "|---|---|---:|---:|---|" ]
     for p in top:
         safe = p.get("source", "").replace("|", "")
@@ -325,9 +356,11 @@ def main():
     # Mark as alerted only if an Issue can be opened or we're in a local test.
     for p in alerts[:10]:
         result = create_github_issue(p)
-        if result["status"] == "error":
+        if result["status"] in ("error", "not_created"):
             state["posts"][normalized_url(p["url"])]["alerted"] = False
         sent.append({"url": p["url"], **result})
+    for p in alerts[10:]:
+        state["posts"][normalized_url(p["url"])]["alerted"] = False
     run = {"at": iso(), "source_attempts": len(stats), "source_ok": sum(s["status"] == "ok" for s in stats), "unique_results": count, "alerts": sent, "routes": stats}
     state.setdefault("runs", []).append(run)
     state["runs"] = state["runs"][-180:]
