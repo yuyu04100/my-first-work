@@ -1,0 +1,42 @@
+name: Free Game Signal Watch
+on:
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: free-game-signal-watch
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test watcher
+        run: python -m unittest discover -s game-watch -p 'test_*.py' -v
+      - name: Scan public sources without paid APIs
+        id: scan
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python game-watch/monitor.py
+      - name: Save audit trail
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add game-watch/data/state.json game-watch/data/latest.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: capture free game signals'
+            git push
+          fi
+      - name: Fail visibly if all source routes failed
+        if: steps.scan.outcome == 'failure'
+        run: exit 1
