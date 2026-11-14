@@ -1,9 +1,9 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-14T14:05:43Z**
+Last run (UTC): **2026-11-14T19:06:58Z**
 
 Sources OK: **24** / **24**
-Unique posts found this run: **55**
+Unique posts found this run: **112**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
@@ -37,7 +37,7 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/demitarot.bsky.social/post/3n23aejfub22a | 47 | 8 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/aubrietarose.bsky.social/post/3mzwokcw2ks2j | 40 | 9 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/sunnexo.moe/post/3n25hqqhic22n | 36 | 10 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/rosencreutz.bsky.social/post/3n26xo2sooc24 | 58 | 2 | 2026-11-14T06:55:10Z |
+| bluesky | https://bsky.app/profile/rosencreutz.bsky.social/post/3n26xo2sooc24 | 59 | 2 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/locofur.bsky.social/post/3n25h2gwvpk2r | 30 | 10 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/patattiemurray.bsky.social/post/3mzx4sgpr422f | 42 | 6 | 2026-11-14T14:05:43Z |
 
@@ -45,27 +45,27 @@ Alerts this run: **0**
 
 | Source | Query | Status | Posts |
 |---|---|---|---:|
-| bluesky | making a game/latest | ok | 3 |
+| bluesky | game mechanic/latest | ok | 28 |
+| bluesky | game mechanic/top | ok | 32 |
+| bluesky | physics game/latest | ok | 6 |
+| bluesky | physics game/top | ok | 11 |
+| bluesky | gameplay prototype/latest | ok | 16 |
+| bluesky | gameplay prototype/top | ok | 17 |
+| bluesky | making a game/latest | ok | 10 |
 | bluesky | making a game/top | ok | 4 |
-| bluesky | game dev/latest | ok | 5 |
+| bluesky | game dev/latest | ok | 3 |
 | bluesky | game dev/top | ok | 0 |
-| bluesky | game concept/latest | ok | 7 |
+| bluesky | game concept/latest | ok | 5 |
 | bluesky | game concept/top | ok | 15 |
-| bluesky | horror game/latest | ok | 6 |
-| bluesky | horror game/top | ok | 7 |
-| bluesky | roblox game/latest | ok | 3 |
-| bluesky | roblox game/top | ok | 3 |
-| bluesky | fortnite creative/latest | ok | 0 |
-| bluesky | fortnite creative/top | ok | 0 |
-| bing-x-index | site:x.com/status "ゲーム開発" | ok | 0 |
-| bing-x-index | site:x.com/status "ゲーム作った" | ok | 0 |
 | bing-x-index | site:twitter.com/status "indie game" | ok | 0 |
 | bing-x-index | site:x.com/status "new game" video | ok | 0 |
+| bing-x-index | site:x.com/status "game prototype" | ok | 0 |
+| bing-x-index | site:x.com/status "indie game" | ok | 0 |
+| google-news | "game prototype" "viral" when:7d | ok | 0 |
 | google-news | "game dev" "twitter" when:7d | ok | 0 |
 | google-news | "インディーゲーム" "話題" when:3d | ok | 0 |
-| google-news | "new game" "X post" viral when:7d | ok | 0 |
 | mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 1 |
-| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 1 |
+| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 |
 | hacker-news | game prototype | ok | 1 |
 | hacker-news | indie game | ok | 2 |
 | hacker-news | roblox | ok | 2 |
