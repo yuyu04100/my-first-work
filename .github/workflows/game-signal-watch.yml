@@ -38,7 +38,21 @@ jobs:
           git add game-watch/data/state.json game-watch/data/latest.md
           if ! git diff --cached --quiet; then
             git commit -m 'chore: capture free game signals'
-            git push
+            # Rebase onto newer commits when a scan overlaps a user edit.
+            # Never force-push the repository or silently overwrite a conflict.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo 'Concurrent state edit: retry on next scheduled run'
+                exit 1
+              fi
+              if git push; then
+                exit 0
+              fi
+              sleep 3
+            done
+            exit 1
           fi
       - name: Fail visibly if all source routes failed
         if: steps.scan.outcome == 'failure'
