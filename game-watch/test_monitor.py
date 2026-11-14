@@ -9,7 +9,7 @@ class MonitorTest(unittest.TestCase):
     def test_url_normalization(self):
         self.assertEqual(monitor.normalized_url("https://twitter.com/test/status/123?ref=aa"), "https://x.com/test/status/123")
     def test_bsky_engagement_signal(self):
-        p = {"uri":"at://did:plc:test/app.bsky.feed.post/abc", "record":{"text":"I made an indie game with physics! https://x.com/a/status/123", "createdAt":"2026-11-14T02:00:00Z"}, "author":{"handle":"test.bsky.social"}, "likeCount":900, "repostCount":120, "replyCount":8, "embed":{"images":[]}}
+        p = {"uri":"at://did:plc:test/app.bsky.feed.post/abc", "record":{"text":"I made an indie game with physics! https://x.com/a/status/123", "createdAt":monitor.iso()}, "author":{"handle":"test.bsky.social"}, "likeCount":900, "repostCount":120, "replyCount":8, "embed":{"images":[]}}
         s = monitor.bsky_to_signal(p)
         self.assertEqual(s["url"], "https://bsky.app/profile/test.bsky.social/post/abc")
         self.assertEqual(s["x_posts"], ["https://x.com/a/status/123"])
@@ -23,7 +23,7 @@ class MonitorTest(unittest.TestCase):
     def test_generic_unrelated_story_rejected(self):
         self.assertFalse(monitor.relevant("football game tonight"))
     def test_deduplicated_alert(self):
-        p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": "2026-11-14T02:00:00Z", "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
+        p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": monitor.iso(), "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
         state={"posts": {}, "runs": []}
         first, _=monitor.update(state,[p,p])
         second, _=monitor.update(state,[p])
