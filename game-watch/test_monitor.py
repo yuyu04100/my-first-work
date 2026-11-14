@@ -22,6 +22,12 @@ class MonitorTest(unittest.TestCase):
         self.assertIsNone(monitor.eligible(s,None))
     def test_generic_unrelated_story_rejected(self):
         self.assertFalse(monitor.relevant("football game tonight"))
+        self.assertFalse(monitor.relevant("loser behaviour to be sending death threats to indie game developers"))
+        self.assertFalse(monitor.relevant("I didn't buy the Harry Potter video game"))
+        self.assertFalse(monitor.relevant("Pokemon made this animation, I want it to be a real game"))
+        self.assertTrue(monitor.relevant("I made a ski jumping game where you jump from falling stocks"))
+        self.assertTrue(monitor.relevant("New game prototype: game where you punch through walls"))
+        self.assertTrue(monitor.relevant("ゲーム開発中、壁を破壊するゲームを作りました"))
     def test_deduplicated_alert(self):
         p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": monitor.iso(), "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
         state={"posts": {}, "runs": []}
