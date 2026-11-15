@@ -179,6 +179,25 @@ def rss_item_count(content):
     return len(ET.fromstring(content).findall(".//item"))
 
 
+def indexed_x_candidates(content):
+    """Keep actual X post URLs as unverified discovery leads.
+
+    Bing dates are indexing dates, never claimed to be original X publication dates.
+    No X engagement numbers can be inferred from the RSS results.
+    """
+    out, seen = [], set()
+    for item in ET.fromstring(content).findall(".//item"):
+        title = " ".join((item.findtext("title", default="") or "").split())
+        link = item.findtext("link", default="") or ""
+        desc = item.findtext("description", default="") or ""
+        for found in XPOST.findall(link + " " + desc):
+            status = normalized_url(found)
+            if status not in seen:
+                seen.add(status)
+                out.append({"status_url": status, "title": title[:130], "indexed_source": normalized_url(link)})
+    return out
+
+
 def collect():
     results = []
     stats = []
@@ -205,9 +224,11 @@ def collect():
         try:
             payload = request(url)
             raw_count = rss_item_count(payload)
+            candidates = indexed_x_candidates(payload)
             posts = parse_rss(payload, "bing-x-index")
             results.extend(posts)
-            stats.append({"source": "bing-x-index", "query": term, "status": "limited" if not posts else "ok", "count": len(posts), "raw_count": raw_count})
+            status = "ok" if posts else "candidate_only" if candidates else "limited"
+            stats.append({"source": "bing-x-index", "query": term, "status": status, "count": len(posts), "raw_count": raw_count, "x_post_candidates": len(candidates), "examples": candidates[:5]})
         except Exception as e:
             stats.append({"source": "bing-x-index", "query": term, "status": "error", "error": str(e)[:140]})
     for i in range(3):
@@ -378,6 +399,15 @@ def report(state, run, alerts):
     lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
         lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
+    x_indexed = {}
+    for r in run["routes"]:
+        for c in r.get("examples", []):
+            x_indexed[c["status_url"]] = c
+    lines += ["", "## X-indexed status links (unverified candidates)", "", "Links below are indexed leads, not verified games or X engagement metrics.", "", "| X status URL | Search title |", "|---|---|"]
+    for c in list(x_indexed.values())[:12]:
+        lines.append(f"| {c['status_url']} | {c['title'].replace('|','/')} |")
+    if not x_indexed:
+        lines.append("| — | No actual X status URL extracted; degraded route rather than a clean scan |")
     lines += ["", "**Limited** means the source responded but yielded no qualifying game post. This is NOT evidence that X had no viral games.", "", "X metadata is **not** available without X access. A failure or missing indexed post is **not** a zero-viral claim. Reddit RSS was retired 2026-11-13 and is deliberately excluded. All sources are best effort; absence of a hit is not evidence that no viral game exists.", ""]
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text("\n".join(lines), encoding="utf-8")
@@ -413,6 +443,7 @@ def main():
               "x_index": {"attempts": len(x_routes), "hits": sum(s.get("count", 0) for s in x_routes),
                           "raw_hits": sum(s.get("raw_count", 0) for s in x_routes),
                           "errors": sum(s["status"] == "error" for s in x_routes),
+                          "indexed_candidate_status_urls": sum(s.get("x_post_candidates", 0) for s in x_routes),
                           "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"},
               "source_attempts": len(stats), "source_ok": run["source_ok"], "source_errors": sum(s["status"] == "error" for s in stats),
               "unique_results": count, "alert_attempts": len(sent), "hours_since_previous_run": gap_hours,
