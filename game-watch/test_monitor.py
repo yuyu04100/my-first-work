@@ -37,6 +37,13 @@ class MonitorTest(unittest.TestCase):
         self.assertEqual(monitor.rss_item_count(b"<rss><channel></channel></rss>"), 0)
         self.assertEqual(monitor.rss_item_count(b"<rss><channel><item><title>A</title></item></channel></rss>"), 1)
 
+    def test_indexed_x_link_survives_keyword_rejection(self):
+        rss = b'<rss><channel><item><title>Random clip</title><link>https://x.com/someone/status/123</link><description>Unlabeled short video</description></item></channel></rss>'
+        self.assertEqual(monitor.parse_rss(rss, "bing-x-index"), [])
+        leads = monitor.indexed_x_candidates(rss)
+        self.assertEqual(len(leads), 1)
+        self.assertEqual(leads[0]["status_url"], "https://x.com/someone/status/123")
+
     def test_state_pruning_to_keep_github_readable(self):
         state = {"posts": {"https://bsky.app/profile/x/post/" + str(i): {"last_seen": str(i), "alerted": False} for i in range(1000)}, "runs": []}
         monitor.update(state, [])
