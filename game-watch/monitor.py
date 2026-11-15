@@ -50,7 +50,18 @@ NEWS_TERMS = [
 ]
 # Free, public profile-media feeds documented by FxEmbed. These cover only
 # selected X accounts, NOT a global keyword search of X.
-FX_X_SEARCH_TERMS = ["game prototype", "ゲーム開発"]
+FX_X_SEARCH_EN = [
+    '"game prototype"', '"I made a game"', '"game mechanic"', '"physics game"',
+    '"gameplay prototype"', '"making a game"', '"destructible environment"',
+    '"indie game" gameplay', '"new game" video', '"game where" prototype',
+    '"devlog" gameplay', '"early gameplay"', '"multiplayer prototype"',
+    '"sandbox game" physics', '"game jam" gameplay', '#screenshotsaturday',
+]
+FX_X_SEARCH_JP = [
+    "ゲーム開発", "自作ゲーム", "ゲーム制作中", "ゲーム試作",
+    "ゲームを作りました", "ゲームプレイ映像",
+]
+FX_X_SEARCH_OTHER = ["prototipo juego", "hice un juego", "게임 개발", "独立游戏 开发"]
 FX_X_MEDIA_HANDLES = [
     "ID_XBOX", "Steam", "pandorioltd", "IGN",
     "Roblox", "FortniteGame", "UnrealEngine", "itchio",
@@ -287,23 +298,29 @@ def collect():
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "ok", "count": len(signals)})
             except Exception as e:
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "error", "error": str(e)[:140]})
-    # Pilot FxEmbed public X SEARCH: test code/availability independently of
-    # the broken Bing search index. X metrics are proxied, not official.
-    for term in FX_X_SEARCH_TERMS:
-        url = "https://api.fxtwitter.com/2/search?" + urllib.parse.urlencode({"q": term, "feed": "latest", "count": 30})
-        try:
-            data = json.loads(request(url))
-            if data.get("code") != 200:
-                raise ValueError("FxEmbed search code=" + str(data.get("code")))
-            raw = data.get("results") or []
-            posts = [fx_x_search_signal(p) for p in raw]
-            posts = [p for p in posts if p]
-            results.extend(posts)
-            stats.append({"source": "fx-x-search", "query": term, "status": "ok" if posts else "limited",
-                          "count": len(posts), "raw_count": len(raw),
-                          "samples": [p.get("text", "")[:75] for p in raw[:2] if isinstance(p, dict)]})
-        except Exception as e:
-            stats.append({"source": "fx-x-search", "query": term, "status": "error", "error": str(e)[:180]})
+    # Every run covers English, Japanese and one other language. Query
+    # separately over 24 hours, 3 days and 7 days.
+    en = [FX_X_SEARCH_EN[(h * 4 + NOW.day + i) % len(FX_X_SEARCH_EN)] for i in range(4)]
+    jp = [FX_X_SEARCH_JP[(h + NOW.day + i) % len(FX_X_SEARCH_JP)] for i in range(2)]
+    other = [FX_X_SEARCH_OTHER[(h + NOW.day) % len(FX_X_SEARCH_OTHER)]]
+    for term in en + jp + other:
+        for days, feed in ((1, "latest"), (3, "media"), (7, "top")):
+            since = (NOW - dt.timedelta(days=days)).strftime("%Y-%m-%d")
+            query = f"{term} since:{since}"
+            url = "https://api.fxtwitter.com/2/search?" + urllib.parse.urlencode({"q": query, "feed": feed, "count": 30})
+            try:
+                data = json.loads(request(url))
+                if data.get("code") != 200:
+                    raise ValueError("FxEmbed search code=" + str(data.get("code")))
+                raw = data.get("results") or []
+                posts = [fx_x_search_signal(p) for p in raw]
+                posts = [p for p in posts if p and p.get("published") and
+                         0 <= (NOW - dt.datetime.fromisoformat(p["published"].replace("Z", "+00:00"))).total_seconds() <= (days * 86400 + 7200)]
+                results.extend(posts)
+                stats.append({"source": "fx-x-search", "query": f"{query}/{feed}", "status": "ok" if posts else "limited",
+                              "count": len(posts), "raw_count": len(raw)})
+            except Exception as e:
+                stats.append({"source": "fx-x-search", "query": f"{query}/{feed}", "status": "error", "error": str(e)[:180]})
     # X profile media feeds are free but limited to watched accounts. No view
     # counts and no claim of comprehensive keyword coverage.
     for handle in FX_X_MEDIA_HANDLES:
@@ -399,6 +416,18 @@ def eligible(post, old):
             return None
     except (ValueError, TypeError):
         return None
+    if post["source"] == "fx-x-search":
+        # Verified via a free third-party X proxy, NOT the official X API.
+        likes, rts = post.get("likes") or 0, post.get("reposts") or 0
+        if (likes >= 3000 and rts >= 120) or rts >= 750:
+            return "x_proxy_large_engagement"
+        if old and old.get("likes") is not None and old.get("prev_at"):
+            try:
+                hours = max(0.05, (NOW - dt.datetime.fromisoformat(old["prev_at"].replace("Z", "+00:00"))).total_seconds() / 3600)
+                if hours <= 6 and (likes - old["likes"]) / hours >= 1200 and (rts - (old.get("reposts") or 0)) / hours >= 85:
+                    return "x_proxy_rapid_growth"
+            except Exception:
+                pass
     if post["source"] == "bluesky":
         likes, rts = post.get("likes") or 0, post.get("reposts") or 0
         if (likes >= 600 and rts >= 100) or rts >= 250:
@@ -440,8 +469,8 @@ def update(state, signals):
         posts[key] = fresh
     # Keep state below GitHub Contents API's ~1 MiB inline content limit.
     # Long-term alert dedup also checks existing GitHub Issues.
-    if len(posts) > 650:
-        kept = sorted(posts.items(), key=lambda kv: kv[1].get("last_seen", ""), reverse=True)[:650]
+    if len(posts) > 520:
+        kept = sorted(posts.items(), key=lambda kv: kv[1].get("last_seen", ""), reverse=True)[:520]
         state["posts"] = dict(kept)
     return alerts, len(unique)
 
@@ -456,7 +485,7 @@ def create_github_issue(p):
     if not token or not repo:
         return {"status": "not_created", "reason": "No GitHub token/repository; local audit only"}
     body = (f"## 無料監視で検出したゲーム関連の急拡散候補\n\n"
-            f"- 出典: {p['source']}（X上の拡散確認を意味しません）\n"
+            f"- 出典: {p['source']}（fx-x-search の数値は無料FxEmbedプロキシで取得したX投稿の反応数。公式X APIからの直接取得ではありません。その他のSNSの反応数をX数値とは扱いません）\n"
             f"- 一次投稿: {p['url']}\n"
             f"- 公開日時: {p.get('published') or '未確認'}\n"
             f"- 発信者: {p.get('author') or '未確認'}\n"
