@@ -1,9 +1,9 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:50:30Z**
+Last run (UTC): **2026-11-15T00:52:15Z**
 
 Sources OK: **21** / **28**
-Unique posts found this run: **191**
+Unique posts found this run: **189**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
@@ -49,7 +49,7 @@ Alerts this run: **0**
 | bluesky | game prototype/top | ok | 20 | — |
 | bluesky | indie game/latest | ok | 9 | — |
 | bluesky | indie game/top | ok | 1 | — |
-| bluesky | I made a game/latest | ok | 27 | — |
+| bluesky | I made a game/latest | ok | 26 | — |
 | bluesky | I made a game/top | ok | 43 | — |
 | bluesky | game mechanic/latest | ok | 24 | — |
 | bluesky | game mechanic/top | ok | 32 | — |
@@ -67,12 +67,20 @@ Alerts this run: **0**
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
 | reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 4 | 100 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 29 |
-| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 1 | — |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 27 |
+| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 0 | — |
 | mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 1 | — |
 | hacker-news | indie game | ok | 2 | — |
 | hacker-news | roblox | ok | 2 | — |
+
+## X-indexed status links (unverified candidates)
+
+Links below are indexed leads, not verified games or X engagement metrics.
+
+| X status URL | Search title |
+|---|---|
+| — | No actual X status URL extracted; degraded route rather than a clean scan |
 
 **Limited** means the source responded but yielded no qualifying game post. This is NOT evidence that X had no viral games.
 
