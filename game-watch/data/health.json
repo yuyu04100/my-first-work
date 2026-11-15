@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-15T01:00:23Z",
+  "at": "2026-11-15T01:02:10Z",
   "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,23 +10,23 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 57,
-  "source_ok": 40,
-  "source_errors": 0,
-  "unique_results": 287,
-  "alert_attempts": 5,
+  "source_ok": 41,
+  "source_errors": 2,
+  "unique_results": 272,
+  "alert_attempts": 0,
   "hours_since_previous_run": 0.03,
-  "state_bytes": 590204,
+  "state_bytes": 608565,
   "fx_x_search": {
     "attempts": 21,
     "qualified_posts": 94,
-    "raw_posts": 320,
+    "raw_posts": 338,
     "errors": 0,
     "note": "Free FxEmbed proxy search pilot, not an official X API contract"
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 95,
-    "errors": 0,
+    "posts": 80,
+    "errors": 2,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
 }
