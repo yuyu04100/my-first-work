@@ -1,6 +1,6 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:50:02Z**
+Last run (UTC): **2026-11-15T00:50:30Z**
 
 Sources OK: **21** / **28**
 Unique posts found this run: **191**
@@ -67,7 +67,7 @@ Alerts this run: **0**
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
 | reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 4 | 100 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 28 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 29 |
 | mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 1 | — |
 | mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 1 | — |

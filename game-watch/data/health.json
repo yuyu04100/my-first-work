@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-15T00:50:30Z",
+  "status": "degraded_x",
+  "x_index": {
+    "attempts": 4,
+    "hits": 0,
+    "raw_hits": 40,
+    "errors": 0,
+    "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
+  },
+  "source_attempts": 28,
+  "source_ok": 21,
+  "source_errors": 0,
+  "unique_results": 191,
+  "alert_attempts": 0,
+  "hours_since_previous_run": 0.01,
+  "state_bytes": 668846
+}
