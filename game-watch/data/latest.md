@@ -1,9 +1,9 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:53:10Z**
+Last run (UTC): **2026-11-15T00:54:32Z**
 
-Sources OK: **21** / **28**
-Unique posts found this run: **189**
+Sources OK: **25** / **36**
+Unique posts found this run: **249**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
@@ -19,8 +19,6 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/donutshoes.bsky.social/post/3n26jswexv22c | 77 | 21 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/andruc.dragoon.dev/post/3n257ns43rk2e | 84 | 14 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/shutinstudio.bsky.social/post/3n24ep4t27c24 | 63 | 20 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/alpineshowtime.bsky.social/post/3n23dgidwxs25 | 75 | 14 | 2026-11-14T14:05:43Z |
-| bluesky | https://bsky.app/profile/critcorsac.bsky.social/post/3mzxvmo2iss2s | 71 | 14 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/kakuri.bsky.social/post/3n222b5yihs2o | 31 | 26 | 2026-11-14T22:56:49Z |
 | bluesky | https://bsky.app/profile/firengames.com/post/3mzxvu5grps2v | 48 | 18 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/tgweaver.bsky.social/post/3n22ltcfpac2w | 89 | 3 | 2026-11-14T06:55:10Z |
@@ -38,8 +36,35 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/demitarot.bsky.social/post/3n23aejfub22a | 47 | 8 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/sunnexo.moe/post/3n25hqqhic22n | 37 | 10 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/rosencreutz.bsky.social/post/3n26xo2sooc24 | 61 | 2 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/aubrietarose.bsky.social/post/3mzwokcw2ks2j | 40 | 9 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/bmf6ntfqsi0hfrp.bsky.social/post/3mzzy37phik2t | 15 | 16 | 2026-11-14T22:56:49Z |
+| bluesky | https://bsky.app/profile/locofur.bsky.social/post/3n25h2gwvpk2r | 30 | 10 | 2026-11-14T06:55:10Z |
+| bluesky | https://bsky.app/profile/patattiemurray.bsky.social/post/3mzx4sgpr422f | 42 | 6 | 2026-11-14T14:05:43Z |
+| bluesky | https://bsky.app/profile/liamajoris.online/post/3n22envcl2v2p | 43 | 5 | 2026-11-14T06:55:10Z |
+
+## X media leads from watched accounts (no X metrics)
+
+| X post URL | Account | Published from feed | Post title |
+|---|---|---|---|
+| https://x.com/IGN/status/2121755097084358858 | IGN | 2026-11-15T00:00:10Z | Grace Ashcroft actress Angela Sant'Albano doesn't think her Resident Evil Requiem hero will "ever be a Leon ch |
+| https://x.com/IGN/status/2121739993022378192 | IGN | 2026-11-14T23:00:09Z | ICYMI: Now that preloads are live for Grand Theft Auto VI, fans have found PlayStation files that include "lau |
+| https://x.com/IGN/status/2121726794147430719 | IGN | 2026-11-14T22:07:42Z | BREAKING: At the 2026 League of Legends World Championship Finals, Riot Games officially unveiled League of Le |
+| https://x.com/IGN/status/2121724895415468163 | IGN | 2026-11-14T22:00:09Z | Adam Driver still can't believe Disney killed his Star Wars movie, The Hunt for Ben Solo, and has now gone so  |
+| https://x.com/IGN/status/2121709806058717376 | IGN | 2026-11-14T21:00:11Z | Henry Cavill has stated that he's still open to the idea of playing Superman following all the shake-ups at DC |
+| https://x.com/IGN/status/2121698448869060822 | IGN | 2026-11-14T20:15:04Z | Sonic games have come a long way since Sonic 06, here is an IGN Playlist of every Sonic game across his 35 yea |
+| https://x.com/IGN/status/2121694707357024286 | IGN | 2026-11-14T20:00:12Z | Rockstar confirms GTA 6 features 'mechanisms that encourage' empathy for the first time in franchise history h |
+| https://x.com/pandorioltd/status/2121680248681222360 | pandorioltd | 2026-11-14T19:02:44Z | Continue developing an incremental game, where you punch walls to escape #indiegame #steam #games |
+| https://x.com/IGN/status/2121679624753004774 | IGN | 2026-11-14T19:00:16Z | A spoiler-filled The Lord of the Rings: The Rings of Power Season 3 interview with Theo actor Tyroe Muhafidin. |
+| https://x.com/IGN/status/2121664520594538971 | IGN | 2026-11-14T18:00:14Z | .@RahulKohli13 joins IGN to play three of his favorite games - Ocarina of Time, Doom, and Red Dead Redemption  |
+| https://x.com/IGN/status/2121660724560662750 | IGN | 2026-11-14T17:45:09Z | Rings of Power showrunner Patrick McKay told us about the show’s version of Balrogs and their goals when they  |
+| https://x.com/IGN/status/2121653392149745836 | IGN | 2026-11-14T17:16:01Z | GTA 6 is so close. What are you going to do first when you get into the open world of Vice City? https://bit.l |
+| https://x.com/IGN/status/2121649410484388113 | IGN | 2026-11-14T17:00:12Z | Before directing E.T., Steven Spielberg almost made an alien horror movie called Night Skies. https://bit.ly/3 |
+| https://x.com/IGN/status/2121641835441320224 | IGN | 2026-11-14T16:30:06Z | This is how Rockstar brought together bad fashion, a miserable gangster, an exploding phone, and fake Zuckerbe |
+| https://x.com/IGN/status/2121634300399432028 | IGN | 2026-11-14T16:00:09Z | Is the DC Cinematic Universe just cursed? Because it sure feels like it after James Gunn and Peter Safran's de |
+| https://x.com/IGN/status/2121619213978681384 | IGN | 2026-11-14T15:00:13Z | How to Rob a Bank wants to speak to real-life financial concerns that plague so many of us, but rarely is it w |
+| https://x.com/pandorioltd/status/2120617317948109236 | pandorioltd | 2026-11-11T20:39:02Z | We've crossed the 5000 wishlist mark, thank you everyone! Escape the Walls is releasing on Steam December 3rd  |
+| https://x.com/pandorioltd/status/2119871184409944337 | pandorioltd | 2026-11-09T19:14:10Z | Do you like the changes? #gamedev #indiegame |
+| https://x.com/pandorioltd/status/2119806519378383054 | pandorioltd | 2026-11-09T14:57:12Z | Making an incremental game about breaking walls We're happy to announce the release date. December 3rd. Free D |
+| https://x.com/pandorioltd/status/2119479723793297875 | pandorioltd | 2026-11-08T17:18:38Z | While the clone of our game is already out and selling well, we're preparing to launch a Free Demo next week f |
 
 ## Search route status
 
@@ -59,10 +84,18 @@ Alerts this run: **0**
 | bluesky | ゲーム開発/top | ok | 9 | — |
 | bluesky | ゲーム制作/latest | ok | 6 | — |
 | bluesky | ゲーム制作/top | ok | 6 | — |
-| bing-x-index | site:x.com "game prototype" video | limited | 0 | 7 |
+| fx-x-media | clemmygames | error | — | — |
+| fx-x-media | indieexchange | error | — | — |
+| fx-x-media | DevolverDigital | error | — | — |
+| fx-x-media | RawFury | error | — | — |
+| fx-x-media | ID_XBOX | ok | 15 | 15 |
+| fx-x-media | Steam | ok | 15 | 15 |
+| fx-x-media | pandorioltd | ok | 15 | 15 |
+| fx-x-media | IGN | ok | 15 | 15 |
+| bing-x-index | site:x.com "game prototype" video | limited | 0 | 10 |
 | bing-x-index | site:x.com "indie game" "gameplay" | limited | 0 | 10 |
 | bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
-| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 7 |
+| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
 | google-news | "indie game" "viral" when:3d | limited | 0 | 6 |
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
@@ -83,7 +116,7 @@ Raw search results help diagnose search providers returning unrelated pages.
 | site:x.com "game prototype" video | Free Online Games at Poki - Play Now! | https://poki.com |
 | site:x.com "game prototype" video | Free Online Games on CrazyGames / Play Now! | https://crazygames.com |
 | site:x.com "indie game" "gameplay" | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
-| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.m.wikipedia.org/wiki/Indie_music |
+| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.wikipedia.org/wiki/Indie_music |
 | site:twitter.com "I made a game" | Instagram | https://instagram.com |
 | site:twitter.com "I made a game" | Í - Wikipedia | https://en.wikipedia.org/wiki/%C3%8D |
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |

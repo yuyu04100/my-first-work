@@ -1,19 +1,25 @@
 {
-  "at": "2026-11-15T00:53:10Z",
-  "status": "degraded_x",
+  "at": "2026-11-15T00:54:32Z",
+  "status": "partial_x_feeds",
   "x_index": {
     "attempts": 4,
     "hits": 0,
-    "raw_hits": 34,
+    "raw_hits": 40,
     "errors": 0,
     "indexed_candidate_status_urls": 0,
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
-  "source_attempts": 28,
-  "source_ok": 21,
-  "source_errors": 0,
-  "unique_results": 189,
+  "source_attempts": 36,
+  "source_ok": 25,
+  "source_errors": 4,
+  "unique_results": 249,
   "alert_attempts": 0,
-  "hours_since_previous_run": 0.01,
-  "state_bytes": 684877
+  "hours_since_previous_run": 0.02,
+  "state_bytes": 685037,
+  "fx_x_media": {
+    "accounts_attempted": 8,
+    "posts": 60,
+    "errors": 4,
+    "limitation": "Only curated profile media feeds, not search across all X posts"
+  }
 }
