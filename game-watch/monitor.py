@@ -266,13 +266,25 @@ def collect():
     # X profile media feeds are free but limited to watched accounts. No view
     # counts and no claim of comprehensive keyword coverage.
     for handle in FX_X_MEDIA_HANDLES:
-        url = f"https://fxtwitter.com/{handle}/media.xml?count=15"
+        # Both hosts are documented by FxEmbed. One may have intermittent
+        # upstream 404s while the other succeeds.
+        payload, used_host, failures = None, None, []
+        for host in ("fxtwitter.com", "fixupx.com"):
+            url = f"https://{host}/{handle}/media.xml?count=15"
+            try:
+                payload = request(url)
+                used_host = host
+                break
+            except Exception as e:
+                failures.append(f"{host}: {str(e)[:70]}")
+        if payload is None:
+            stats.append({"source": "fx-x-media", "query": handle, "status": "error", "error": "; ".join(failures)[:200]})
+            continue
         try:
-            payload = request(url)
             posts = fx_x_media_signals(payload, handle)
             results.extend(posts)
             stats.append({"source": "fx-x-media", "query": handle, "status": "ok" if posts else "limited",
-                          "count": len(posts), "raw_count": rss_item_count(payload)})
+                          "count": len(posts), "raw_count": rss_item_count(payload), "host": used_host})
         except Exception as e:
             stats.append({"source": "fx-x-media", "query": handle, "status": "error", "error": str(e)[:140]})
     # Search engine feeds have uneven indexing of X; this is discovery, NOT all-X collection.
