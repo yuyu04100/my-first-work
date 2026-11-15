@@ -365,7 +365,7 @@ def collect():
     ]
     other_start = (h + NOW.day) % len(other_pools)
     intl = [(lang, terms[(h + NOW.day) % len(terms)])
-            for lang, terms in (other_pools[other_start], other_pools[(other_start+1)%len(other_pools)})]
+            for lang, terms in (other_pools[other_start], other_pools[(other_start + 1) % len(other_pools)])]
     search_terms = [("en", term) for term in en] + [("ja", term) for term in jp] + intl
     for language, term in search_terms:
         for days, feed in ((1, "latest"), (3, "media"), (7, "top")):
