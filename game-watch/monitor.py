@@ -732,7 +732,7 @@ def report(state, run, alerts):
         lines.append(f"| {c['status_url']} | {c['title'].replace('|','/')} |")
     if not x_indexed:
         lines.append("| — | No actual X status URL extracted; degraded route rather than a clean scan |")
-    lines += ["", "**Limited** means the source responded but yielded no qualifying game post. This is NOT evidence that X had no viral games.", "", "X metadata is **not** available without X access. A failure or missing indexed post is **not** a zero-viral claim. Reddit RSS was retired 2026-11-13 and is deliberately excluded. All sources are best effort; absence of a hit is not evidence that no viral game exists.", ""]
+    lines += ["", "**Limited** means the source responded but yielded no qualifying game post. This is NOT evidence that X had no viral games.", "", "FxEmbed proxy provides available X-post reaction counts (not official X API; views may be unavailable). Provider errors and missing posts do NOT imply no game went viral. A source returning 404 is counted as failed, not zero results. Reddit's old direct RSS is excluded. All discovery sources are partial.", ""]
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text("\n".join(lines), encoding="utf-8")
 
@@ -792,7 +792,9 @@ def main():
                "qualified_posts": sum(r.get("count", 0) for r in x_search_routes if r.get("discovery_route") == kind),
                "errors": sum(r.get("status") == "error" for r in x_search_routes if r.get("discovery_route") == kind)}
         for kind in ("global-video", "global-creator")}
-    if health["fx_x_search"]["qualified_posts"]:
+    if health["fx_x_search"]["errors"] >= max(3, len(x_search_routes) // 4):
+        health["status"] = "degraded_x_search"
+    elif health["fx_x_search"]["qualified_posts"]:
         health["status"] = "partial_x_search"
     health["fx_x_media"] = {"accounts_attempted": len(fx_routes), "posts": x_feed_count,
                             "errors": sum(s["status"] == "error" for s in fx_routes),
