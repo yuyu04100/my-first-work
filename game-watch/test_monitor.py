@@ -44,6 +44,15 @@ class MonitorTest(unittest.TestCase):
         self.assertEqual(len(leads), 1)
         self.assertEqual(leads[0]["status_url"], "https://x.com/someone/status/123")
 
+    def test_free_x_media_feed_keeps_provenance_not_fake_metrics(self):
+        rss = b'<rss><channel><item><title>Gameplay footage</title><link>https://fxtwitter.com/gamedev/status/987</link><pubDate>Sat, 14 Nov 2026 02:30:00 GMT</pubDate></item></channel></rss>'
+        signals = monitor.fx_x_media_signals(rss, "gamedev")
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["url"], "https://x.com/gamedev/status/987")
+        self.assertIsNone(signals[0]["likes"])
+        self.assertIsNone(signals[0]["reposts"])
+        self.assertIsNone(monitor.eligible(signals[0], None))
+
     def test_state_pruning_to_keep_github_readable(self):
         state = {"posts": {"https://bsky.app/profile/x/post/" + str(i): {"last_seen": str(i), "alerted": False} for i in range(1000)}, "runs": []}
         monitor.update(state, [])
