@@ -1,6 +1,6 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:52:36Z**
+Last run (UTC): **2026-11-15T00:53:10Z**
 
 Sources OK: **21** / **28**
 Unique posts found this run: **189**
@@ -73,6 +73,21 @@ Alerts this run: **0**
 | hacker-news | game prototype | ok | 1 | — |
 | hacker-news | indie game | ok | 2 | — |
 | hacker-news | roblox | ok | 2 | — |
+
+## Raw search results from X discovery routes (unverified)
+
+Raw search results help diagnose search providers returning unrelated pages.
+
+| Query | Result title | Result URL |
+|---|---|---|
+| site:x.com "game prototype" video | Free Online Games at Poki - Play Now! | https://poki.com |
+| site:x.com "game prototype" video | Free Online Games on CrazyGames / Play Now! | https://crazygames.com |
+| site:x.com "indie game" "gameplay" | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
+| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.m.wikipedia.org/wiki/Indie_music |
+| site:twitter.com "I made a game" | Instagram | https://instagram.com |
+| site:twitter.com "I made a game" | Í - Wikipedia | https://en.wikipedia.org/wiki/%C3%8D |
+| "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
+| "x.com" "game mechanic" gameplay | X (@X) / X | https://x.com/X |
 
 ## X-indexed status links (unverified candidates)
 
