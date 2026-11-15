@@ -1,8 +1,8 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:57:11Z**
+Last run (UTC): **2026-11-15T00:58:27Z**
 
-Sources OK: **28** / **36**
+Sources OK: **29** / **38**
 Unique posts found this run: **285**
 Alerts this run: **0**
 
@@ -65,10 +65,12 @@ Alerts this run: **0**
 | bluesky | ゲーム開発/top | ok | 9 | — |
 | bluesky | ゲーム制作/latest | ok | 6 | — |
 | bluesky | ゲーム制作/top | ok | 6 | — |
+| fx-x-search | game prototype | ok | 3 | 20 |
+| fx-x-search | ゲーム開発 | ok | 2 | 20 |
 | fx-x-media | ID_XBOX | ok | 15 | 15 |
 | fx-x-media | Steam | ok | 15 | 15 |
 | fx-x-media | pandorioltd | ok | 15 | 15 |
-| fx-x-media | IGN | ok | 5 | 15 |
+| fx-x-media | IGN | error | — | — |
 | fx-x-media | Roblox | ok | 15 | 15 |
 | fx-x-media | FortniteGame | error | — | — |
 | fx-x-media | UnrealEngine | ok | 15 | 15 |
@@ -81,7 +83,7 @@ Alerts this run: **0**
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
 | reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 4 | 100 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 30 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 27 |
 | mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 0 | — |
 | mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 1 | — |
@@ -97,7 +99,7 @@ Raw search results help diagnose search providers returning unrelated pages.
 | site:x.com "game prototype" video | Free Online Games at Poki - Play Now! | https://poki.com |
 | site:x.com "game prototype" video | Free Online Games on CrazyGames / Play Now! | https://crazygames.com |
 | site:x.com "indie game" "gameplay" | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
-| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.m.wikipedia.org/wiki/Indie_music |
+| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.wikipedia.org/wiki/Indie_music |
 | site:twitter.com "I made a game" | Instagram | https://instagram.com |
 | site:twitter.com "I made a game" | Í - Wikipedia | https://en.wikipedia.org/wiki/%C3%8D |
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
