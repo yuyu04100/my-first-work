@@ -51,8 +51,8 @@ NEWS_TERMS = [
 # Free, public profile-media feeds documented by FxEmbed. These cover only
 # selected X accounts, NOT a global keyword search of X.
 FX_X_MEDIA_HANDLES = [
-    "clemmygames", "indieexchange", "DevolverDigital", "RawFury",
     "ID_XBOX", "Steam", "pandorioltd", "IGN",
+    "Roblox", "FortniteGame", "UnrealEngine", "itchio",
 ]
 MASTODON_FEEDS = [
     "https://mastodon.gamedev.place/tags/indiedev.rss",
@@ -204,6 +204,14 @@ def fx_x_media_signals(content, handle):
         raw = item.findtext("description", default="") or ""
         desc = re.sub(r"<[^>]+>", " ", raw)
         pub = date_iso(item.findtext("pubDate", default=""))
+        # General entertainment feeds include movies and TV. Keep gaming
+        # context only; specialized developer feeds remain broad.
+        if handle.lower() in {"ign", "steam", "id_xbox"}:
+            combined = (title + " " + desc).lower()
+            if not any(word in combined for word in
+                       ("game", "play", "indie", "steam", "demo", "trailer", "devlog",
+                        "prototype", "roblox", "fortnite", "ゲーム", "switch", "xbox")):
+                continue
         posts.append({"url": original, "title": title[:180], "text": desc[:600],
                       "published": pub, "source": "fx-x-media", "author": handle,
                       "likes": None, "reposts": None, "replies": None, "video": True,
@@ -446,7 +454,7 @@ def report(state, run, alerts):
     for p in top:
         safe = p.get("source", "").replace("|", "")
         lines.append(f"| {safe} | {p['url']} | {p.get('likes') if p.get('likes') is not None else '—'} | {p.get('reposts') if p.get('reposts') is not None else '—'} | {p.get('first_seen','')} |")
-    x_media = sorted((p for p in state["posts"].values() if p.get("source") == "fx-x-media"),
+    x_media = sorted((p for p in state["posts"].values() if p.get("source") == "fx-x-media" and relevant(p.get("title", "") + " " + p.get("text", ""))),
                      key=lambda x: x.get("published") or "", reverse=True)[:20]
     lines += ["", "## X media leads from watched accounts (no X metrics)", "",
               "| X post URL | Account | Published from feed | Post title |", "|---|---|---|---|"]
