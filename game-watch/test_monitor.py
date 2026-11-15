@@ -28,6 +28,20 @@ class MonitorTest(unittest.TestCase):
         self.assertTrue(monitor.relevant("I made a ski jumping game where you jump from falling stocks"))
         self.assertTrue(monitor.relevant("New game prototype: game where you punch through walls"))
         self.assertTrue(monitor.relevant("ゲーム開発中、壁を破壊するゲームを作りました"))
+    def test_industry_statement_not_a_game_demo(self):
+        self.assertFalse(monitor.relevant("ゲーム開発カンファレンスGDCのIGF審査員チームが声明を公開"))
+        self.assertFalse(monitor.relevant("IGF game developer awards jurors announce policy"))
+        self.assertTrue(monitor.relevant("I made a game where you punch through a wall"))
+
+    def test_rss_empty_result_is_not_a_verified_x_hit(self):
+        self.assertEqual(monitor.rss_item_count(b"<rss><channel></channel></rss>"), 0)
+        self.assertEqual(monitor.rss_item_count(b"<rss><channel><item><title>A</title></item></channel></rss>"), 1)
+
+    def test_state_pruning_to_keep_github_readable(self):
+        state = {"posts": {"https://bsky.app/profile/x/post/" + str(i): {"last_seen": str(i), "alerted": False} for i in range(1000)}, "runs": []}
+        monitor.update(state, [])
+        self.assertLessEqual(len(state["posts"]), 650)
+
     def test_deduplicated_alert(self):
         p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": monitor.iso(), "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
         state={"posts": {}, "runs": []}
