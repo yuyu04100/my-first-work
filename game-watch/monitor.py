@@ -181,7 +181,7 @@ def relevant(text):
         # English: include creator demonstrations outside the exact "I made" phrase.
         r"\b(?:i|we|our team|my studio)\s+(?:just\s+)?(?:made|built|developed|created|am making|are making|am working on|are working on|am developing|are developing)\b",
         r"\b(?:my|our)\s+(?:first\s+|new\s+|upcoming\s+)?(?:indie\s+)?(?:game|gameplay|prototype)\b",
-        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game|playable demo|playtest footage|gameplay clip|prototype footage|gameplay footage)\b",
+        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game|playable demo|game demo|interactive game|playable in the browser|game you can play|playtest footage|gameplay clip|prototype footage|gameplay footage)\b",
         r"\b(?:game where|game that lets|play my game|working on my game|working on our game|new game i made|game i'm making|game we made)\b",
         # Japanese.
         r"(?:自作ゲーム|ゲームの試作|試作ゲーム|ゲームを作|ゲームを開発|開発中のゲーム|ゲーム制作中|ゲーム開発中|ゲーム作りました|ゲームを制作|ゲームプレイ映像)",
@@ -351,16 +351,21 @@ def collect():
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "ok", "count": len(signals)})
             except Exception as e:
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "error", "error": str(e)[:140]})
-    # Always inspect English + Japanese + Spanish + Korean + Chinese + a
-    # rotating European-language query. Three age windows per term.
-    en = [FX_X_SEARCH_EN[(h * 5 + NOW.day + i) % len(FX_X_SEARCH_EN)] for i in range(5)]
-    jp = [FX_X_SEARCH_JP[(h + NOW.day + i) % len(FX_X_SEARCH_JP)] for i in range(2)]
-    intl = [
-        ("es", FX_X_SEARCH_ES[(h + NOW.day) % len(FX_X_SEARCH_ES)]),
-        ("ko", FX_X_SEARCH_KO[(h + NOW.day) % len(FX_X_SEARCH_KO)]),
-        ("zh", FX_X_SEARCH_ZH[(h + NOW.day) % len(FX_X_SEARCH_ZH)]),
-        ("eu", FX_X_SEARCH_EU[(h + NOW.day) % len(FX_X_SEARCH_EU)]),
+    # Always inspect English, Japanese and rotating overseas languages.
+    # Each chosen term is checked over 24 hours, 3 days and 7 days.
+    # Bound unauthenticated proxy load. More queries caused HTTP 404 upstream,
+    # so prioritize diverse discovery over repeating too many near-identical terms.
+    en = [FX_X_SEARCH_EN[(h * 5 + NOW.day + i) % len(FX_X_SEARCH_EN)] for i in range(3)]
+    jp = [FX_X_SEARCH_JP[(h + NOW.day) % len(FX_X_SEARCH_JP)]]
+    other_pools = [
+        ("es", FX_X_SEARCH_ES),
+        ("ko", FX_X_SEARCH_KO),
+        ("zh", FX_X_SEARCH_ZH),
+        ("eu", FX_X_SEARCH_EU),
     ]
+    other_start = (h + NOW.day) % len(other_pools)
+    intl = [(lang, terms[(h + NOW.day) % len(terms)])
+            for lang, terms in (other_pools[other_start], other_pools[(other_start+1)%len(other_pools)})]
     search_terms = [("en", term) for term in en] + [("ja", term) for term in jp] + intl
     for language, term in search_terms:
         for days, feed in ((1, "latest"), (3, "media"), (7, "top")):
@@ -404,8 +409,8 @@ def collect():
     # and a rotating set of accounts with documented overseas breakout clips.
     # The profiles are starting leads, not evidence of geographic representativeness.
     # These are kept in the same FxEmbed results/audit channel as regular searches.
-    global_visual = [FX_X_GLOBAL_VISUAL_QUERIES[(h * 3 + NOW.day + i) % len(FX_X_GLOBAL_VISUAL_QUERIES)] for i in range(4)]
-    global_creators = [FX_X_GLOBAL_CREATORS[(h * 5 + NOW.day + i) % len(FX_X_GLOBAL_CREATORS)] for i in range(5)]
+    global_visual = [FX_X_GLOBAL_VISUAL_QUERIES[(h * 3 + NOW.day + i) % len(FX_X_GLOBAL_VISUAL_QUERIES)] for i in range(2)]
+    global_creators = [FX_X_GLOBAL_CREATORS[(h * 5 + NOW.day + i) % len(FX_X_GLOBAL_CREATORS)] for i in range(4)]
     global_queries = [("global-video", term) for term in global_visual] + [
         ("global-creator", f"from:{handle}") for handle in global_creators]
     for route_kind, term in global_queries:
