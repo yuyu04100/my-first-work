@@ -50,22 +50,36 @@ NEWS_TERMS = [
 ]
 # Free, public profile-media feeds documented by FxEmbed. These cover only
 # selected X accounts, NOT a global keyword search of X.
+# Search multiple international-language routes on EVERY execution, not just
+# occasional global/English queries. A search term's language is not the
+# author's nationality and does not establish geographic reach.
 FX_X_SEARCH_EN = [
     '"game prototype"', '"I made a game"', '"game mechanic"', '"physics game"',
     '"gameplay prototype"', '"making a game"', '"destructible environment"',
     '"indie game" gameplay', '"new game" video', '"game where" prototype',
     '"devlog" gameplay', '"early gameplay"', '"multiplayer prototype"',
     '"sandbox game" physics', '"game jam" gameplay', '#screenshotsaturday',
+    '"I built a game"', '"my new game"', '"gameplay clip"', '"playtest"',
+    '"physics sandbox"', '"co-op game"', '"gameplay footage"',
+    '"experimental game"', '"I made this" game', '"game I am working on"',
+    '"procedural game"', '"viral indie game"',
 ]
 FX_X_SEARCH_JP = [
     "ゲーム開発", "自作ゲーム", "ゲーム制作中", "ゲーム試作",
     "ゲームを作りました", "ゲームプレイ映像",
 ]
-FX_X_SEARCH_OTHER = ["prototipo juego", "hice un juego", "게임 개발", "独立游戏 开发"]
+FX_X_SEARCH_ES = ["hice un juego", "estoy haciendo un juego", "prototipo de juego", "mi nuevo juego"]
+FX_X_SEARCH_KO = ["게임을 만들었", "게임 개발 중", "인디 게임 개발", "게임 프로토타입"]
+FX_X_SEARCH_ZH = ["我做了个游戏", "独立游戏开发", "游戏实机演示", "游戏原型"]
+FX_X_SEARCH_EU = [
+    "fiz um jogo", "meu novo jogo", "j'ai créé un jeu",
+    "je développe un jeu", "ich habe ein spiel entwickelt", "mein neues spiel",
+]
 FX_X_MEDIA_HANDLES = [
     "ID_XBOX", "Steam", "pandorioltd", "IGN",
     "Roblox", "FortniteGame", "UnrealEngine", "itchio",
 ]
+
 MASTODON_FEEDS = [
     "https://mastodon.gamedev.place/tags/indiedev.rss",
     "https://mastodon.gamedev.place/tags/gamedev.rss",
@@ -125,26 +139,46 @@ def normalized_url(url):
 
 
 def relevant(text):
-    """Exclude generic game-industry commentary; require actual gameplay evidence.
+    """Require evidence of a game, not generic industry news.
 
-    Precision filter for automatic alerts, not a complete discovery filter.
+    Apply comparable creation/prototype cues to English, Japanese, Spanish,
+    Korean, Chinese, Portuguese, French and German. Broad/no-label video
+    candidates are retained separately for manual inspection, never auto-alerted.
     """
     text = (text or "").lower()
     if any(s in text for s in EXCLUDE):
         return False
     if any(s in text for s in NEWS_ONLY):
         return False
-    game_words = ("game", "gameplay", "prototype", "gamedev", "indiedev", "roblox", "fortnite", "ゲーム", "ロブロックス", "フォートナイト")
+    game_words = (
+        "game", "gameplay", "prototype", "gamedev", "indiedev", "roblox", "fortnite",
+        "ゲーム", "ロブロックス", "フォートナイト",
+        "juego", "videojuego", "jogo", "jeu", "spiel",
+        "게임", "游戏", "遊戲",
+    )
     if not any(word in text for word in game_words):
         return False
     cues = [
-        r"\b(?:i|we|our team|my studio)\s+(?:just\s+)?(?:made|built|developed|created|am making|are making|am working on)\b",
-        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game|playable demo)\b",
-        r"\b(?:game where|game that lets|play my game|working on my game|working on our game|new game i made)\b",
+        # English: include creator demonstrations outside the exact "I made" phrase.
+        r"\b(?:i|we|our team|my studio)\s+(?:just\s+)?(?:made|built|developed|created|am making|are making|am working on|are working on|am developing|are developing)\b",
+        r"\b(?:my|our)\s+(?:first\s+|new\s+|upcoming\s+)?(?:indie\s+)?(?:game|gameplay|prototype)\b",
+        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game|playable demo|playtest footage|gameplay clip|prototype footage|gameplay footage)\b",
+        r"\b(?:game where|game that lets|play my game|working on my game|working on our game|new game i made|game i'm making|game we made)\b",
+        # Japanese.
         r"(?:自作ゲーム|ゲームの試作|試作ゲーム|ゲームを作|ゲームを開発|開発中のゲーム|ゲーム制作中|ゲーム開発中|ゲーム作りました|ゲームを制作|ゲームプレイ映像)",
+        # Spanish and Portuguese.
+        r"\b(?:hice|cre[eé]|desarroll[eé]|estoy (?:haciendo|creando|desarrollando))\s+(?:un|este|mi)\s+(?:nuevo\s+)?(?:video)?juego\b",
+        r"\b(?:mi nuevo juego|prototipo de (?:un )?juego|juego que (?:hice|estoy haciendo))\b",
+        r"\b(?:fiz|criei|desenvolvi|estou (?:fazendo|criando|desenvolvendo))\s+(?:um|meu|este)\s+(?:novo\s+)?jogo\b",
+        r"\b(?:meu novo jogo|prot[oó]tipo de jogo)\b",
+        # Korean and Chinese.
+        r"(?:게임을? (?:만들|개발)|게임 (?:제작|개발|프로토타입|플레이 영상)|제가 만든 게임|인디 ?게임 개발)",
+        r"(?:自制游戏|自製遊戲|游戏开发|遊戲開發|游戏制作|遊戲製作|游戏原型|遊戲原型|游戏实机|遊戲實機|做了个游戏|做了一个游戏|我做了个游戏|开发了一款游戏|遊戲演示|游戏演示)",
+        # French and German.
+        r"\b(?:j['’]ai (?:cr[eé][eé]|fait) un jeu|je d[eé]veloppe un jeu|mon nouveau jeu|prototype de jeu)\b",
+        r"\b(?:ich habe (?:ein|mein) spiel (?:gemacht|entwickelt)|mein neues spiel|spielprototyp)\b",
     ]
     return any(re.search(pattern, text) for pattern in cues)
-
 
 def classify(post):
     """Accept a signal only with positive gaming context. No made-up X metrics."""
@@ -298,12 +332,18 @@ def collect():
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "ok", "count": len(signals)})
             except Exception as e:
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "error", "error": str(e)[:140]})
-    # Every run covers English, Japanese and one other language. Query
-    # separately over 24 hours, 3 days and 7 days.
-    en = [FX_X_SEARCH_EN[(h * 4 + NOW.day + i) % len(FX_X_SEARCH_EN)] for i in range(4)]
+    # Always inspect English + Japanese + Spanish + Korean + Chinese + a
+    # rotating European-language query. Three age windows per term.
+    en = [FX_X_SEARCH_EN[(h * 5 + NOW.day + i) % len(FX_X_SEARCH_EN)] for i in range(5)]
     jp = [FX_X_SEARCH_JP[(h + NOW.day + i) % len(FX_X_SEARCH_JP)] for i in range(2)]
-    other = [FX_X_SEARCH_OTHER[(h + NOW.day) % len(FX_X_SEARCH_OTHER)]]
-    for term in en + jp + other:
+    intl = [
+        ("es", FX_X_SEARCH_ES[(h + NOW.day) % len(FX_X_SEARCH_ES)]),
+        ("ko", FX_X_SEARCH_KO[(h + NOW.day) % len(FX_X_SEARCH_KO)]),
+        ("zh", FX_X_SEARCH_ZH[(h + NOW.day) % len(FX_X_SEARCH_ZH)]),
+        ("eu", FX_X_SEARCH_EU[(h + NOW.day) % len(FX_X_SEARCH_EU)]),
+    ]
+    search_terms = [("en", term) for term in en] + [("ja", term) for term in jp] + intl
+    for language, term in search_terms:
         for days, feed in ((1, "latest"), (3, "media"), (7, "top")):
             since = (NOW - dt.timedelta(days=days)).strftime("%Y-%m-%d")
             query = f"{term} since:{since}"
@@ -313,12 +353,32 @@ def collect():
                 if data.get("code") != 200:
                     raise ValueError("FxEmbed search code=" + str(data.get("code")))
                 raw = data.get("results") or []
-                posts = [fx_x_search_signal(p) for p in raw]
-                posts = [p for p in posts if p and p.get("published") and
-                         0 <= (NOW - dt.datetime.fromisoformat(p["published"].replace("Z", "+00:00"))).total_seconds() <= (days * 86400 + 7200)]
+                posts = []
+                review = []
+                for candidate in raw:
+                    verified = fx_x_search_signal(candidate)
+                    if verified and verified.get("published"):
+                        age = (NOW - dt.datetime.fromisoformat(verified["published"].replace("Z", "+00:00"))).total_seconds()
+                        if 0 <= age <= (days * 86400 + 7200):
+                            posts.append(verified)
+                    elif isinstance(candidate, dict) and candidate.get("type", "status") == "status":
+                        likes = candidate.get("likes") or 0
+                        reposts = candidate.get("reposts") or 0
+                        if (isinstance(likes, (float, int)) and isinstance(reposts, (float, int)) and
+                            ((likes >= 3000 and reposts >= 120) or reposts >= 750)):
+                            author = candidate.get("author") or {}
+                            handle = author.get("screen_name") or author.get("username")
+                            raw_url = candidate.get("url") or (f"https://x.com/{handle}/status/{candidate.get('id')}" if handle else "")
+                            candidate_url = normalized_url(raw_url)
+                            if XPOST.fullmatch(candidate_url):
+                                review.append({"url": candidate_url, "language_query": language,
+                                               "likes": int(likes), "reposts": int(reposts),
+                                               "text": (candidate.get("text") or "")[:110]})
                 results.extend(posts)
-                stats.append({"source": "fx-x-search", "query": f"{query}/{feed}", "status": "ok" if posts else "limited",
-                              "count": len(posts), "raw_count": len(raw)})
+                stats.append({"source": "fx-x-search", "query": f"{query}/{feed}",
+                              "query_language": language, "status": "ok" if posts else "limited",
+                              "count": len(posts), "raw_count": len(raw),
+                              "review_count": len(review), "review_examples": review[:6]})
             except Exception as e:
                 stats.append({"source": "fx-x-search", "query": f"{query}/{feed}", "status": "error", "error": str(e)[:180]})
     # X profile media feeds are free but limited to watched accounts. No view
@@ -560,6 +620,26 @@ def report(state, run, alerts):
               "| X post URL | Account | Published from feed | Post title |", "|---|---|---|---|"]
     for p in x_media:
         lines.append(f"| {p['url']} | {p.get('author','')} | {p.get('published') or 'unknown'} | {p.get('title','').replace('|','/')[:110]} |")
+    lines += ["", "## FxEmbed X search coverage by query language", "",
+              "These are query-language buckets, NOT geographic location or nationality.", "",
+              "| Query language | Searches | Raw hits | Qualified | Review-only high-engagement |",
+              "|---|---:|---:|---:|---:|"]
+    for lang in ("en", "ja", "es", "ko", "zh", "eu"):
+        subset = [r for r in run["routes"] if r["source"] == "fx-x-search" and r.get("query_language") == lang]
+        lines.append(f"| {lang} | {len(subset)} | {sum(r.get('raw_count', 0) for r in subset)} | {sum(r.get('count', 0) for r in subset)} | {sum(r.get('review_count', 0) for r in subset)} |")
+    review = {}
+    for route in run["routes"]:
+        if route["source"] == "fx-x-search":
+            for item in route.get("review_examples", []):
+                review[item["url"]] = item
+    lines += ["", "## High-engagement X posts excluded by automatic text classifier (REVIEW ONLY)", "",
+              "No game identity or game-related virality has been verified for these posts.", "",
+              "| X post | Query language | Likes (FxEmbed) | Reposts (FxEmbed) | Snippet |",
+              "|---|---|---:|---:|---|"]
+    for p in sorted(review.values(), key=lambda p: p["reposts"] * 3 + p["likes"], reverse=True)[:20]:
+        lines.append(f"| {p['url']} | {p['language_query']} | {p['likes']} | {p['reposts']} | {p['text'].replace('|', '/').replace(chr(10), ' ')[:100]} |")
+    if not review:
+        lines.append("| — | — | — | — | No review-only high-engagement posts sampled |")
     lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
         lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
@@ -624,7 +704,13 @@ def main():
                              "qualified_posts": sum(s.get("count", 0) for s in x_search_routes),
                              "raw_posts": sum(s.get("raw_count", 0) for s in x_search_routes),
                              "errors": sum(s["status"] == "error" for s in x_search_routes),
-                             "note": "Free FxEmbed proxy search pilot, not an official X API contract"}
+                             "by_query_language": {
+                                 lang: {"attempts": sum(r.get("query_language") == lang for r in x_search_routes),
+                                        "raw_posts": sum(r.get("raw_count", 0) for r in x_search_routes if r.get("query_language") == lang),
+                                        "qualified_posts": sum(r.get("count", 0) for r in x_search_routes if r.get("query_language") == lang),
+                                        "review_only_high_engagement": sum(r.get("review_count", 0) for r in x_search_routes if r.get("query_language") == lang)}
+                                 for lang in ("en", "ja", "es", "ko", "zh", "eu")},
+                             "note": "Query languages are NOT user locations; free FxEmbed proxy, not official X API"}
     if health["fx_x_search"]["qualified_posts"]:
         health["status"] = "partial_x_search"
     health["fx_x_media"] = {"accounts_attempted": len(fx_routes), "posts": x_feed_count,
