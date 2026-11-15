@@ -53,6 +53,25 @@ class MonitorTest(unittest.TestCase):
         self.assertIsNone(signals[0]["reposts"])
         self.assertIsNone(monitor.eligible(signals[0], None))
 
+    def test_fx_x_search_proxy_metrics_are_not_fabricated(self):
+        sample = {"type": "status", "id": "123456789", "url": "https://twitter.com/test/status/123456789",
+                  "created_at": monitor.iso(), "text": "I made a game prototype with physics and videos",
+                  "author": {"screen_name": "test"}, "likes": 5000, "reposts": 600,
+                  "media": {"videos": [{"url": "https://example.org/video.mp4"}]}}
+        p = monitor.fx_x_search_signal(sample)
+        self.assertEqual(p["url"], "https://x.com/test/status/123456789")
+        self.assertEqual(p["likes"], 5000)
+        self.assertEqual(p["reposts"], 600)
+        self.assertTrue(p["video"])
+        self.assertEqual(p["counts_source"], "FxEmbed public X proxy, not X official API")
+        self.assertEqual(monitor.eligible(p, None), "x_proxy_large_engagement")
+
+    def test_non_game_x_search_is_not_an_auto_alert(self):
+        sample = {"type": "status", "id": "123", "url": "https://x.com/test/status/123",
+                  "created_at": monitor.iso(), "text": "IGF judges announce a game development policy",
+                  "author": {"screen_name": "test"}, "likes": 50000, "reposts": 10000}
+        self.assertIsNone(monitor.fx_x_search_signal(sample))
+
     def test_state_pruning_to_keep_github_readable(self):
         state = {"posts": {"https://bsky.app/profile/x/post/" + str(i): {"last_seen": str(i), "alerted": False} for i in range(1000)}, "runs": []}
         monitor.update(state, [])
