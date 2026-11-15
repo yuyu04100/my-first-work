@@ -1,6 +1,6 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:52:15Z**
+Last run (UTC): **2026-11-15T00:52:36Z**
 
 Sources OK: **21** / **28**
 Unique posts found this run: **189**
@@ -59,10 +59,10 @@ Alerts this run: **0**
 | bluesky | ゲーム開発/top | ok | 9 | — |
 | bluesky | ゲーム制作/latest | ok | 6 | — |
 | bluesky | ゲーム制作/top | ok | 6 | — |
-| bing-x-index | site:x.com "game prototype" video | limited | 0 | 10 |
+| bing-x-index | site:x.com "game prototype" video | limited | 0 | 7 |
 | bing-x-index | site:x.com "indie game" "gameplay" | limited | 0 | 10 |
 | bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
-| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
+| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 7 |
 | google-news | "indie game" "viral" when:3d | limited | 0 | 6 |
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |

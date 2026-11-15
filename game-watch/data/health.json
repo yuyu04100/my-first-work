@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-15T00:52:15Z",
+  "at": "2026-11-15T00:52:36Z",
   "status": "degraded_x",
   "x_index": {
     "attempts": 4,
     "hits": 0,
-    "raw_hits": 40,
+    "raw_hits": 34,
     "errors": 0,
     "indexed_candidate_status_urls": 0,
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
@@ -14,6 +14,6 @@
   "source_errors": 0,
   "unique_results": 189,
   "alert_attempts": 0,
-  "hours_since_previous_run": 0.03,
-  "state_bytes": 675835
+  "hours_since_previous_run": 0.01,
+  "state_bytes": 681385
 }
