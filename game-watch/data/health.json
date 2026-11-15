@@ -1,31 +1,31 @@
 {
-  "at": "2026-11-15T01:04:02Z",
+  "at": "2026-11-15T02:37:08Z",
   "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
     "hits": 0,
-    "raw_hits": 40,
+    "raw_hits": 37,
     "errors": 0,
     "indexed_candidate_status_urls": 0,
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 57,
-  "source_ok": 40,
+  "source_ok": 44,
   "source_errors": 0,
-  "unique_results": 303,
-  "alert_attempts": 1,
-  "hours_since_previous_run": 0.03,
-  "state_bytes": 628928,
+  "unique_results": 293,
+  "alert_attempts": 0,
+  "hours_since_previous_run": 1.55,
+  "state_bytes": 640344,
   "fx_x_search": {
     "attempts": 21,
-    "qualified_posts": 109,
-    "raw_posts": 337,
+    "qualified_posts": 96,
+    "raw_posts": 397,
     "errors": 0,
     "note": "Free FxEmbed proxy search pilot, not an official X API contract"
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 95,
+    "posts": 90,
     "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
