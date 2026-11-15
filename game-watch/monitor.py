@@ -75,6 +75,25 @@ FX_X_SEARCH_EU = [
     "fiz um jogo", "meu novo jogo", "j'ai créé un jeu",
     "je développe un jeu", "ich habe ein spiel entwickelt", "mein neues spiel",
 ]
+# Cross-language, game-title-free search for visuals that reach people beyond
+# the developer's typical game-dev hashtags. None of these imply full X coverage.
+FX_X_GLOBAL_VISUAL_QUERIES = [
+    "indie game filter:videos min_faves:500",
+    "new gameplay filter:videos min_faves:500",
+    "physics gameplay filter:videos min_faves:500",
+    "game prototype filter:videos min_faves:500",
+    "multiplayer game filter:videos min_faves:500",
+    "game dev filter:videos min_faves:500",
+    "gameplay footage filter:videos min_faves:500",
+    "playable demo filter:videos min_faves:500",
+]
+# Known high-interest international creators / developer showcase accounts.
+# Benchmark/discovery assistance only. This is NOT a list of every game maker.
+FX_X_GLOBAL_CREATORS = [
+    "ebbyamir", "felixrieseberg", "xikhar", "thsottiaux",
+    "BlendiByl", "apekshik", "kevin_t_ngo", "aniketjart",
+    "IndieGameJoe", "GameZoneHQ", "nexindie", "sundarpichai",
+]
 FX_X_MEDIA_HANDLES = [
     "ID_XBOX", "Steam", "pandorioltd", "IGN",
     "Roblox", "FortniteGame", "UnrealEngine", "itchio",
@@ -381,6 +400,51 @@ def collect():
                               "review_count": len(review), "review_examples": review[:6]})
             except Exception as e:
                 stats.append({"source": "fx-x-search", "query": f"{query}/{feed}", "status": "error", "error": str(e)[:180]})
+    # International supplementary discovery. Search both general video ideas
+    # and a rotating set of accounts with documented overseas breakout clips.
+    # The profiles are starting leads, not evidence of geographic representativeness.
+    # These are kept in the same FxEmbed results/audit channel as regular searches.
+    global_visual = [FX_X_GLOBAL_VISUAL_QUERIES[(h * 3 + NOW.day + i) % len(FX_X_GLOBAL_VISUAL_QUERIES)] for i in range(4)]
+    global_creators = [FX_X_GLOBAL_CREATORS[(h * 5 + NOW.day + i) % len(FX_X_GLOBAL_CREATORS)] for i in range(5)]
+    global_queries = [("global-video", term) for term in global_visual] + [
+        ("global-creator", f"from:{handle}") for handle in global_creators]
+    for route_kind, term in global_queries:
+        for days, feed in ((1, "latest"), (7, "top")):
+            since = (NOW - dt.timedelta(days=days)).strftime("%Y-%m-%d")
+            query = f"{term} since:{since}"
+            url = "https://api.fxtwitter.com/2/search?" + urllib.parse.urlencode({"q": query, "feed": feed, "count": 50})
+            try:
+                data = json.loads(request(url))
+                if data.get("code") != 200:
+                    raise ValueError("FxEmbed search code=" + str(data.get("code")))
+                raw = data.get("results") or []
+                posts = []
+                reviewed = []
+                for candidate in raw:
+                    p = fx_x_search_signal(candidate)
+                    if p and p.get("published"):
+                        age = (NOW - dt.datetime.fromisoformat(p["published"].replace("Z", "+00:00"))).total_seconds()
+                        if 0 <= age <= days * 86400 + 7200:
+                            posts.append(p)
+                    elif isinstance(candidate, dict) and candidate.get("type", "status") == "status":
+                        author = candidate.get("author") or {}
+                        handle = author.get("screen_name") or author.get("username")
+                        u = normalized_url(candidate.get("url") or
+                                           (f"https://x.com/{handle}/status/{candidate.get('id')}" if handle else ""))
+                        if XPOST.fullmatch(u) and (candidate.get("likes") or 0) >= 1000:
+                            reviewed.append({"url": u, "text": (candidate.get("text") or "")[:110],
+                                             "likes": candidate.get("likes") or 0, "reposts": candidate.get("reposts") or 0,
+                                             "language_query": route_kind})
+                results.extend(posts)
+                stats.append({"source": "fx-x-search", "query_language": "en",
+                              "discovery_route": route_kind, "query": f"{query}/{feed}",
+                              "status": "ok" if posts else "limited", "count": len(posts),
+                              "raw_count": len(raw), "review_count": len(reviewed),
+                              "review_examples": reviewed[:8]})
+            except Exception as e:
+                stats.append({"source": "fx-x-search", "query_language": "en", "discovery_route": route_kind,
+                              "query": f"{query}/{feed}", "status": "error", "error": str(e)[:180]})
+
     # X profile media feeds are free but limited to watched accounts. No view
     # counts and no claim of comprehensive keyword coverage.
     for handle in FX_X_MEDIA_HANDLES:
@@ -640,6 +704,12 @@ def report(state, run, alerts):
         lines.append(f"| {p['url']} | {p['language_query']} | {p['likes']} | {p['reposts']} | {p['text'].replace('|', '/').replace(chr(10), ' ')[:100]} |")
     if not review:
         lines.append("| — | — | — | — | No review-only high-engagement posts sampled |")
+    lines += ["", "## Overseas discovery route audit (not a completeness guarantee)", "",
+              "| Route | Queries | Raw hits | Qualified | Excluded high reaction |",
+              "|---|---:|---:|---:|---:|"]
+    for kind in ("global-video", "global-creator"):
+        matched = [r for r in run["routes"] if r.get("discovery_route") == kind]
+        lines.append(f"| {kind} | {len(matched)} | {sum(x.get('raw_count', 0) for x in matched)} | {sum(x.get('count', 0) for x in matched)} | {sum(x.get('review_count', 0) for x in matched)} |")
     lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
         lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
@@ -711,6 +781,12 @@ def main():
                                         "review_only_high_engagement": sum(r.get("review_count", 0) for r in x_search_routes if r.get("query_language") == lang)}
                                  for lang in ("en", "ja", "es", "ko", "zh", "eu")},
                              "note": "Query languages are NOT user locations; free FxEmbed proxy, not official X API"}
+    health["fx_x_search"]["overseas_discovery_routes"] = {
+        kind: {"attempts": sum(r.get("discovery_route") == kind for r in x_search_routes),
+               "raw_posts": sum(r.get("raw_count", 0) for r in x_search_routes if r.get("discovery_route") == kind),
+               "qualified_posts": sum(r.get("count", 0) for r in x_search_routes if r.get("discovery_route") == kind),
+               "errors": sum(r.get("status") == "error" for r in x_search_routes if r.get("discovery_route") == kind)}
+        for kind in ("global-video", "global-creator")}
     if health["fx_x_search"]["qualified_posts"]:
         health["status"] = "partial_x_search"
     health["fx_x_media"] = {"accounts_attempted": len(fx_routes), "posts": x_feed_count,
