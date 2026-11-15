@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "data" / "state.json"
 REPORT = ROOT / "data" / "latest.md"
+HEALTH = ROOT / "data" / "health.json"
 UTC = dt.timezone.utc
 NOW = dt.datetime.now(UTC)
 USER_AGENT = "GameSignalWatch/1.0 (public feed monitor; no API keys)"
@@ -28,13 +29,19 @@ BSKY_TERMS = [
     "game prototype", "indie game", "I made a game", "game mechanic",
     "physics game", "gameplay prototype", "making a game", "game dev",
     "game concept", "horror game", "roblox game", "fortnite creative",
+    "game demo", "indie dev", "physics sandbox", "viral indie game",
     "ゲーム開発", "ゲーム制作", "ゲーム試作", "自作ゲーム", "ゲーム アイデア", "新作ゲーム",
 ]
 BING_TERMS = [
-    'site:x.com/status "game prototype"', 'site:x.com/status "indie game"',
-    'site:x.com/status "gameplay" "made"', 'site:x.com/status "game mechanic"',
-    'site:x.com/status "ゲーム開発"', 'site:x.com/status "ゲーム作った"',
-    'site:twitter.com/status "indie game"', 'site:x.com/status "new game" video',
+    'site:x.com "game prototype" video', 'site:x.com "indie game" "gameplay"',
+    'site:twitter.com "I made a game"', '"x.com" "game mechanic" gameplay',
+    'site:x.com "ゲーム開発" 動画', 'site:x.com "ゲーム作った"',
+    'site:twitter.com "indie game" prototype', '"x.com" "new game" video',
+]
+REDDIT_INDEX_TERMS = [
+    'site:reddit.com/r/IndieDev "game" when:7d',
+    'site:reddit.com/r/indiegames "prototype" when:7d',
+    'site:reddit.com/r/gamedev "gameplay" when:7d',
 ]
 NEWS_TERMS = [
     '"indie game" "viral" when:3d', '"game prototype" "viral" when:7d',
@@ -47,6 +54,11 @@ MASTODON_FEEDS = [
 ]
 KEYS = ["game", "play", "prototype", "indie", "devlog", "mechanic", "made", "physics", "roblox", "fortnite", "steam", "pixel", "horror", "ゲーム", "ロブロックス", "フォートナイト", "試作", "開発", "自作"]
 EXCLUDE = ["job hiring", "game developer salary", "stock market", "game of thrones", "nba game", "football game"]
+# Game industry politics and awards are NOT playable mechanics.
+NEWS_ONLY = [
+    "igf", "juror", "jury", "award judges", "judging committee", "union", "labor action",
+    "声明", "審査員", "投票しない", "ゲーム開発カンファレンス", "ゲーム開発者の労働", "インディーゲーム大賞",
+]
 XPOST = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/[^\s/]+/status/\d+", re.I)
 URLS = re.compile(r"https?://[^\s<>\"']+", re.I)
 
@@ -95,21 +107,23 @@ def normalized_url(url):
 
 
 def relevant(text):
-    """Only flag an actual game concept, developer demonstration, or prototype.
+    """Exclude generic game-industry commentary; require actual gameplay evidence.
 
-    This is intentionally conservative; the separate ChatGPT discovery task covers
-    broad low-information X videos and can manually promote strong exceptions.
+    Precision filter for automatic alerts, not a complete discovery filter.
     """
     text = (text or "").lower()
     if any(s in text for s in EXCLUDE):
         return False
-    if not any(s in text for s in ["game", "gameplay", "prototype", "gamedev", "indiedev", "roblox", "fortnite", "ゲーム", "ロブロックス", "フォートナイト"]):
+    if any(s in text for s in NEWS_ONLY):
+        return False
+    game_words = ("game", "gameplay", "prototype", "gamedev", "indiedev", "roblox", "fortnite", "ゲーム", "ロブロックス", "フォートナイト")
+    if not any(word in text for word in game_words):
         return False
     cues = [
         r"\b(?:i|we|our team|my studio)\s+(?:just\s+)?(?:made|built|developed|created|am making|are making|am working on)\b",
-        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game)\b",
-        r"\b(?:game where|game that lets|play my game|playable demo|working on my game|working on our game|new game i made)\b",
-        r"(?:自作ゲーム|ゲーム開発|ゲーム制作|ゲームの試作|試作ゲーム|ゲームを作|ゲームを開発|作っているゲーム)",
+        r"\b(?:game prototype|gameplay prototype|gameplay reveal|gameplay trailer|first gameplay|game mechanic|game concept|game jam|devlog|physics game|playable demo)\b",
+        r"\b(?:game where|game that lets|play my game|working on my game|working on our game|new game i made)\b",
+        r"(?:自作ゲーム|ゲームの試作|試作ゲーム|ゲームを作|ゲームを開発|開発中のゲーム|ゲーム制作中|ゲーム開発中|ゲーム作りました|ゲームを制作|ゲームプレイ映像)",
     ]
     return any(re.search(pattern, text) for pattern in cues)
 
@@ -160,12 +174,18 @@ def parse_rss(content, source):
     return posts
 
 
+def rss_item_count(content):
+    """Distinguish valid but empty index search results from game leads."""
+    return len(ET.fromstring(content).findall(".//item"))
+
+
 def collect():
     results = []
     stats = []
     h = NOW.hour
-    # One high-coverage and one emerging query each run, with rotating language/phrases.
-    indices = sorted({(h * 3 + i) % len(BSKY_TERMS) for i in range(6)})
+    # Always sample BOTH English and Japanese, even if some scheduled runs are skipped.
+    en_count = len(BSKY_TERMS) - 6
+    indices = sorted({(h * 5 + i) % en_count for i in range(5)} | {en_count + ((h + i) % 6) for i in range(2)})
     for index in indices:
         term = BSKY_TERMS[index]
         for sort in ("latest", "top"):
@@ -183,20 +203,34 @@ def collect():
         term = BING_TERMS[(h * 2 + i) % len(BING_TERMS)]
         url = "https://www.bing.com/search?" + urllib.parse.urlencode({"q": term, "format": "rss"})
         try:
-            posts = parse_rss(request(url), "bing-x-index")
+            payload = request(url)
+            raw_count = rss_item_count(payload)
+            posts = parse_rss(payload, "bing-x-index")
             results.extend(posts)
-            stats.append({"source": "bing-x-index", "query": term, "status": "ok", "count": len(posts)})
+            stats.append({"source": "bing-x-index", "query": term, "status": "limited" if not posts else "ok", "count": len(posts), "raw_count": raw_count})
         except Exception as e:
             stats.append({"source": "bing-x-index", "query": term, "status": "error", "error": str(e)[:140]})
     for i in range(3):
         term = NEWS_TERMS[(h + i) % len(NEWS_TERMS)]
         url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": term, "hl": "en-US", "gl": "US", "ceid": "US:en"})
         try:
-            posts = parse_rss(request(url), "google-news")
+            payload = request(url)
+            posts = parse_rss(payload, "google-news")
             results.extend(posts)
-            stats.append({"source": "google-news", "query": term, "status": "ok", "count": len(posts)})
+            stats.append({"source": "google-news", "query": term, "status": "ok" if posts else "limited", "count": len(posts), "raw_count": rss_item_count(payload)})
         except Exception as e:
             stats.append({"source": "google-news", "query": term, "status": "error", "error": str(e)[:140]})
+    # Reddit's old direct RSS is unavailable: use searchable public article indexes.
+    for i in range(2):
+        term = REDDIT_INDEX_TERMS[(h + i) % len(REDDIT_INDEX_TERMS)]
+        url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": term, "hl": "en-US", "gl": "US", "ceid": "US:en"})
+        try:
+            payload = request(url)
+            posts = parse_rss(payload, "reddit-index")
+            results.extend(posts)
+            stats.append({"source": "reddit-index", "query": term, "status": "ok" if posts else "limited", "count": len(posts), "raw_count": rss_item_count(payload)})
+        except Exception as e:
+            stats.append({"source": "reddit-index", "query": term, "status": "error", "error": str(e)[:140]})
     for feed in MASTODON_FEEDS:
         try:
             posts = parse_rss(request(feed), "mastodon")
@@ -265,16 +299,17 @@ def update(state, signals):
         fresh["first_seen"] = old["first_seen"] if old else iso()
         fresh["last_seen"] = iso()
         fresh["prev_at"] = iso()
-        fresh["history"] = ((old or {}).get("history", []) + [{"at": iso(), "likes": p.get("likes"), "reposts": p.get("reposts")}])[-12:]
+        fresh["history"] = ((old or {}).get("history", []) + [{"at": iso(), "likes": p.get("likes"), "reposts": p.get("reposts")}])[-4:]
         fresh["alerted"] = (old or {}).get("alerted", False)
         if criterion and not fresh["alerted"]:
             fresh["alerted"] = True
             fresh["alert_reason"] = criterion
             alerts.append(fresh)
         posts[key] = fresh
-    # Bounded state; alerted items retained longer where possible.
-    if len(posts) > 3500:
-        kept = sorted(posts.items(), key=lambda kv: kv[1].get("last_seen", ""), reverse=True)[:3500]
+    # Keep state below GitHub Contents API's ~1 MiB inline content limit.
+    # Long-term alert dedup also checks existing GitHub Issues.
+    if len(posts) > 650:
+        kept = sorted(posts.items(), key=lambda kv: kv[1].get("last_seen", ""), reverse=True)[:650]
         state["posts"] = dict(kept)
     return alerts, len(unique)
 
@@ -340,10 +375,10 @@ def report(state, run, alerts):
     for p in top:
         safe = p.get("source", "").replace("|", "")
         lines.append(f"| {safe} | {p['url']} | {p.get('likes') if p.get('likes') is not None else '—'} | {p.get('reposts') if p.get('reposts') is not None else '—'} | {p.get('first_seen','')} |")
-    lines += ["", "## Search route status", "", "| Source | Query | Status | Posts |", "|---|---|---|---:|"]
+    lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
-        lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} |")
-    lines += ["", "X metadata is **not** available without X access. A failure or missing indexed post is **not** a zero-viral claim. Reddit RSS was retired 2026-11-13 and is deliberately excluded. All sources are best effort; absence of a hit is not evidence that no viral game exists.", ""]
+        lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
+    lines += ["", "**Limited** means the source responded but yielded no qualifying game post. This is NOT evidence that X had no viral games.", "", "X metadata is **not** available without X access. A failure or missing indexed post is **not** a zero-viral claim. Reddit RSS was retired 2026-11-13 and is deliberately excluded. All sources are best effort; absence of a hit is not evidence that no viral game exists.", ""]
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text("\n".join(lines), encoding="utf-8")
 
@@ -363,9 +398,26 @@ def main():
         state["posts"][normalized_url(p["url"])]["alerted"] = False
     run = {"at": iso(), "source_attempts": len(stats), "source_ok": sum(s["status"] == "ok" for s in stats), "unique_results": count, "alerts": sent, "routes": stats}
     state.setdefault("runs", []).append(run)
-    state["runs"] = state["runs"][-180:]
+    state["runs"] = state["runs"][-28:]
     STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    STATE.write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    x_routes = [s for s in stats if s["source"] == "bing-x-index"]
+    prior = state["runs"][-2]["at"] if len(state["runs"]) > 1 else None
+    gap_hours = None
+    if prior:
+        try:
+            gap_hours = round((NOW - dt.datetime.fromisoformat(prior.replace("Z", "+00:00"))).total_seconds() / 3600, 2)
+        except (ValueError, TypeError):
+            pass
+    health = {"at": iso(), "status": "degraded_x" if not any(s.get("count", 0) > 0 for s in x_routes) else "partial_coverage",
+              "x_index": {"attempts": len(x_routes), "hits": sum(s.get("count", 0) for s in x_routes),
+                          "raw_hits": sum(s.get("raw_count", 0) for s in x_routes),
+                          "errors": sum(s["status"] == "error" for s in x_routes),
+                          "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"},
+              "source_attempts": len(stats), "source_ok": run["source_ok"], "source_errors": sum(s["status"] == "error" for s in stats),
+              "unique_results": count, "alert_attempts": len(sent), "hours_since_previous_run": gap_hours,
+              "state_bytes": STATE.stat().st_size}
+    HEALTH.write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report(state, run, alerts)
     print(json.dumps({"at": run["at"], "ok": run["source_ok"], "attempted": run["source_attempts"], "unique": count, "alerts": sent}, ensure_ascii=False))
     if run["source_ok"] == 0:
