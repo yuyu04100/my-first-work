@@ -100,6 +100,15 @@ class MonitorTest(unittest.TestCase):
         for name in ("FX_X_SEARCH_ES", "FX_X_SEARCH_KO", "FX_X_SEARCH_ZH", "FX_X_SEARCH_EU"):
             self.assertGreaterEqual(len(getattr(monitor, name)), 4)
 
+    def test_overseas_independent_discovery_anchors(self):
+        self.assertGreaterEqual(len(monitor.FX_X_GLOBAL_VISUAL_QUERIES), 8)
+        self.assertGreaterEqual(len(monitor.FX_X_GLOBAL_CREATORS), 12)
+        self.assertTrue(all("filter:videos" in q for q in monitor.FX_X_GLOBAL_VISUAL_QUERIES))
+        self.assertTrue({"ebbyamir", "felixrieseberg", "BlendiByl", "apekshik"}.issubset(
+            set(monitor.FX_X_GLOBAL_CREATORS)))
+        self.assertTrue(monitor.relevant("My new game: a bike ride through a living painting"))
+        self.assertTrue(monitor.relevant("Game prototype footage: a destructible skyscraper"))
+
     def test_deduplicated_alert(self):
         p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": monitor.iso(), "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
         state={"posts": {}, "runs": []}
