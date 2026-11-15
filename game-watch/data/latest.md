@@ -1,45 +1,45 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T09:54:09Z**
+Last run (UTC): **2026-11-15T17:02:10Z**
 
-Sources OK: **38** / **66**
-Unique posts found this run: **321**
-Alerts this run: **0**
+Sources OK: **46** / **66**
+Unique posts found this run: **445**
+Alerts this run: **4**
 
 ## Top public-platform signals (not X views)
 
 | Source | Original link | Likes/points | Reposts | First seen |
 |---|---|---:|---:|---|
-| fx-x-search | https://x.com/gtasix_/status/2121280386986582343 | 33742 | 1779 | 2026-11-15T03:03:17Z |
-| fx-x-search | https://x.com/kevin_t_ngo/status/2119868968307695818 | 4260 | 215 | 2026-11-15T03:23:51Z |
-| bluesky | https://bsky.app/profile/sosowski.bsky.social/post/3mzuqbjoffc24 | 2099 | 623 | 2026-11-14T06:55:10Z |
-| fx-x-search | https://x.com/alto__games/status/2120847129258397926 | 2035 | 142 | 2026-11-15T01:00:23Z |
-| fx-x-search | https://x.com/niri002/status/2119441326894637400 | 1232 | 241 | 2026-11-15T03:03:17Z |
-| fx-x-search | https://x.com/_TheSmartAlec1/status/2121632646652723637 | 1431 | 126 | 2026-11-15T03:23:51Z |
-| fx-x-search | https://x.com/IndieGameJoe/status/2119384743548780984 | 888 | 91 | 2026-11-15T03:19:23Z |
-| fx-x-search | https://x.com/IndieGameJoe/status/2119829137301053578 | 837 | 67 | 2026-11-15T01:00:23Z |
-| fx-x-search | https://x.com/dsharp_games/status/2121563908259684822 | 436 | 79 | 2026-11-15T02:37:08Z |
-| fx-x-search | https://x.com/IndieGameJoe/status/2120218967792918576 | 489 | 30 | 2026-11-15T03:19:23Z |
-| bluesky | https://bsky.app/profile/mauraquint.bsky.social/post/3n22u3cw5kk2w | 386 | 23 | 2026-11-14T06:55:10Z |
-| fx-x-search | https://x.com/ZARGATES/status/2121178214278009290 | 148 | 56 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/hibi_kaihatsu/status/2121585851205578899 | 231 | 27 | 2026-11-15T02:37:08Z |
-| bluesky | https://bsky.app/profile/albasoup.itch.io/post/3n2344w2des2d | 184 | 36 | 2026-11-15T03:01:19Z |
-| bluesky | https://bsky.app/profile/sunnylabgames.bsky.social/post/3n2c6gf5sx22z | 127 | 43 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/nguyenvann6_24/status/2121418171429302426 | 248 | 0 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/Amukarna/status/2121694223607152814 | 149 | 31 | 2026-11-15T03:01:19Z |
-| bluesky | https://bsky.app/profile/aerialdash.neocities.org/post/3mzyhrqpofs2h | 127 | 35 | 2026-11-15T03:01:19Z |
-| bluesky | https://bsky.app/profile/melbotstudios.bsky.social/post/3n252tvmuco25 | 131 | 32 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/Cynical_Honey/status/2121285079423189430 | 147 | 26 | 2026-11-15T02:37:08Z |
-| bluesky | https://bsky.app/profile/doodlemancy.com/post/3mzz4buynsscj | 90 | 32 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/poparena.bsky.social/post/3n25wm6d4f227 | 104 | 23 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/tedbushman.bsky.social/post/3n27qskh4ys2v | 86 | 29 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/bloomfilters.plus/post/3mzqb4laeyk26 | 148 | 7 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/louispixels/status/2121062744225202240 | 164 | 0 | 2026-11-15T01:00:23Z |
-| bluesky | https://bsky.app/profile/enikofox.com/post/3n2djfssqfc2i | 117 | 12 | 2026-11-15T09:54:09Z |
-| bluesky | https://bsky.app/profile/wootmaster.bsky.social/post/3mzyjbouk3k2x | 103 | 13 | 2026-11-15T03:01:19Z |
-| fx-x-search | https://x.com/SAAC_News/status/2120792292495589710 | 97 | 15 | 2026-11-15T03:01:19Z |
-| bluesky | https://bsky.app/profile/donutshoes.bsky.social/post/3n26jswexv22c | 77 | 21 | 2026-11-14T06:55:10Z |
+| fx-x-search | https://x.com/su10_game/status/2121516676567257225 | 5407 | 629 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/GTAVI_Countdown/status/2121280501524955212 | 4906 | 260 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/kevin_t_ngo/status/2119868968307695818 | 4267 | 216 | 2026-11-15T03:23:51Z |
+| fx-x-search | https://x.com/SynthPotato/status/2121280950755615109 | 4135 | 174 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/GTAVI_Countdown/status/2120919679426605124 | 3389 | 162 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/Isws81U/status/2121182234422178147 | 1651 | 136 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/hitomise_com/status/2121890952750973066 | 1059 | 82 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/DanielOlimac/status/2120968938456768888 | 743 | 27 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/Rap/status/2121280708798804451 | 702 | 40 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/kevin_t_ngo/status/2121701020598415465 | 455 | 22 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/pokapokagames/status/2121921191141073195 | 404 | 37 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/GTAonlineNews/status/2121281163142549846 | 344 | 33 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/KeicaMusic/status/2121552407238980022 | 320 | 32 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/Okami13_/status/2121292810972463527 | 282 | 17 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/nath12345678901/status/2121216251926385060 | 296 | 11 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/soncho_kitsune/status/2121941597315269005 | 218 | 35 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/LastMoonGame/status/2120972291601269115 | 177 | 21 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/DannyLimanseta/status/2119844347302863193 | 212 | 7 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/Okami13_/status/2120927586100363725 | 180 | 14 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/YourAnonOne/status/2120930243204526366 | 198 | 8 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/ZNZNkys/status/2121898102403875053 | 165 | 13 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/sonic0828/status/2119957712477839833 | 138 | 21 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/VoidmawGames/status/2120910490867999203 | 126 | 19 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/aniketjart/status/2120729567568765376 | 129 | 13 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/shogo_oomori/status/2121944018959601774 | 109 | 15 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/luccacerf/status/2121757576190988341 | 111 | 11 | 2026-11-15T17:02:10Z |
+| fx-x-search | https://x.com/bugmii_x/status/2121266370356847028 | 112 | 9 | 2026-11-15T17:02:10Z |
 | fx-x-search | https://x.com/cc_sbw/status/2119478872010113241 | 117 | 5 | 2026-11-15T09:54:09Z |
+| bluesky | https://bsky.app/profile/talidev3d.bsky.social/post/3n2cgi35dmk22 | 68 | 20 | 2026-11-15T00:50:02Z |
+| bluesky | https://bsky.app/profile/andruc.dragoon.dev/post/3n257ns43rk2e | 84 | 14 | 2026-11-14T06:55:10Z |
 
 ## X media leads from watched accounts (no X metrics)
 
@@ -55,9 +55,9 @@ These are query-language buckets, NOT geographic location or nationality.
 
 | Query language | Searches | Raw hits | Qualified | Review-only high-engagement |
 |---|---:|---:|---:|---:|
-| en | 21 | 272 | 20 | 33 |
-| ja | 3 | 90 | 12 | 3 |
-| es | 3 | 72 | 12 | 2 |
+| en | 21 | 408 | 190 | 18 |
+| ja | 3 | 89 | 24 | 2 |
+| es | 3 | 73 | 11 | 1 |
 | ko | 3 | 0 | 0 | 0 |
 | zh | 0 | 0 | 0 | 0 |
 | eu | 0 | 0 | 0 | 0 |
@@ -68,67 +68,63 @@ No game identity or game-related virality has been verified for these posts.
 
 | X post | Query language | Likes (FxEmbed) | Reposts (FxEmbed) | Snippet |
 |---|---|---:|---:|---|
-| https://x.com/SpaceX/status/2121715216597827756 | global-creator | 125894 | 24784 | Mechazilla catches Starship! Congratulations to the entire SpaceX team on this incredible achievemen |
-| https://x.com/thsottiaux/status/2120410006273380750 | global-creator | 19113 | 408 | It’s been a while without resets. Maybe I should come back out of the basement |
-| https://x.com/felixrieseberg/status/2119925633564463609 | global-creator | 14787 | 1144 | I wanted to test Fable 5.2's quality with one-shot prompts without human feedback.  Everything in th |
-| https://x.com/gameunlocked26/status/2120607494200566233 | en | 12854 | 328 | This is what Cyberpunk 2077 looked like at E3 2018. |
-| https://x.com/Paguon_JP/status/2121513513923609020 | ja | 9996 | 878 | メロディーにハモるゲーム  https://paguon.com/casualgame/hamore  #ゲーム開発 #gamedev |
-| https://x.com/thsottiaux/status/2120410480204525936 | global-creator | 11439 | 298 | Thursday is feeling codexy to me. Perhaps also a good time for a banked reset. |
-| https://x.com/elonmusk/status/2121628295234023654 | en | 8456 | 701 | Improvements to Grok @Bot efficiency |
-| https://x.com/dotpixel3d/status/2121785258291195926 | ja | 6417 | 1103 | このゲームは死んだら二度と遊べない 神の体内を探索し、証拠を写真に収め、死因を特定せよ  セーブなし、リトライなし、死んだら終わり ただし、研究成果は世界中のプレイヤーと共有される  命をつなぎ、真実 |
-| https://x.com/MisterJagger_/status/2121749385021391158 | es | 4597 | 285 | El puto Ocarina es el videojuego perfecto estoy flipando |
-| https://x.com/AUTOMATONJapan/status/2121423422085546234 | ja | 3147 | 686 | ゲーム開発者による「木の後ろにキャラがいるとき、どう見せるか」談義が白熱。“木スケスケ技法”か“キャラシルエット化”か、隠れた難題 https://automaton-media.com/articl |
-| https://x.com/thsottiaux/status/2120304649807020238 | global-creator | 4126 | 58 | @embw_l0x We're assembling one of the best teams ever and I do talk to folks at Anthropic every once |
-| https://x.com/LautaTWT/status/2120960572267131084 | es | 3158 | 372 | Warner me bajó el MK9 de navegador.  Así que lo hice nativo para PC. Con online y rollback.  Es el M |
-| https://x.com/emollick/status/2119918307457577163 | global-creator | 1931 | 176 | In one of my favorite experiments, I told Fable 5.2 to build an endless, hands-off journey through 3 |
-| https://x.com/embw_l0x/status/2120010057337151701 | global-creator | 2340 | 25 | Guys this is bad  Im hearing rumors that morale at OpenAI is very low with the release of Fable 5.2  |
-| https://x.com/thsottiaux/status/2121845965997101118 | global-creator | 2149 | 75 | Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, r |
-| https://x.com/felixrieseberg/status/2119927483994907024 | global-creator | 1774 | 46 | I'm slowly discovering that the age of prompt engineering is basically over. It's so simple:  "You k |
-| https://x.com/felixrieseberg/status/2119867837296857361 | global-creator | 1517 | 84 | We're releasing Claude Fable & Mythos 5.2! They're good models, I have some demos and tips for you.  |
-| https://x.com/felixrieseberg/status/2120245629725409758 | global-creator | 1302 | 81 | One thing that's surprising about this game: EVERYTHING IS CODE.   All textures and models are funct |
-| https://x.com/xikhar/status/2119966147328299284 | global-creator | 1270 | 64 | Fable 5.2 just built a Bugatti Tourbillon in Blender.  It modeled every part, including the interior |
-| https://x.com/thsottiaux/status/2121134582527594929 | global-creator | 1383 | 5 | @argofowl Hi 👋 Doing well. Team is busy |
+| https://x.com/claudeai/status/2119867114450268322 | global-creator | 96085 | 9235 | Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical c |
+| https://x.com/MightyGazelle1/status/2120331218839560298 | en | 14567 | 1327 | People are so used to giving Nintendo crap for performance, but now Zelda is 60 fps and GTA is "targ |
+| https://x.com/BlendiByl/status/2120341251178594532 | global-creator | 7965 | 398 | i used fable 5.2 to make this "hand-painted" game in less than an hour  Every frame is about 1.5 mil |
+| https://x.com/MisterJagger_/status/2121749385021391158 | es | 6087 | 365 | El puto Ocarina es el videojuego perfecto estoy flipando |
+| https://x.com/YOSHITAKEapp/status/2121521890082873732 | ja | 4181 | 491 | 毎朝、夫の髭を剃るゲームリリースしました🥸 喉元にカミソリを当てたまま、夫の話を聞く。 こちらも是非遊んでやってください(＞人＜;) #ゲーム制作 #gamedev #夫の髭を剃る |
+| https://x.com/hoisassaaaaaaa/status/2121197926378618905 | ja | 4650 | 275 | すでにパソコン5回は落ちました。 引き続き制作頑張ります💻️  #椅子取りゲーム制作裏側 |
+| https://x.com/ControlRemedy/status/2120938480675025129 | en | 4082 | 355 | Photo Mode will come to CONTROL Resonant in December.  We’re delaying the release of the Photo Mode  |
+| https://x.com/rehan_shei/status/2119855388988518794 | global-creator | 2309 | 204 | Introducing patch: build and play games.  - Every game dev tool in one CLI and MCP - 50,000+ open-so |
+| https://x.com/BlendiByl/status/2121594536153718972 | global-creator | 2394 | 107 | i used fable 5.2 to make this wizard sandbox game in 1 day 🧙‍♂️  there are 7 spells right now, about |
+| https://x.com/BlendiByl/status/2120694003230560585 | global-creator | 1810 | 124 | used fable 5.2 to make this delightful ghibli inspired scene 🌳  playable, and open source: https://p |
+| https://x.com/kevin_t_ngo/status/2121303379196662115 | global-creator | 1719 | 113 | Here's my prompt for this drawing:  > Analyze [/Users/kevin/Documents/art] for hands and self-portra |
+| https://x.com/Ratchooo/status/2121506658291761298 | global-creator | 1260 | 74 | このポスト参考にClaude Fable 5.2でJavaScriptドローイングしてみたけど凄い・・・   メタデータ残さないので生成AI画像チェッカーにも引っ掛からない |
+| https://x.com/kevin_t_ngo/status/2121017780501967136 | global-creator | 1306 | 58 | JavaScript drawing by Claude Fable 5.2 |
+| https://x.com/aniketjart/status/2121793239175119279 | global-creator | 1066 | 132 | My Dragon Ball rewatch led me to build another fan game based on the Red Ribbon Army Saga! Work in p |
+| https://x.com/ericmaskfr/status/2119910195325481026 | global-video | 1036 | 74 | GTA 6 isn't out yet. Anthropic's new Fable 5.2 already built me one  one prompt. I was not ready for |
+| https://x.com/gokayfem/status/2119493602900369465 | global-creator | 1052 | 38 | sculpting attempt with opus 5.5 |
 
 ## Overseas discovery route audit (not a completeness guarantee)
 
 | Route | Queries | Raw hits | Qualified | Excluded high reaction |
 |---|---:|---:|---:|---:|
 | global-video | 4 | 1 | 0 | 1 |
-| global-creator | 8 | 146 | 1 | 30 |
+| global-creator | 8 | 183 | 6 | 15 |
 
 ## Search route status
 
 | Source | Query | Status | Qualified | Raw RSS items |
 |---|---|---|---:|---:|
-| bluesky | game prototype/latest | ok | 22 | — |
-| bluesky | game prototype/top | ok | 27 | — |
-| bluesky | indie game/latest | ok | 10 | — |
-| bluesky | indie game/top | ok | 12 | — |
-| bluesky | indie dev/latest | ok | 13 | — |
-| bluesky | indie dev/top | ok | 6 | — |
-| bluesky | physics sandbox/latest | ok | 2 | — |
-| bluesky | physics sandbox/top | ok | 2 | — |
-| bluesky | viral indie game/latest | ok | 9 | — |
-| bluesky | viral indie game/top | ok | 9 | — |
-| bluesky | 自作ゲーム/latest | ok | 56 | — |
-| bluesky | 自作ゲーム/top | ok | 60 | — |
-| bluesky | ゲーム アイデア/latest | ok | 3 | — |
-| bluesky | ゲーム アイデア/top | ok | 3 | — |
-| fx-x-search | "gameplay prototype" since:2026-11-14/latest | limited | 0 | 0 |
-| fx-x-search | "gameplay prototype" since:2026-11-12/media | limited | 0 | 0 |
-| fx-x-search | "gameplay prototype" since:2026-11-08/top | ok | 2 | 5 |
-| fx-x-search | "making a game" since:2026-11-14/latest | ok | 1 | 20 |
-| fx-x-search | "making a game" since:2026-11-12/media | ok | 12 | 46 |
-| fx-x-search | "making a game" since:2026-11-08/top | ok | 4 | 34 |
-| fx-x-search | "destructible environment" since:2026-11-14/latest | limited | 0 | 1 |
-| fx-x-search | "destructible environment" since:2026-11-12/media | limited | 0 | 1 |
-| fx-x-search | "destructible environment" since:2026-11-08/top | limited | 0 | 18 |
-| fx-x-search | ゲーム開発 since:2026-11-14/latest | limited | 0 | 20 |
-| fx-x-search | ゲーム開発 since:2026-11-12/media | ok | 9 | 50 |
-| fx-x-search | ゲーム開発 since:2026-11-08/top | ok | 3 | 20 |
+| bluesky | gameplay prototype/latest | ok | 23 | — |
+| bluesky | gameplay prototype/top | ok | 23 | — |
+| bluesky | making a game/latest | ok | 36 | — |
+| bluesky | making a game/top | ok | 10 | — |
+| bluesky | game dev/latest | ok | 6 | — |
+| bluesky | game dev/top | ok | 3 | — |
+| bluesky | game concept/latest | ok | 15 | — |
+| bluesky | game concept/top | ok | 21 | — |
+| bluesky | horror game/latest | ok | 7 | — |
+| bluesky | horror game/top | ok | 7 | — |
+| bluesky | ゲーム開発/latest | ok | 9 | — |
+| bluesky | ゲーム開発/top | ok | 8 | — |
+| bluesky | 新作ゲーム/latest | ok | 0 | — |
+| bluesky | 新作ゲーム/top | ok | 0 | — |
+| fx-x-search | "I built a game" since:2026-11-14/latest | ok | 8 | 8 |
+| fx-x-search | "I built a game" since:2026-11-12/media | ok | 16 | 16 |
+| fx-x-search | "I built a game" since:2026-11-08/top | ok | 20 | 29 |
+| fx-x-search | "my new game" since:2026-11-14/latest | ok | 17 | 20 |
+| fx-x-search | "my new game" since:2026-11-12/media | ok | 36 | 41 |
+| fx-x-search | "my new game" since:2026-11-08/top | ok | 18 | 29 |
+| fx-x-search | "gameplay clip" since:2026-11-14/latest | ok | 12 | 15 |
+| fx-x-search | "gameplay clip" since:2026-11-12/media | ok | 38 | 45 |
+| fx-x-search | "gameplay clip" since:2026-11-08/top | ok | 19 | 21 |
+| fx-x-search | ゲーム制作中 since:2026-11-14/latest | ok | 1 | 20 |
+| fx-x-search | ゲーム制作中 since:2026-11-12/media | ok | 15 | 49 |
+| fx-x-search | ゲーム制作中 since:2026-11-08/top | ok | 8 | 20 |
 | fx-x-search | hice un juego since:2026-11-14/latest | ok | 1 | 20 |
-| fx-x-search | hice un juego since:2026-11-12/media | ok | 3 | 29 |
-| fx-x-search | hice un juego since:2026-11-08/top | ok | 8 | 23 |
+| fx-x-search | hice un juego since:2026-11-12/media | ok | 3 | 28 |
+| fx-x-search | hice un juego since:2026-11-08/top | ok | 7 | 25 |
 | fx-x-search | 게임을 만들었 since:2026-11-14/latest | limited | 0 | 0 |
 | fx-x-search | 게임을 만들었 since:2026-11-12/media | limited | 0 | 0 |
 | fx-x-search | 게임을 만들었 since:2026-11-08/top | limited | 0 | 0 |
@@ -136,33 +132,33 @@ No game identity or game-related virality has been verified for these posts.
 | fx-x-search | physics gameplay filter:videos min_faves:500 since:2026-11-08/top | limited | 0 | 0 |
 | fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-14/latest | limited | 0 | 0 |
 | fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-08/top | limited | 0 | 1 |
-| fx-x-search | from:ebbyamir since:2026-11-14/latest | limited | 0 | 1 |
-| fx-x-search | from:ebbyamir since:2026-11-08/top | limited | 0 | 38 |
-| fx-x-search | from:felixrieseberg since:2026-11-14/latest | limited | 0 | 0 |
-| fx-x-search | from:felixrieseberg since:2026-11-08/top | ok | 1 | 27 |
-| fx-x-search | from:xikhar since:2026-11-14/latest | limited | 0 | 20 |
-| fx-x-search | from:xikhar since:2026-11-08/top | limited | 0 | 26 |
-| fx-x-search | from:thsottiaux since:2026-11-14/latest | limited | 0 | 1 |
-| fx-x-search | from:thsottiaux since:2026-11-08/top | limited | 0 | 33 |
+| fx-x-search | from:BlendiByl since:2026-11-14/latest | limited | 0 | 8 |
+| fx-x-search | from:BlendiByl since:2026-11-08/top | ok | 1 | 27 |
+| fx-x-search | from:apekshik since:2026-11-14/latest | limited | 0 | 4 |
+| fx-x-search | from:apekshik since:2026-11-08/top | limited | 0 | 35 |
+| fx-x-search | from:kevin_t_ngo since:2026-11-14/latest | ok | 1 | 17 |
+| fx-x-search | from:kevin_t_ngo since:2026-11-08/top | ok | 2 | 43 |
+| fx-x-search | from:aniketjart since:2026-11-14/latest | limited | 0 | 16 |
+| fx-x-search | from:aniketjart since:2026-11-08/top | ok | 2 | 33 |
 | fx-x-media | ID_XBOX | ok | 15 | 15 |
 | fx-x-media | Steam | ok | 15 | 15 |
 | fx-x-media | pandorioltd | ok | 15 | 15 |
-| fx-x-media | IGN | ok | 6 | 15 |
+| fx-x-media | IGN | limited | 0 | 20 |
 | fx-x-media | Roblox | ok | 15 | 15 |
-| fx-x-media | FortniteGame | limited | 0 | 1 |
+| fx-x-media | FortniteGame | limited | 0 | 0 |
 | fx-x-media | UnrealEngine | ok | 15 | 15 |
 | fx-x-media | itchio | ok | 15 | 15 |
 | bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
 | bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
 | bing-x-index | site:x.com "ゲーム開発" 動画 | limited | 0 | 10 |
 | bing-x-index | site:x.com "ゲーム作った" | limited | 0 | 10 |
-| google-news | "インディーゲーム" "話題" when:3d | limited | 0 | 0 |
-| google-news | "new game" "X post" viral when:7d | limited | 0 | 1 |
-| google-news | "Roblox" "viral" "game" when:3d | limited | 0 | 9 |
-| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 35 | 100 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 29 |
-| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 0 | — |
-| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
+| google-news | "Roblox" "viral" "game" when:3d | limited | 0 | 8 |
+| google-news | "indie game" "viral" when:3d | limited | 0 | 0 |
+| google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
+| reddit-index | site:reddit.com/r/gamedev "gameplay" when:7d | ok | 5 | 58 |
+| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 32 | 100 |
+| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 1 | — |
+| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 4 | — |
 | hacker-news | game prototype | ok | 1 | — |
 | hacker-news | indie game | ok | 2 | — |
 | hacker-news | roblox | ok | 2 | — |
@@ -174,13 +170,13 @@ Raw search results help diagnose search providers returning unrelated pages.
 | Query | Result title | Result URL |
 |---|---|---|
 | site:twitter.com "I made a game" | Instagram | https://instagram.com |
-| site:twitter.com "I made a game" | Ï - Wikipedia | https://en.wikipedia.org/wiki/%C3%8F |
+| site:twitter.com "I made a game" | Í - Wikipedia | https://en.m.wikipedia.org/wiki/%C3%8D |
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
 | "x.com" "game mechanic" gameplay | X (@X) / X | https://x.com/X |
 | site:x.com "ゲーム開発" 動画 | Poki (ポキ) - 無料オンラインゲーム - 今すぐプレイしよう！ | https://poki.com/jp |
-| site:x.com "ゲーム開発" 動画 | 無料ゲームが盛りだくさん、かんたんゲーム - Yahoo!ゲーム | https://games.yahoo.co.jp/play |
+| site:x.com "ゲーム開発" 動画 | 無料オンライン ゲームをプレイする / MSN のゲーム | https://msn.com/ja-jp/play |
 | site:x.com "ゲーム作った" | Poki (ポキ) - 無料オンラインゲーム - 今すぐプレイしよう！ | https://poki.com/jp |
-| site:x.com "ゲーム作った" | 無料ゲームが盛りだくさん、かんたんゲーム - Yahoo!ゲーム | https://games.yahoo.co.jp/play |
+| site:x.com "ゲーム作った" | 無料オンライン ゲームをプレイする / MSN のゲーム | https://msn.com/ja-jp/play |
 
 ## X-indexed status links (unverified candidates)
 
