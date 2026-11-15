@@ -1,9 +1,9 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:54:32Z**
+Last run (UTC): **2026-11-15T00:55:25Z**
 
 Sources OK: **25** / **36**
-Unique posts found this run: **249**
+Unique posts found this run: **260**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
@@ -23,11 +23,9 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/firengames.com/post/3mzxvu5grps2v | 48 | 18 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/tgweaver.bsky.social/post/3n22ltcfpac2w | 89 | 3 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/talidev3d.bsky.social/post/3n2cgi35dmk22 | 52 | 15 | 2026-11-15T00:50:02Z |
-| bluesky | https://bsky.app/profile/sylviefluff.bsky.social/post/3n22rptq3b22q | 48 | 16 | 2026-11-14T14:05:43Z |
 | bluesky | https://bsky.app/profile/talidev3d.bsky.social/post/3n25d4o3bqs2o | 90 | 0 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/imrankhan.bsky.social/post/3n2c3k5yevk2p | 87 | 0 | 2026-11-14T19:06:58Z |
 | bluesky | https://bsky.app/profile/henryhoffman.bsky.social/post/3mzvwk4mvt22k | 50 | 12 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/miguedorta.bsky.social/post/3n27mbw35wc2g | 35 | 17 | 2026-11-14T14:05:43Z |
 | bluesky | https://bsky.app/profile/ethan8bit.newgrounds.com/post/3n23f4qqbks24 | 75 | 3 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/dodoot.bsky.social/post/3mzyi35a2zc2o | 47 | 12 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/jennymati.bsky.social/post/3n24y3ofxzs2x | 45 | 12 | 2026-11-14T06:55:10Z |
@@ -38,8 +36,10 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/rosencreutz.bsky.social/post/3n26xo2sooc24 | 61 | 2 | 2026-11-14T06:55:10Z |
 | bluesky | https://bsky.app/profile/bmf6ntfqsi0hfrp.bsky.social/post/3mzzy37phik2t | 15 | 16 | 2026-11-14T22:56:49Z |
 | bluesky | https://bsky.app/profile/locofur.bsky.social/post/3n25h2gwvpk2r | 30 | 10 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/patattiemurray.bsky.social/post/3mzx4sgpr422f | 42 | 6 | 2026-11-14T14:05:43Z |
 | bluesky | https://bsky.app/profile/liamajoris.online/post/3n22envcl2v2p | 43 | 5 | 2026-11-14T06:55:10Z |
+| bluesky | https://bsky.app/profile/playstrelka.bsky.social/post/3n2aplklvxq2b | 32 | 7 | 2026-11-14T06:55:10Z |
+| bluesky | https://bsky.app/profile/ironbramble.com/post/3n26ssg2luo2e | 40 | 3 | 2026-11-14T06:55:10Z |
+| bluesky | https://bsky.app/profile/gamespark.jp/post/3mzzqzhbq3u2a | 13 | 12 | 2026-11-14T22:56:49Z |
 
 ## X media leads from watched accounts (no X metrics)
 
@@ -61,10 +61,10 @@ Alerts this run: **0**
 | https://x.com/IGN/status/2121641835441320224 | IGN | 2026-11-14T16:30:06Z | This is how Rockstar brought together bad fashion, a miserable gangster, an exploding phone, and fake Zuckerbe |
 | https://x.com/IGN/status/2121634300399432028 | IGN | 2026-11-14T16:00:09Z | Is the DC Cinematic Universe just cursed? Because it sure feels like it after James Gunn and Peter Safran's de |
 | https://x.com/IGN/status/2121619213978681384 | IGN | 2026-11-14T15:00:13Z | How to Rob a Bank wants to speak to real-life financial concerns that plague so many of us, but rarely is it w |
-| https://x.com/pandorioltd/status/2120617317948109236 | pandorioltd | 2026-11-11T20:39:02Z | We've crossed the 5000 wishlist mark, thank you everyone! Escape the Walls is releasing on Steam December 3rd  |
-| https://x.com/pandorioltd/status/2119871184409944337 | pandorioltd | 2026-11-09T19:14:10Z | Do you like the changes? #gamedev #indiegame |
-| https://x.com/pandorioltd/status/2119806519378383054 | pandorioltd | 2026-11-09T14:57:12Z | Making an incremental game about breaking walls We're happy to announce the release date. December 3rd. Free D |
-| https://x.com/pandorioltd/status/2119479723793297875 | pandorioltd | 2026-11-08T17:18:38Z | While the clone of our game is already out and selling well, we're preparing to launch a Free Demo next week f |
+| https://x.com/devolverdigital/status/2121329505637740764 | DevolverDigital | 2026-11-13T19:49:01Z | It's a bundle of galactic proportions. Get the BALLxPIT x Warhammer Survivors bundle and say goodbye to your a |
+| https://x.com/RawFury/status/2121287187387826564 | RawFury | 2026-11-13T17:00:51Z | in the world of the bright wilds, you'll find a lot of interesting characters. like this one. |
+| https://x.com/indieexchange/status/2121286980960960759 | indieexchange | 2026-11-13T17:00:02Z | FREE GIVEAWAY! 🎁 #FreeKeyFriday Tenebris Somnia the 2D survival horror adventure game with live action cutscen |
+| https://x.com/RawFury/status/2121259019834917019 | RawFury | 2026-11-13T15:08:56Z | 🐫KINGDOM TWO CROWNS: PHARAOH LANDS IS OUT ON DECEMBER 1ST!☀️ Set out on a new adventure in the ancient Egypt-i |
 
 ## Search route status
 
@@ -85,22 +85,22 @@ Alerts this run: **0**
 | bluesky | ゲーム制作/latest | ok | 6 | — |
 | bluesky | ゲーム制作/top | ok | 6 | — |
 | fx-x-media | clemmygames | error | — | — |
-| fx-x-media | indieexchange | error | — | — |
-| fx-x-media | DevolverDigital | error | — | — |
-| fx-x-media | RawFury | error | — | — |
-| fx-x-media | ID_XBOX | ok | 15 | 15 |
-| fx-x-media | Steam | ok | 15 | 15 |
+| fx-x-media | indieexchange | ok | 15 | 15 |
+| fx-x-media | DevolverDigital | ok | 15 | 15 |
+| fx-x-media | RawFury | ok | 15 | 15 |
+| fx-x-media | ID_XBOX | error | — | — |
+| fx-x-media | Steam | error | — | — |
 | fx-x-media | pandorioltd | ok | 15 | 15 |
 | fx-x-media | IGN | ok | 15 | 15 |
-| bing-x-index | site:x.com "game prototype" video | limited | 0 | 10 |
+| bing-x-index | site:x.com "game prototype" video | limited | 0 | 7 |
 | bing-x-index | site:x.com "indie game" "gameplay" | limited | 0 | 10 |
 | bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
-| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
+| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 7 |
 | google-news | "indie game" "viral" when:3d | limited | 0 | 6 |
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
-| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 4 | 100 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 27 |
+| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | limited | 0 | 0 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 28 |
 | mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 0 | — |
 | mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 1 | — |
@@ -116,7 +116,7 @@ Raw search results help diagnose search providers returning unrelated pages.
 | site:x.com "game prototype" video | Free Online Games at Poki - Play Now! | https://poki.com |
 | site:x.com "game prototype" video | Free Online Games on CrazyGames / Play Now! | https://crazygames.com |
 | site:x.com "indie game" "gameplay" | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
-| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.wikipedia.org/wiki/Indie_music |
+| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.m.wikipedia.org/wiki/Indie_music |
 | site:twitter.com "I made a game" | Instagram | https://instagram.com |
 | site:twitter.com "I made a game" | Í - Wikipedia | https://en.wikipedia.org/wiki/%C3%8D |
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
