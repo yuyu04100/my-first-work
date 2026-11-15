@@ -48,6 +48,12 @@ NEWS_TERMS = [
     '"game dev" "twitter" when:7d', '"インディーゲーム" "話題" when:3d',
     '"new game" "X post" viral when:7d', '"Roblox" "viral" "game" when:3d',
 ]
+# Free, public profile-media feeds documented by FxEmbed. These cover only
+# selected X accounts, NOT a global keyword search of X.
+FX_X_MEDIA_HANDLES = [
+    "clemmygames", "indieexchange", "DevolverDigital", "RawFury",
+    "ID_XBOX", "Steam", "pandorioltd", "IGN",
+]
 MASTODON_FEEDS = [
     "https://mastodon.gamedev.place/tags/indiedev.rss",
     "https://mastodon.gamedev.place/tags/gamedev.rss",
@@ -179,6 +185,32 @@ def rss_item_count(content):
     return len(ET.fromstring(content).findall(".//item"))
 
 
+def fx_x_media_signals(content, handle):
+    """Convert a public, per-account FxEmbed RSS feed into X post leads.
+
+    FxEmbed is a third-party relay; X engagement metrics are deliberately None.
+    """
+    posts = []
+    for item in ET.fromstring(content).findall(".//item"):
+        urls = (item.findtext("link", default="") or "") + " " + (item.findtext("guid", default="") or "")
+        found = XPOST.findall(urls)
+        if not found:
+            found = re.findall(r"https?://(?:www\.)?(?:fxtwitter|fixupx)\.com/[^/\s<>\"']+/status/\d+", urls, re.I)
+        if not found:
+            continue
+        original = normalized_url(found[0])
+        original = re.sub(r"^https://(?:fxtwitter|fixupx)\.com/", "https://x.com/", original, flags=re.I)
+        title = " ".join((item.findtext("title", default="") or "").split())
+        raw = item.findtext("description", default="") or ""
+        desc = re.sub(r"<[^>]+>", " ", raw)
+        pub = date_iso(item.findtext("pubDate", default=""))
+        posts.append({"url": original, "title": title[:180], "text": desc[:600],
+                      "published": pub, "source": "fx-x-media", "author": handle,
+                      "likes": None, "reposts": None, "replies": None, "video": True,
+                      "image": False, "x_posts": [original]})
+    return posts
+
+
 def rss_raw_examples(content, limit=3):
     items = ET.fromstring(content).findall(".//item")
     return [{"title": " ".join((i.findtext("title", default="") or "").split())[:130],
@@ -223,6 +255,18 @@ def collect():
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "ok", "count": len(signals)})
             except Exception as e:
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "error", "error": str(e)[:140]})
+    # X profile media feeds are free but limited to watched accounts. No view
+    # counts and no claim of comprehensive keyword coverage.
+    for handle in FX_X_MEDIA_HANDLES:
+        url = f"https://fxtwitter.com/{handle}/media.xml?count=15"
+        try:
+            payload = request(url)
+            posts = fx_x_media_signals(payload, handle)
+            results.extend(posts)
+            stats.append({"source": "fx-x-media", "query": handle, "status": "ok" if posts else "limited",
+                          "count": len(posts), "raw_count": rss_item_count(payload)})
+        except Exception as e:
+            stats.append({"source": "fx-x-media", "query": handle, "status": "error", "error": str(e)[:140]})
     # Search engine feeds have uneven indexing of X; this is discovery, NOT all-X collection.
     for i in range(4):
         term = BING_TERMS[(h * 2 + i) % len(BING_TERMS)]
@@ -402,6 +446,12 @@ def report(state, run, alerts):
     for p in top:
         safe = p.get("source", "").replace("|", "")
         lines.append(f"| {safe} | {p['url']} | {p.get('likes') if p.get('likes') is not None else '—'} | {p.get('reposts') if p.get('reposts') is not None else '—'} | {p.get('first_seen','')} |")
+    x_media = sorted((p for p in state["posts"].values() if p.get("source") == "fx-x-media"),
+                     key=lambda x: x.get("published") or "", reverse=True)[:20]
+    lines += ["", "## X media leads from watched accounts (no X metrics)", "",
+              "| X post URL | Account | Published from feed | Post title |", "|---|---|---|---|"]
+    for p in x_media:
+        lines.append(f"| {p['url']} | {p.get('author','')} | {p.get('published') or 'unknown'} | {p.get('title','').replace('|','/')[:110]} |")
     lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
         lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
@@ -450,7 +500,9 @@ def main():
             gap_hours = round((NOW - dt.datetime.fromisoformat(prior.replace("Z", "+00:00"))).total_seconds() / 3600, 2)
         except (ValueError, TypeError):
             pass
-    health = {"at": iso(), "status": "degraded_x" if not any(s.get("count", 0) > 0 for s in x_routes) else "partial_coverage",
+    fx_routes = [s for s in stats if s["source"] == "fx-x-media"]
+    x_feed_count = sum(s.get("count", 0) for s in fx_routes)
+    health = {"at": iso(), "status": "partial_x_feeds" if x_feed_count > 0 else "degraded_x",
               "x_index": {"attempts": len(x_routes), "hits": sum(s.get("count", 0) for s in x_routes),
                           "raw_hits": sum(s.get("raw_count", 0) for s in x_routes),
                           "errors": sum(s["status"] == "error" for s in x_routes),
@@ -459,6 +511,9 @@ def main():
               "source_attempts": len(stats), "source_ok": run["source_ok"], "source_errors": sum(s["status"] == "error" for s in stats),
               "unique_results": count, "alert_attempts": len(sent), "hours_since_previous_run": gap_hours,
               "state_bytes": STATE.stat().st_size}
+    health["fx_x_media"] = {"accounts_attempted": len(fx_routes), "posts": x_feed_count,
+                            "errors": sum(s["status"] == "error" for s in fx_routes),
+                            "limitation": "Only curated profile media feeds, not search across all X posts"}
     HEALTH.write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report(state, run, alerts)
     print(json.dumps({"at": run["at"], "ok": run["source_ok"], "attempted": run["source_attempts"], "unique": count, "alerts": sent}, ensure_ascii=False))
