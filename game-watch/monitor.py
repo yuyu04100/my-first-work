@@ -179,6 +179,12 @@ def rss_item_count(content):
     return len(ET.fromstring(content).findall(".//item"))
 
 
+def rss_raw_examples(content, limit=3):
+    items = ET.fromstring(content).findall(".//item")
+    return [{"title": " ".join((i.findtext("title", default="") or "").split())[:130],
+             "url": normalized_url(i.findtext("link", default=""))} for i in items[:limit]]
+
+
 def indexed_x_candidates(content):
     """Keep actual X post URLs as unverified discovery leads.
 
@@ -228,7 +234,7 @@ def collect():
             posts = parse_rss(payload, "bing-x-index")
             results.extend(posts)
             status = "ok" if posts else "candidate_only" if candidates else "limited"
-            stats.append({"source": "bing-x-index", "query": term, "status": status, "count": len(posts), "raw_count": raw_count, "x_post_candidates": len(candidates), "examples": candidates[:5]})
+            stats.append({"source": "bing-x-index", "query": term, "status": status, "count": len(posts), "raw_count": raw_count, "x_post_candidates": len(candidates), "examples": candidates[:5], "raw_examples": rss_raw_examples(payload, 2)})
         except Exception as e:
             stats.append({"source": "bing-x-index", "query": term, "status": "error", "error": str(e)[:140]})
     for i in range(3):
@@ -399,6 +405,11 @@ def report(state, run, alerts):
     lines += ["", "## Search route status", "", "| Source | Query | Status | Qualified | Raw RSS items |", "|---|---|---|---:|---:|"]
     for s in run["routes"]:
         lines.append(f"| {s['source']} | {s['query'].replace('|','/')} | {s['status']} | {s.get('count', '—')} | {s.get('raw_count', '—')} |")
+    lines += ["", "## Raw search results from X discovery routes (unverified)", "", "Raw search results help diagnose search providers returning unrelated pages.", "", "| Query | Result title | Result URL |", "|---|---|---|"]
+    for r in run["routes"]:
+        if r["source"] == "bing-x-index":
+            for item in r.get("raw_examples", []):
+                lines.append(f"| {r['query'].replace('|','/')} | {item['title'].replace('|','/')} | {item['url']} |")
     x_indexed = {}
     for r in run["routes"]:
         for c in r.get("examples", []):
