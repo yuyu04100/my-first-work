@@ -77,6 +77,29 @@ class MonitorTest(unittest.TestCase):
         monitor.update(state, [])
         self.assertLessEqual(len(state["posts"]), 650)
 
+    def test_international_creator_post_filter(self):
+        self.assertTrue(monitor.relevant("Hice un juego donde puedes saltar entre edificios"))
+        self.assertTrue(monitor.relevant("Estoy haciendo un juego de física"))
+        self.assertTrue(monitor.relevant("Fiz um jogo com personagens que voam"))
+        self.assertTrue(monitor.relevant("Je développe un jeu de puzzle"))
+        self.assertTrue(monitor.relevant("Mein neues Spiel mit Physik"))
+        self.assertTrue(monitor.relevant("게임을 만들었습니다. 캐릭터가 벽을 부숩니다"))
+        self.assertTrue(monitor.relevant("我做了个游戏，可以破坏房间"))
+        self.assertTrue(monitor.relevant("独立游戏开发，一款物理游戏"))
+        self.assertTrue(monitor.relevant("Here's the gameplay footage for my new game"))
+        self.assertTrue(monitor.relevant("I built a game about transforming into anything"))
+
+    def test_international_non_game_posts_excluded(self):
+        self.assertFalse(monitor.relevant("Los salarios de desarrolladores de videojuegos son bajos"))
+        self.assertFalse(monitor.relevant("ゲーム開発カンファレンスで審査員が声明"))
+        self.assertFalse(monitor.relevant("IGF jurors reveal a new game award rule"))
+
+    def test_all_languages_have_dedicated_query_pools(self):
+        self.assertGreaterEqual(len(monitor.FX_X_SEARCH_EN), 20)
+        self.assertGreaterEqual(len(monitor.FX_X_SEARCH_JP), 6)
+        for name in ("FX_X_SEARCH_ES", "FX_X_SEARCH_KO", "FX_X_SEARCH_ZH", "FX_X_SEARCH_EU"):
+            self.assertGreaterEqual(len(getattr(monitor, name)), 4)
+
     def test_deduplicated_alert(self):
         p={"url":"https://bsky.app/profile/a/post/b", "title":"physics game", "text":"physics game", "published": monitor.iso(), "source":"bluesky", "author":"a", "likes":950, "reposts":250, "replies":1, "video":True, "image":False,"x_posts":[]}
         state={"posts": {}, "runs": []}
