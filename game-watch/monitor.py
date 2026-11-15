@@ -336,7 +336,25 @@ def collect():
             except Exception as e:
                 failures.append(f"{host}: {str(e)[:70]}")
         if payload is None:
-            stats.append({"source": "fx-x-media", "query": handle, "status": "error", "error": "; ".join(failures)[:200]})
+            # Some official X profiles do not have a relay media RSS feed.
+            # Try the same free proxy's keyword search for that account, and
+            # keep the original feed 404s visible in warning instead of hiding.
+            query = "from:" + handle
+            try:
+                endpoint = "https://api.fxtwitter.com/2/search?" + urllib.parse.urlencode({"q": query, "feed": "latest", "count": 25})
+                data = json.loads(request(endpoint))
+                if data.get("code") != 200:
+                    raise ValueError("FxEmbed search code=" + str(data.get("code")))
+                raw = data.get("results") or []
+                posts = [fx_x_search_signal(p) for p in raw]
+                posts = [p for p in posts if p]
+                results.extend(posts)
+                stats.append({"source": "fx-x-media", "query": handle, "status": "fallback" if posts else "limited",
+                              "count": len(posts), "raw_count": len(raw), "warning": "; ".join(failures)[:200],
+                              "fallback": "fx-x-search from:handle"})
+            except Exception as e:
+                stats.append({"source": "fx-x-media", "query": handle, "status": "error",
+                              "error": ("; ".join(failures) + "; fallback: " + str(e))[:220]})
             continue
         try:
             posts = fx_x_media_signals(payload, handle)
