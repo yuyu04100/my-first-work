@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-15T00:55:58Z",
+  "at": "2026-11-15T00:57:11Z",
   "status": "partial_x_feeds",
   "x_index": {
     "attempts": 4,
@@ -10,16 +10,16 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 36,
-  "source_ok": 26,
-  "source_errors": 3,
-  "unique_results": 254,
+  "source_ok": 28,
+  "source_errors": 1,
+  "unique_results": 285,
   "alert_attempts": 0,
-  "hours_since_previous_run": 0.01,
-  "state_bytes": 689250,
+  "hours_since_previous_run": 0.02,
+  "state_bytes": 696861,
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 65,
-    "errors": 3,
+    "posts": 95,
+    "errors": 1,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
 }
