@@ -1,9 +1,9 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-15T00:55:25Z**
+Last run (UTC): **2026-11-15T00:55:58Z**
 
-Sources OK: **25** / **36**
-Unique posts found this run: **260**
+Sources OK: **26** / **36**
+Unique posts found this run: **254**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
@@ -45,26 +45,7 @@ Alerts this run: **0**
 
 | X post URL | Account | Published from feed | Post title |
 |---|---|---|---|
-| https://x.com/IGN/status/2121755097084358858 | IGN | 2026-11-15T00:00:10Z | Grace Ashcroft actress Angela Sant'Albano doesn't think her Resident Evil Requiem hero will "ever be a Leon ch |
-| https://x.com/IGN/status/2121739993022378192 | IGN | 2026-11-14T23:00:09Z | ICYMI: Now that preloads are live for Grand Theft Auto VI, fans have found PlayStation files that include "lau |
-| https://x.com/IGN/status/2121726794147430719 | IGN | 2026-11-14T22:07:42Z | BREAKING: At the 2026 League of Legends World Championship Finals, Riot Games officially unveiled League of Le |
-| https://x.com/IGN/status/2121724895415468163 | IGN | 2026-11-14T22:00:09Z | Adam Driver still can't believe Disney killed his Star Wars movie, The Hunt for Ben Solo, and has now gone so  |
-| https://x.com/IGN/status/2121709806058717376 | IGN | 2026-11-14T21:00:11Z | Henry Cavill has stated that he's still open to the idea of playing Superman following all the shake-ups at DC |
-| https://x.com/IGN/status/2121698448869060822 | IGN | 2026-11-14T20:15:04Z | Sonic games have come a long way since Sonic 06, here is an IGN Playlist of every Sonic game across his 35 yea |
-| https://x.com/IGN/status/2121694707357024286 | IGN | 2026-11-14T20:00:12Z | Rockstar confirms GTA 6 features 'mechanisms that encourage' empathy for the first time in franchise history h |
-| https://x.com/pandorioltd/status/2121680248681222360 | pandorioltd | 2026-11-14T19:02:44Z | Continue developing an incremental game, where you punch walls to escape #indiegame #steam #games |
-| https://x.com/IGN/status/2121679624753004774 | IGN | 2026-11-14T19:00:16Z | A spoiler-filled The Lord of the Rings: The Rings of Power Season 3 interview with Theo actor Tyroe Muhafidin. |
-| https://x.com/IGN/status/2121664520594538971 | IGN | 2026-11-14T18:00:14Z | .@RahulKohli13 joins IGN to play three of his favorite games - Ocarina of Time, Doom, and Red Dead Redemption  |
-| https://x.com/IGN/status/2121660724560662750 | IGN | 2026-11-14T17:45:09Z | Rings of Power showrunner Patrick McKay told us about the show’s version of Balrogs and their goals when they  |
-| https://x.com/IGN/status/2121653392149745836 | IGN | 2026-11-14T17:16:01Z | GTA 6 is so close. What are you going to do first when you get into the open world of Vice City? https://bit.l |
-| https://x.com/IGN/status/2121649410484388113 | IGN | 2026-11-14T17:00:12Z | Before directing E.T., Steven Spielberg almost made an alien horror movie called Night Skies. https://bit.ly/3 |
-| https://x.com/IGN/status/2121641835441320224 | IGN | 2026-11-14T16:30:06Z | This is how Rockstar brought together bad fashion, a miserable gangster, an exploding phone, and fake Zuckerbe |
-| https://x.com/IGN/status/2121634300399432028 | IGN | 2026-11-14T16:00:09Z | Is the DC Cinematic Universe just cursed? Because it sure feels like it after James Gunn and Peter Safran's de |
-| https://x.com/IGN/status/2121619213978681384 | IGN | 2026-11-14T15:00:13Z | How to Rob a Bank wants to speak to real-life financial concerns that plague so many of us, but rarely is it w |
-| https://x.com/devolverdigital/status/2121329505637740764 | DevolverDigital | 2026-11-13T19:49:01Z | It's a bundle of galactic proportions. Get the BALLxPIT x Warhammer Survivors bundle and say goodbye to your a |
-| https://x.com/RawFury/status/2121287187387826564 | RawFury | 2026-11-13T17:00:51Z | in the world of the bright wilds, you'll find a lot of interesting characters. like this one. |
-| https://x.com/indieexchange/status/2121286980960960759 | indieexchange | 2026-11-13T17:00:02Z | FREE GIVEAWAY! 🎁 #FreeKeyFriday Tenebris Somnia the 2D survival horror adventure game with live action cutscen |
-| https://x.com/RawFury/status/2121259019834917019 | RawFury | 2026-11-13T15:08:56Z | 🐫KINGDOM TWO CROWNS: PHARAOH LANDS IS OUT ON DECEMBER 1ST!☀️ Set out on a new adventure in the ancient Egypt-i |
+| https://x.com/ID_XBOX/status/2065101858620735819 | ID_XBOX | 2026-06-11T16:00:25Z | Woodo is a cozy diorama puzzle game where you assemble wooden scenes piece by piece. Each scene slowly fills w |
 
 ## Search route status
 
@@ -84,23 +65,23 @@ Alerts this run: **0**
 | bluesky | ゲーム開発/top | ok | 9 | — |
 | bluesky | ゲーム制作/latest | ok | 6 | — |
 | bluesky | ゲーム制作/top | ok | 6 | — |
-| fx-x-media | clemmygames | error | — | — |
-| fx-x-media | indieexchange | ok | 15 | 15 |
-| fx-x-media | DevolverDigital | ok | 15 | 15 |
-| fx-x-media | RawFury | ok | 15 | 15 |
-| fx-x-media | ID_XBOX | error | — | — |
-| fx-x-media | Steam | error | — | — |
-| fx-x-media | pandorioltd | ok | 15 | 15 |
-| fx-x-media | IGN | ok | 15 | 15 |
-| bing-x-index | site:x.com "game prototype" video | limited | 0 | 7 |
+| fx-x-media | ID_XBOX | ok | 15 | 15 |
+| fx-x-media | Steam | ok | 15 | 15 |
+| fx-x-media | pandorioltd | error | — | — |
+| fx-x-media | IGN | ok | 5 | 15 |
+| fx-x-media | Roblox | ok | 15 | 15 |
+| fx-x-media | FortniteGame | error | — | — |
+| fx-x-media | UnrealEngine | error | — | — |
+| fx-x-media | itchio | ok | 15 | 15 |
+| bing-x-index | site:x.com "game prototype" video | limited | 0 | 10 |
 | bing-x-index | site:x.com "indie game" "gameplay" | limited | 0 | 10 |
 | bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
-| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 7 |
+| bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
 | google-news | "indie game" "viral" when:3d | limited | 0 | 6 |
 | google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
 | google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
-| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | limited | 0 | 0 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 28 |
+| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 4 | 100 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 29 |
 | mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 0 | — |
 | mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 1 | — |
@@ -116,7 +97,7 @@ Raw search results help diagnose search providers returning unrelated pages.
 | site:x.com "game prototype" video | Free Online Games at Poki - Play Now! | https://poki.com |
 | site:x.com "game prototype" video | Free Online Games on CrazyGames / Play Now! | https://crazygames.com |
 | site:x.com "indie game" "gameplay" | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
-| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.m.wikipedia.org/wiki/Indie_music |
+| site:x.com "indie game" "gameplay" | Indie music - Wikipedia | https://en.wikipedia.org/wiki/Indie_music |
 | site:twitter.com "I made a game" | Instagram | https://instagram.com |
 | site:twitter.com "I made a game" | Í - Wikipedia | https://en.wikipedia.org/wiki/%C3%8D |
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
