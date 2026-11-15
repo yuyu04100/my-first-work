@@ -44,8 +44,15 @@ jobs:
               git fetch origin main
               if ! git rebase origin/main; then
                 git rebase --abort || true
-                echo 'Concurrent state edit: retry on next scheduled run'
-                exit 1
+                echo 'Concurrent state edit detected: refresh state and rescan on latest main'
+                git reset --hard origin/main
+                python -m unittest discover -s game-watch -p 'test_*.py' -v
+                python game-watch/monitor.py
+                git add game-watch/data/state.json game-watch/data/latest.md game-watch/data/health.json
+                if git diff --cached --quiet; then
+                  exit 0
+                fi
+                git commit -m 'chore: retry game signals after concurrent update'
               fi
               if git push; then
                 exit 0
