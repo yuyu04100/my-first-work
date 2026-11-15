@@ -50,6 +50,7 @@ NEWS_TERMS = [
 ]
 # Free, public profile-media feeds documented by FxEmbed. These cover only
 # selected X accounts, NOT a global keyword search of X.
+FX_X_SEARCH_TERMS = ["game prototype", "ゲーム開発"]
 FX_X_MEDIA_HANDLES = [
     "ID_XBOX", "Steam", "pandorioltd", "IGN",
     "Roblox", "FortniteGame", "UnrealEngine", "itchio",
@@ -185,6 +186,29 @@ def rss_item_count(content):
     return len(ET.fromstring(content).findall(".//item"))
 
 
+def fx_x_search_signal(p):
+    """A public FxEmbed proxy search result, NOT a direct X API response."""
+    if not isinstance(p, dict) or p.get("type", "status") != "status":
+        return None
+    author = p.get("author") or {}
+    handle = author.get("screen_name") or author.get("username") or ""
+    raw_url = p.get("url") or (f"https://x.com/{handle}/status/{p.get('id')}" if handle and p.get("id") else "")
+    url = normalized_url(raw_url)
+    if not XPOST.fullmatch(url):
+        return None
+    text = p.get("text") or ""
+    media = p.get("media") or {}
+    signal = {"url": url, "title": text[:180].replace("\n", " "), "text": text[:600],
+              "published": date_iso(p.get("created_at")), "source": "fx-x-search",
+              "author": handle, "likes": int(p["likes"]) if isinstance(p.get("likes"), (int, float)) else None,
+              "reposts": int(p["reposts"]) if isinstance(p.get("reposts"), (int, float)) else None,
+              "replies": int(p["replies"]) if isinstance(p.get("replies"), (int, float)) else None,
+              "video": bool(media.get("videos") or media.get("external")),
+              "image": bool(media.get("photos")), "x_posts": [url],
+              "counts_source": "FxEmbed public X proxy, not X official API"}
+    return classify(signal)
+
+
 def fx_x_media_signals(content, handle):
     """Convert a public, per-account FxEmbed RSS feed into X post leads.
 
@@ -263,6 +287,23 @@ def collect():
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "ok", "count": len(signals)})
             except Exception as e:
                 stats.append({"source": "bluesky", "query": term + "/" + sort, "status": "error", "error": str(e)[:140]})
+    # Pilot FxEmbed public X SEARCH: test code/availability independently of
+    # the broken Bing search index. X metrics are proxied, not official.
+    for term in FX_X_SEARCH_TERMS:
+        url = "https://api.fxtwitter.com/2/search?" + urllib.parse.urlencode({"q": term, "feed": "latest", "count": 30})
+        try:
+            data = json.loads(request(url))
+            if data.get("code") != 200:
+                raise ValueError("FxEmbed search code=" + str(data.get("code")))
+            raw = data.get("results") or []
+            posts = [fx_x_search_signal(p) for p in raw]
+            posts = [p for p in posts if p]
+            results.extend(posts)
+            stats.append({"source": "fx-x-search", "query": term, "status": "ok" if posts else "limited",
+                          "count": len(posts), "raw_count": len(raw),
+                          "samples": [p.get("text", "")[:75] for p in raw[:2] if isinstance(p, dict)]})
+        except Exception as e:
+            stats.append({"source": "fx-x-search", "query": term, "status": "error", "error": str(e)[:180]})
     # X profile media feeds are free but limited to watched accounts. No view
     # counts and no claim of comprehensive keyword coverage.
     for handle in FX_X_MEDIA_HANDLES:
@@ -531,6 +572,14 @@ def main():
               "source_attempts": len(stats), "source_ok": run["source_ok"], "source_errors": sum(s["status"] == "error" for s in stats),
               "unique_results": count, "alert_attempts": len(sent), "hours_since_previous_run": gap_hours,
               "state_bytes": STATE.stat().st_size}
+    x_search_routes = [s for s in stats if s["source"] == "fx-x-search"]
+    health["fx_x_search"] = {"attempts": len(x_search_routes),
+                             "qualified_posts": sum(s.get("count", 0) for s in x_search_routes),
+                             "raw_posts": sum(s.get("raw_count", 0) for s in x_search_routes),
+                             "errors": sum(s["status"] == "error" for s in x_search_routes),
+                             "note": "Free FxEmbed proxy search pilot, not an official X API contract"}
+    if health["fx_x_search"]["qualified_posts"]:
+        health["status"] = "partial_x_search"
     health["fx_x_media"] = {"accounts_attempted": len(fx_routes), "posts": x_feed_count,
                             "errors": sum(s["status"] == "error" for s in fx_routes),
                             "limitation": "Only curated profile media feeds, not search across all X posts"}
