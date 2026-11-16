@@ -1,10 +1,10 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-16T01:58:24Z**
+Last run (UTC): **2026-11-16T09:32:20Z**
 
-Sources OK: **41** / **66**
-Unique posts found this run: **367**
-Alerts this run: **0**
+Sources OK: **45** / **66**
+Unique posts found this run: **372**
+Alerts this run: **1**
 
 ## Top public-platform signals (not X views)
 
@@ -14,32 +14,32 @@ Alerts this run: **0**
 | fx-x-search | https://x.com/HYPEX/status/2120919139888050635 | 26309 | 1018 | 2026-11-15T21:43:56Z |
 | fx-x-search | https://x.com/HYPEX/status/2121281758209736878 | 21721 | 922 | 2026-11-15T21:43:56Z |
 | fx-x-search | https://x.com/LordBalvin/status/2120616123611623855 | 7203 | 272 | 2026-11-15T21:43:56Z |
-| fx-x-search | https://x.com/kevin_t_ngo/status/2119868968307695818 | 4268 | 216 | 2026-11-15T03:23:51Z |
-| fx-x-search | https://x.com/WitchSprings/status/2120431376717726086 | 1063 | 367 | 2026-11-16T01:58:24Z |
+| fx-x-search | https://x.com/shogo_oomori/status/2119745453667602904 | 4127 | 654 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/kevin_t_ngo/status/2119868968307695818 | 4272 | 217 | 2026-11-15T03:23:51Z |
+| fx-x-search | https://x.com/RickTheR1ck/status/2120182769896898776 | 2283 | 235 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/Isws81U/status/2121182234422178147 | 1657 | 136 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/team_timehack/status/2121176868758208588 | 1415 | 196 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/hitomise_com/status/2121890952750973066 | 1463 | 116 | 2026-11-16T09:32:20Z |
 | fx-x-search | https://x.com/Pirat_Nation/status/2120939682317963565 | 1217 | 50 | 2026-11-15T21:43:56Z |
-| fx-x-search | https://x.com/gamespark/status/2120819037072736357 | 552 | 170 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/OhChadol/status/2121831462974685633 | 527 | 81 | 2026-11-16T01:58:24Z |
+| fx-x-search | https://x.com/OhChadol/status/2121831462974685633 | 592 | 99 | 2026-11-16T01:58:24Z |
+| fx-x-search | https://x.com/soncho_kitsune/status/2121941597315269005 | 515 | 70 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/BlendiByl/status/2121177279451844707 | 558 | 47 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/sslab_bp/status/2121087854113959976 | 309 | 38 | 2026-11-16T09:32:20Z |
 | fx-x-search | https://x.com/BeyondTheBoxCN/status/2120018618310181364 | 306 | 36 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2120043779700695458 | 238 | 30 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/GTAlphaintel/status/2121322274985050300 | 249 | 17 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/KristinaButKev/status/2119594681713447277 | 226 | 22 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2121769903543730531 | 218 | 24 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2120446433438613984 | 195 | 27 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/cagyjan1/status/2120131860466405654 | 224 | 17 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/onefifthblue/status/2120523776949625038 | 165 | 13 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/kalypsomediaJP/status/2120094123734499630 | 106 | 28 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2120079031986962505 | 144 | 10 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2121860753070207465 | 117 | 8 | 2026-11-16T01:58:24Z |
+| fx-x-search | https://x.com/kutazumin/status/2119754377183600923 | 279 | 28 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/nath12345678901/status/2121216251926385060 | 296 | 11 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/BeyondTheBoxCN/status/2121769903543730531 | 219 | 24 | 2026-11-16T01:58:24Z |
+| bluesky | https://bsky.app/profile/enikofox.com/post/3n2djfssqfc2i | 232 | 19 | 2026-11-16T09:32:20Z |
+| bluesky | https://bsky.app/profile/sunnylabgames.bsky.social/post/3n2c6gf5sx22z | 143 | 45 | 2026-11-16T09:32:20Z |
+| bluesky | https://bsky.app/profile/melbotstudios.bsky.social/post/3n252tvmuco25 | 137 | 32 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/game_daisuki14/status/2121892666950779082 | 158 | 16 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/BeyondTheBoxCN/status/2120079031986962505 | 144 | 11 | 2026-11-16T01:58:24Z |
+| fx-x-search | https://x.com/louispixels/status/2121062744225202240 | 165 | 0 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/game_daisuki14/status/2121170431680160252 | 118 | 11 | 2026-11-16T09:32:20Z |
+| bluesky | https://bsky.app/profile/wootmaster.bsky.social/post/3mzyjbouk3k2x | 103 | 13 | 2026-11-16T09:32:20Z |
+| fx-x-search | https://x.com/bugmii_x/status/2121266370356847028 | 113 | 9 | 2026-11-16T09:32:20Z |
 | bluesky | https://bsky.app/profile/talidev3d.bsky.social/post/3n2cgi35dmk22 | 72 | 20 | 2026-11-15T00:50:02Z |
 | bluesky | https://bsky.app/profile/andruc.dragoon.dev/post/3n257ns43rk2e | 84 | 14 | 2026-11-14T06:55:10Z |
-| bluesky | https://bsky.app/profile/alpineshowtime.bsky.social/post/3n23dgidwxs25 | 75 | 14 | 2026-11-15T17:02:10Z |
-| bluesky | https://bsky.app/profile/thezestiestbone.bsky.social/post/3n2d3pkimy223 | 84 | 4 | 2026-11-15T17:02:10Z |
-| fx-x-search | https://x.com/4GamerNews/status/2121201540920967353 | 50 | 14 | 2026-11-16T01:58:24Z |
-| fx-x-search | https://x.com/xzx_slipknot/status/2121290235015500167 | 69 | 6 | 2026-11-16T01:58:24Z |
-| bluesky | https://bsky.app/profile/miguedorta.bsky.social/post/3n27mbw35wc2g | 35 | 17 | 2026-11-15T17:02:10Z |
-| fx-x-search | https://x.com/BeyondTheBoxCN/status/2120451466444034185 | 66 | 6 | 2026-11-16T01:58:24Z |
-| bluesky | https://bsky.app/profile/ddder.bsky.social/post/3n25wbosi4k2s | 62 | 7 | 2026-11-15T21:43:56Z |
-| fx-x-search | https://x.com/PARROTREPORT/status/2121320352991060428 | 28 | 16 | 2026-11-16T01:58:24Z |
 
 ## X media leads from watched accounts (no X metrics)
 
@@ -55,11 +55,11 @@ These are query-language buckets, NOT geographic location or nationality.
 
 | Query language | Searches | Raw hits | Qualified | Review-only high-engagement |
 |---|---:|---:|---:|---:|
-| en | 21 | 295 | 88 | 25 |
-| ja | 3 | 34 | 21 | 0 |
+| en | 21 | 328 | 24 | 39 |
+| ja | 3 | 90 | 43 | 0 |
 | es | 0 | 0 | 0 | 0 |
-| ko | 3 | 28 | 4 | 0 |
-| zh | 3 | 88 | 37 | 0 |
+| ko | 3 | 30 | 8 | 0 |
+| zh | 3 | 87 | 34 | 0 |
 | eu | 0 | 0 | 0 | 0 |
 
 ## High-engagement X posts excluded by automatic text classifier (REVIEW ONLY)
@@ -68,98 +68,101 @@ No game identity or game-related virality has been verified for these posts.
 
 | X post | Query language | Likes (FxEmbed) | Reposts (FxEmbed) | Snippet |
 |---|---|---:|---:|---|
-| https://x.com/SpaceX/status/2121715216597827756 | global-creator | 136749 | 26691 | Mechazilla catches Starship! Congratulations to the entire SpaceX team on this incredible achievemen |
-| https://x.com/sundarpichai/status/2121721987794174178 | global-creator | 48822 | 1917 | Congrats @SpaceX for that starship catch, still feels like science fiction! Watching it live was inc |
-| https://x.com/ebbyamir/status/2120284261089673376 | global-creator | 17907 | 2285 | I turned Van Gogh riding through his Starry Night into a game with Fable 5.2  Play it here: https:// |
-| https://x.com/sundarpichai/status/2121338095664808238 | global-creator | 18701 | 956 | What we shipped this week @google   Monday: Two new 8th-gen TPUs Tuesday: Gemini 4 Carbon - AlphaPro |
-| https://x.com/GTASixInfo/status/2120595424025497703 | en | 10695 | 589 | New GTA 6 Gameplay  (via @onlyindade) |
-| https://x.com/sundarpichai/status/2120581155078729728 | global-creator | 8130 | 663 | Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @Googl |
-| https://x.com/RyanColeHq/status/2120117896664035782 | en | 7215 | 190 | She likes MEAN WHITE BOYS🤡🤡🤡 |
-| https://x.com/thefox/status/2120942632679674209 | global-creator | 4036 | 259 | Today, Search is getting a massive upgrade with Gemini 4 Hydrogen!  It’s the biggest model improveme |
-| https://x.com/sundarpichai/status/2120207062655549933 | global-creator | 3821 | 323 | Our teams put Gemini 4 Carbon to work on a major security challenge: mathematically proving the code |
-| https://x.com/McGroin83/status/2120691204887036251 | global-video | 1728 | 211 | 🚨 LITTLEBIGPLANET 3 gets a PC release with online multiplayer and 10 million archived levels! 🌍🎮  LB |
-| https://x.com/_mohansolo/status/2122119826575646918 | global-creator | 1834 | 116 | We’re doubling the context window for Argon, Carbon, and Hydrogen in Antigravity.  Lots of work to m |
-| https://x.com/sundarpichai/status/2120548872238064036 | global-creator | 1722 | 108 | Thinking of all our veterans and their families today. Thank you for your service and sacrifice to o |
-| https://x.com/nexindie/status/2121049143879577875 | global-creator | 1302 | 246 | New Japanese fighting game with rollback netcode 'Xenoh: Dynamic Bout' officially announced.  Coming |
-| https://x.com/BFBulletin/status/2120531608964874505 | global-video | 1477 | 156 | BREAKING: A fan-made project by @TekRantGaming has successfully revived #Battlefield1943 restoring t |
-| https://x.com/j_dekoninck/status/2121263753006374997 | global-creator | 1491 | 112 | For the first time in a very long time, we have a non-OpenAI model as #1 on MathArena! Gemini 4 Carb |
-| https://x.com/scottnarmstrong/status/2122089351081275657 | global-creator | 1158 | 46 | on my first ever Carbon prompt it solved a research problem we’d been throwing wave after wave of As |
-| https://x.com/ericmaskfr/status/2119910195325481026 | global-video | 1034 | 74 | GTA 6 isn't out yet. Anthropic's new Fable 5.2 already built me one  one prompt. I was not ready for |
+| https://x.com/claudeai/status/2120174844822298730 | global-creator | 17511 | 1312 | A thread of early experiments with Claude Fable 5.2:  A 3D model of a cell, built entirely from code |
+| https://x.com/thsottiaux/status/2120410006273380750 | global-creator | 19122 | 408 | It’s been a while without resets. Maybe I should come back out of the basement |
+| https://x.com/felixrieseberg/status/2119925633564463609 | global-creator | 14858 | 1151 | I wanted to test Fable 5.2's quality with one-shot prompts without human feedback.  Everything in th |
+| https://x.com/gameunlocked26/status/2120607494200566233 | en | 12887 | 328 | This is what Cyberpunk 2077 looked like at E3 2018. |
+| https://x.com/thsottiaux/status/2120410480204525936 | global-creator | 11459 | 298 | Thursday is feeling codexy to me. Perhaps also a good time for a banked reset. |
+| https://x.com/DofuTheWhite/status/2121718354243101061 | en | 11599 | 214 | So were Hylians just worshipping Time or what's going on there |
+| https://x.com/thsottiaux/status/2121062974161092792 | global-creator | 10441 | 185 | How can codex be improved? Try not to say model. |
+| https://x.com/GlobeEyeNews/status/2121652701016834271 | en | 8040 | 496 | BREAKING:  Petition to reinstate Jensen Huang as CEO of Nvidia reaches over 100,000 signatures. |
+| https://x.com/BlendiByl/status/2120341251178594532 | global-creator | 7981 | 397 | i used fable 5.2 to make this "hand-painted" game in less than an hour  Every frame is about 1.5 mil |
+| https://x.com/thsottiaux/status/2122206990101536852 | global-creator | 5080 | 146 | Codex team might have actually fixed the "model at capacity" errors that have been pestering you. |
+| https://x.com/thsottiaux/status/2121845965997101118 | global-creator | 4407 | 131 | Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, r |
+| https://x.com/thsottiaux/status/2120304649807020238 | global-creator | 4125 | 58 | @embw_l0x We're assembling one of the best teams ever and I do talk to folks at Anthropic every once |
+| https://x.com/emollick/status/2119918307457577163 | global-creator | 1933 | 176 | In one of my favorite experiments, I told Fable 5.2 to build an endless, hands-off journey through 3 |
+| https://x.com/embw_l0x/status/2120010057337151701 | global-creator | 2338 | 25 | Guys this is bad  Im hearing rumors that morale at OpenAI is very low with the release of Fable 5.2  |
+| https://x.com/McGroin83/status/2120691204887036251 | global-video | 1729 | 211 | 🚨 LITTLEBIGPLANET 3 gets a PC release with online multiplayer and 10 million archived levels! 🌍🎮  LB |
+| https://x.com/BFBulletin/status/2120531608964874505 | global-video | 1478 | 156 | BREAKING: A fan-made project by @TekRantGaming has successfully revived #Battlefield1943 restoring t |
+| https://x.com/felixrieseberg/status/2119927483994907024 | global-creator | 1775 | 46 | I'm slowly discovering that the age of prompt engineering is basically over. It's so simple:  "You k |
+| https://x.com/felixrieseberg/status/2119867837296857361 | global-creator | 1518 | 84 | We're releasing Claude Fable & Mythos 5.2! They're good models, I have some demos and tips for you.  |
+| https://x.com/felixrieseberg/status/2122036839238492493 | global-creator | 1366 | 78 | All hail the weird web  I just enabled HTML-in-Canvas in Claude’s desktop apps. It’s a footnote chan |
+| https://x.com/felixrieseberg/status/2120245629725409758 | global-creator | 1309 | 82 | One thing that's surprising about this game: EVERYTHING IS CODE.   All textures and models are funct |
 
 ## Overseas discovery route audit (not a completeness guarantee)
 
 | Route | Queries | Raw hits | Qualified | Excluded high reaction |
 |---|---:|---:|---:|---:|
-| global-video | 4 | 4 | 0 | 3 |
-| global-creator | 8 | 96 | 0 | 20 |
+| global-video | 4 | 6 | 0 | 4 |
+| global-creator | 8 | 140 | 3 | 32 |
 
 ## Search route status
 
 | Source | Query | Status | Qualified | Raw RSS items |
 |---|---|---|---:|---:|
-| bluesky | gameplay prototype/latest | ok | 22 | — |
-| bluesky | gameplay prototype/top | ok | 22 | — |
-| bluesky | making a game/latest | ok | 14 | — |
-| bluesky | making a game/top | ok | 11 | — |
-| bluesky | game dev/latest | ok | 7 | — |
-| bluesky | game dev/top | ok | 4 | — |
-| bluesky | game concept/latest | ok | 13 | — |
-| bluesky | game concept/top | ok | 18 | — |
-| bluesky | horror game/latest | ok | 6 | — |
-| bluesky | horror game/top | ok | 7 | — |
-| bluesky | ゲーム制作/latest | ok | 8 | — |
-| bluesky | ゲーム制作/top | ok | 8 | — |
-| bluesky | ゲーム試作/latest | ok | 33 | — |
-| bluesky | ゲーム試作/top | ok | 32 | — |
-| fx-x-search | "co-op game" since:2026-11-15/latest | ok | 4 | 20 |
-| fx-x-search | "co-op game" since:2026-11-13/media | ok | 5 | 25 |
-| fx-x-search | "co-op game" since:2026-11-09/top | ok | 4 | 25 |
-| fx-x-search | "gameplay footage" since:2026-11-15/latest | ok | 19 | 20 |
-| fx-x-search | "gameplay footage" since:2026-11-13/media | ok | 40 | 41 |
-| fx-x-search | "gameplay footage" since:2026-11-09/top | ok | 14 | 27 |
-| fx-x-search | "experimental game" since:2026-11-15/latest | limited | 0 | 2 |
-| fx-x-search | "experimental game" since:2026-11-13/media | limited | 0 | 2 |
-| fx-x-search | "experimental game" since:2026-11-09/top | ok | 2 | 33 |
-| fx-x-search | ゲームプレイ映像 since:2026-11-15/latest | ok | 2 | 4 |
-| fx-x-search | ゲームプレイ映像 since:2026-11-13/media | ok | 4 | 8 |
-| fx-x-search | ゲームプレイ映像 since:2026-11-09/top | ok | 15 | 22 |
-| fx-x-search | 게임 개발 중 since:2026-11-15/latest | ok | 1 | 4 |
-| fx-x-search | 게임 개발 중 since:2026-11-13/media | limited | 0 | 3 |
-| fx-x-search | 게임 개발 중 since:2026-11-09/top | ok | 3 | 21 |
-| fx-x-search | 独立游戏开发 since:2026-11-15/latest | ok | 5 | 20 |
-| fx-x-search | 独立游戏开发 since:2026-11-13/media | ok | 14 | 48 |
-| fx-x-search | 独立游戏开发 since:2026-11-09/top | ok | 18 | 20 |
-| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-15/latest | limited | 0 | 0 |
-| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-09/top | limited | 0 | 1 |
+| bluesky | game prototype/latest | ok | 17 | — |
+| bluesky | game prototype/top | ok | 23 | — |
+| bluesky | indie game/latest | ok | 7 | — |
+| bluesky | indie game/top | ok | 10 | — |
+| bluesky | indie dev/latest | ok | 12 | — |
+| bluesky | indie dev/top | ok | 5 | — |
+| bluesky | physics sandbox/latest | ok | 2 | — |
+| bluesky | physics sandbox/top | ok | 2 | — |
+| bluesky | viral indie game/latest | ok | 9 | — |
+| bluesky | viral indie game/top | ok | 9 | — |
+| bluesky | 自作ゲーム/latest | ok | 56 | — |
+| bluesky | 自作ゲーム/top | ok | 60 | — |
+| bluesky | ゲーム アイデア/latest | ok | 3 | — |
+| bluesky | ゲーム アイデア/top | ok | 3 | — |
+| fx-x-search | "making a game" since:2026-11-15/latest | ok | 1 | 20 |
+| fx-x-search | "making a game" since:2026-11-13/media | ok | 9 | 45 |
+| fx-x-search | "making a game" since:2026-11-09/top | ok | 6 | 38 |
+| fx-x-search | "destructible environment" since:2026-11-15/latest | limited | 0 | 3 |
+| fx-x-search | "destructible environment" since:2026-11-13/media | limited | 0 | 1 |
+| fx-x-search | "destructible environment" since:2026-11-09/top | limited | 0 | 22 |
+| fx-x-search | "indie game" gameplay since:2026-11-15/latest | ok | 1 | 15 |
+| fx-x-search | "indie game" gameplay since:2026-11-13/media | ok | 1 | 17 |
+| fx-x-search | "indie game" gameplay since:2026-11-09/top | ok | 3 | 21 |
+| fx-x-search | 自作ゲーム since:2026-11-15/latest | ok | 12 | 20 |
+| fx-x-search | 自作ゲーム since:2026-11-13/media | ok | 23 | 50 |
+| fx-x-search | 自作ゲーム since:2026-11-09/top | ok | 8 | 20 |
+| fx-x-search | 게임 개발 중 since:2026-11-15/latest | ok | 2 | 5 |
+| fx-x-search | 게임 개발 중 since:2026-11-13/media | ok | 1 | 4 |
+| fx-x-search | 게임 개발 중 since:2026-11-09/top | ok | 5 | 21 |
+| fx-x-search | 独立游戏开发 since:2026-11-15/latest | ok | 8 | 20 |
+| fx-x-search | 独立游戏开发 since:2026-11-13/media | ok | 17 | 47 |
+| fx-x-search | 独立游戏开发 since:2026-11-09/top | ok | 9 | 20 |
+| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-15/latest | limited | 0 | 1 |
+| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-09/top | limited | 0 | 2 |
 | fx-x-search | multiplayer game filter:videos min_faves:500 since:2026-11-15/latest | limited | 0 | 0 |
 | fx-x-search | multiplayer game filter:videos min_faves:500 since:2026-11-09/top | limited | 0 | 3 |
-| fx-x-search | from:GameZoneHQ since:2026-11-15/latest | limited | 0 | 0 |
-| fx-x-search | from:GameZoneHQ since:2026-11-09/top | limited | 0 | 0 |
-| fx-x-search | from:nexindie since:2026-11-15/latest | limited | 0 | 4 |
-| fx-x-search | from:nexindie since:2026-11-09/top | limited | 0 | 32 |
-| fx-x-search | from:sundarpichai since:2026-11-15/latest | limited | 0 | 2 |
-| fx-x-search | from:sundarpichai since:2026-11-09/top | limited | 0 | 21 |
-| fx-x-search | from:ebbyamir since:2026-11-15/latest | limited | 0 | 0 |
-| fx-x-search | from:ebbyamir since:2026-11-09/top | limited | 0 | 37 |
+| fx-x-search | from:felixrieseberg since:2026-11-15/latest | error | — | — |
+| fx-x-search | from:felixrieseberg since:2026-11-09/top | ok | 1 | 33 |
+| fx-x-search | from:xikhar since:2026-11-15/latest | limited | 0 | 13 |
+| fx-x-search | from:xikhar since:2026-11-09/top | limited | 0 | 30 |
+| fx-x-search | from:thsottiaux since:2026-11-15/latest | limited | 0 | 2 |
+| fx-x-search | from:thsottiaux since:2026-11-09/top | limited | 0 | 28 |
+| fx-x-search | from:BlendiByl since:2026-11-15/latest | limited | 0 | 8 |
+| fx-x-search | from:BlendiByl since:2026-11-09/top | ok | 2 | 26 |
 | fx-x-media | ID_XBOX | ok | 15 | 15 |
-| fx-x-media | Steam | limited | 0 | 20 |
+| fx-x-media | Steam | ok | 15 | 15 |
 | fx-x-media | pandorioltd | ok | 15 | 15 |
-| fx-x-media | IGN | limited | 0 | 20 |
+| fx-x-media | IGN | ok | 6 | 15 |
 | fx-x-media | Roblox | ok | 15 | 15 |
 | fx-x-media | FortniteGame | limited | 0 | 1 |
 | fx-x-media | UnrealEngine | ok | 15 | 15 |
 | fx-x-media | itchio | ok | 15 | 15 |
-| bing-x-index | site:twitter.com "I made a game" | limited | 0 | 7 |
+| bing-x-index | site:twitter.com "I made a game" | limited | 0 | 10 |
 | bing-x-index | "x.com" "game mechanic" gameplay | limited | 0 | 10 |
 | bing-x-index | site:x.com "ゲーム開発" 動画 | limited | 0 | 10 |
 | bing-x-index | site:x.com "ゲーム作った" | limited | 0 | 10 |
-| google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
-| google-news | "game dev" "twitter" when:7d | limited | 0 | 2 |
 | google-news | "インディーゲーム" "話題" when:3d | limited | 0 | 0 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 5 | 26 |
-| reddit-index | site:reddit.com/r/gamedev "gameplay" when:7d | ok | 4 | 57 |
-| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 3 | — |
-| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 3 | — |
+| google-news | "new game" "X post" viral when:7d | limited | 0 | 1 |
+| google-news | "Roblox" "viral" "game" when:3d | limited | 0 | 9 |
+| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | ok | 37 | 100 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 5 | 27 |
+| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 4 | — |
+| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 1 | — |
 | hacker-news | game prototype | ok | 1 | — |
 | hacker-news | indie game | ok | 2 | — |
 | hacker-news | roblox | ok | 2 | — |
@@ -175,9 +178,9 @@ Raw search results help diagnose search providers returning unrelated pages.
 | "x.com" "game mechanic" gameplay | X. It’s what’s happening / X | https://x.com |
 | "x.com" "game mechanic" gameplay | X (@X) / X | https://x.com/X |
 | site:x.com "ゲーム開発" 動画 | Poki (ポキ) - 無料オンラインゲーム - 今すぐプレイしよう！ | https://poki.com/jp |
-| site:x.com "ゲーム開発" 動画 | 無料ゲームが盛りだくさん、かんたんゲーム - Yahoo!ゲーム | https://games.yahoo.co.jp/play |
+| site:x.com "ゲーム開発" 動画 | 無料オンライン ゲームをプレイする / MSN のゲーム | https://msn.com/ja-jp/play |
 | site:x.com "ゲーム作った" | Poki (ポキ) - 無料オンラインゲーム - 今すぐプレイしよう！ | https://poki.com/jp |
-| site:x.com "ゲーム作った" | 無料ゲームが盛りだくさん、かんたんゲーム - Yahoo!ゲーム | https://games.yahoo.co.jp/play |
+| site:x.com "ゲーム作った" | 無料オンライン ゲームをプレイする / MSN のゲーム | https://msn.com/ja-jp/play |
 
 ## X-indexed status links (unverified candidates)
 
