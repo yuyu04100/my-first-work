@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-16T09:32:20Z",
+  "at": "2026-11-16T19:50:29Z",
   "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,52 +10,52 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 45,
+  "source_ok": 44,
   "source_errors": 1,
-  "unique_results": 372,
-  "alert_attempts": 1,
-  "hours_since_previous_run": 7.57,
-  "state_bytes": 780494,
+  "unique_results": 451,
+  "alert_attempts": 5,
+  "hours_since_previous_run": 10.3,
+  "state_bytes": 770992,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 109,
-    "raw_posts": 535,
-    "errors": 1,
+    "qualified_posts": 152,
+    "raw_posts": 490,
+    "errors": 0,
     "by_query_language": {
       "en": {
         "attempts": 21,
-        "raw_posts": 328,
-        "qualified_posts": 24,
-        "review_only_high_engagement": 39
+        "raw_posts": 337,
+        "qualified_posts": 118,
+        "review_only_high_engagement": 49
       },
       "ja": {
         "attempts": 3,
-        "raw_posts": 90,
-        "qualified_posts": 43,
+        "raw_posts": 42,
+        "qualified_posts": 30,
         "review_only_high_engagement": 0
       },
       "es": {
+        "attempts": 3,
+        "raw_posts": 97,
+        "qualified_posts": 1,
+        "review_only_high_engagement": 9
+      },
+      "ko": {
         "attempts": 0,
         "raw_posts": 0,
         "qualified_posts": 0,
-        "review_only_high_engagement": 0
-      },
-      "ko": {
-        "attempts": 3,
-        "raw_posts": 30,
-        "qualified_posts": 8,
         "review_only_high_engagement": 0
       },
       "zh": {
-        "attempts": 3,
-        "raw_posts": 87,
-        "qualified_posts": 34,
-        "review_only_high_engagement": 0
-      },
-      "eu": {
         "attempts": 0,
         "raw_posts": 0,
         "qualified_posts": 0,
+        "review_only_high_engagement": 0
+      },
+      "eu": {
+        "attempts": 3,
+        "raw_posts": 14,
+        "qualified_posts": 3,
         "review_only_high_engagement": 0
       }
     },
@@ -63,15 +63,15 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 6,
-        "qualified_posts": 0,
+        "raw_posts": 29,
+        "qualified_posts": 5,
         "errors": 0
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 140,
-        "qualified_posts": 3,
-        "errors": 1
+        "raw_posts": 156,
+        "qualified_posts": 6,
+        "errors": 0
       }
     }
   },
