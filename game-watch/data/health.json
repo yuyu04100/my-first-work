@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-17T02:54:10Z",
+  "at": "2026-11-17T11:44:08Z",
   "status": "degraded_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,38 +10,38 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 38,
-  "source_errors": 14,
-  "unique_results": 362,
-  "alert_attempts": 2,
-  "hours_since_previous_run": 7.06,
-  "state_bytes": 769607,
+  "source_ok": 42,
+  "source_errors": 10,
+  "unique_results": 358,
+  "alert_attempts": 3,
+  "hours_since_previous_run": 8.83,
+  "state_bytes": 783938,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 102,
-    "raw_posts": 304,
-    "errors": 12,
+    "qualified_posts": 226,
+    "raw_posts": 368,
+    "errors": 8,
     "by_query_language": {
       "en": {
-        "attempts": 18,
-        "raw_posts": 172,
-        "qualified_posts": 86,
-        "review_only_high_engagement": 23
+        "attempts": 21,
+        "raw_posts": 195,
+        "qualified_posts": 166,
+        "review_only_high_engagement": 3
       },
       "ja": {
-        "attempts": 1,
-        "raw_posts": 20,
-        "qualified_posts": 13,
-        "review_only_high_engagement": 1
+        "attempts": 3,
+        "raw_posts": 90,
+        "qualified_posts": 49,
+        "review_only_high_engagement": 0
       },
       "es": {
-        "attempts": 2,
-        "raw_posts": 55,
-        "qualified_posts": 1,
-        "review_only_high_engagement": 1
+        "attempts": 3,
+        "raw_posts": 83,
+        "qualified_posts": 11,
+        "review_only_high_engagement": 3
       },
       "ko": {
-        "attempts": 0,
+        "attempts": 3,
         "raw_posts": 0,
         "qualified_posts": 0,
         "review_only_high_engagement": 0
@@ -53,32 +53,32 @@
         "review_only_high_engagement": 0
       },
       "eu": {
-        "attempts": 2,
-        "raw_posts": 57,
-        "qualified_posts": 2,
-        "review_only_high_engagement": 1
+        "attempts": 0,
+        "raw_posts": 0,
+        "qualified_posts": 0,
+        "review_only_high_engagement": 0
       }
     },
     "note": "Query languages are NOT user locations; free FxEmbed proxy, not official X API",
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 3,
-        "qualified_posts": 1,
-        "errors": 2
+        "raw_posts": 4,
+        "qualified_posts": 0,
+        "errors": 0
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 76,
-        "qualified_posts": 4,
-        "errors": 3
+        "raw_posts": 0,
+        "qualified_posts": 0,
+        "errors": 8
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 95,
-    "errors": 1,
+    "posts": 79,
+    "errors": 2,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
 }
