@@ -1,6 +1,6 @@
 {
-  "at": "2026-11-17T11:44:08Z",
-  "status": "degraded_x_search",
+  "at": "2026-11-17T20:50:01Z",
+  "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
     "hits": 0,
@@ -10,46 +10,46 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 42,
-  "source_errors": 10,
-  "unique_results": 358,
-  "alert_attempts": 3,
-  "hours_since_previous_run": 8.83,
-  "state_bytes": 783938,
+  "source_ok": 44,
+  "source_errors": 0,
+  "unique_results": 428,
+  "alert_attempts": 10,
+  "hours_since_previous_run": 9.1,
+  "state_bytes": 836849,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 226,
-    "raw_posts": 368,
-    "errors": 8,
+    "qualified_posts": 121,
+    "raw_posts": 543,
+    "errors": 0,
     "by_query_language": {
       "en": {
         "attempts": 21,
-        "raw_posts": 195,
-        "qualified_posts": 166,
-        "review_only_high_engagement": 3
+        "raw_posts": 324,
+        "qualified_posts": 40,
+        "review_only_high_engagement": 31
       },
       "ja": {
         "attempts": 3,
         "raw_posts": 90,
-        "qualified_posts": 49,
-        "review_only_high_engagement": 0
-      },
-      "es": {
-        "attempts": 3,
-        "raw_posts": 83,
-        "qualified_posts": 11,
+        "qualified_posts": 35,
         "review_only_high_engagement": 3
       },
-      "ko": {
-        "attempts": 3,
-        "raw_posts": 0,
-        "qualified_posts": 0,
-        "review_only_high_engagement": 0
-      },
-      "zh": {
+      "es": {
         "attempts": 0,
         "raw_posts": 0,
         "qualified_posts": 0,
+        "review_only_high_engagement": 0
+      },
+      "ko": {
+        "attempts": 3,
+        "raw_posts": 39,
+        "qualified_posts": 8,
+        "review_only_high_engagement": 0
+      },
+      "zh": {
+        "attempts": 3,
+        "raw_posts": 90,
+        "qualified_posts": 38,
         "review_only_high_engagement": 0
       },
       "eu": {
@@ -63,22 +63,22 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 4,
-        "qualified_posts": 0,
+        "raw_posts": 42,
+        "qualified_posts": 16,
         "errors": 0
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 0,
+        "raw_posts": 94,
         "qualified_posts": 0,
-        "errors": 8
+        "errors": 0
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 79,
-    "errors": 2,
+    "posts": 80,
+    "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
 }
