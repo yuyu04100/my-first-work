@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-18T02:52:18Z",
+  "at": "2026-11-18T11:31:33Z",
   "status": "degraded_x_search",
   "x_index": {
     "attempts": 4,
@@ -11,27 +11,27 @@
   },
   "source_attempts": 66,
   "source_ok": 40,
-  "source_errors": 14,
-  "unique_results": 405,
+  "source_errors": 11,
+  "unique_results": 308,
   "alert_attempts": 1,
-  "hours_since_previous_run": 6.04,
-  "state_bytes": 825013,
+  "hours_since_previous_run": 8.65,
+  "state_bytes": 834557,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 177,
-    "raw_posts": 376,
-    "errors": 14,
+    "qualified_posts": 128,
+    "raw_posts": 415,
+    "errors": 11,
     "by_query_language": {
       "en": {
-        "attempts": 20,
-        "raw_posts": 376,
-        "qualified_posts": 177,
-        "review_only_high_engagement": 9
+        "attempts": 21,
+        "raw_posts": 398,
+        "qualified_posts": 120,
+        "review_only_high_engagement": 43
       },
       "ja": {
-        "attempts": 0,
-        "raw_posts": 0,
-        "qualified_posts": 0,
+        "attempts": 1,
+        "raw_posts": 17,
+        "qualified_posts": 8,
         "review_only_high_engagement": 0
       },
       "es": {
@@ -63,21 +63,21 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 0,
-        "qualified_posts": 0,
-        "errors": 4
+        "raw_posts": 9,
+        "qualified_posts": 1,
+        "errors": 3
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 196,
-        "qualified_posts": 9,
+        "raw_posts": 163,
+        "qualified_posts": 2,
         "errors": 0
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 84,
+    "posts": 101,
     "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
