@@ -1,6 +1,6 @@
 {
-  "at": "2026-11-17T20:50:01Z",
-  "status": "partial_x_search",
+  "at": "2026-11-18T02:52:18Z",
+  "status": "degraded_x_search",
   "x_index": {
     "attempts": 4,
     "hits": 0,
@@ -10,29 +10,29 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 44,
-  "source_errors": 0,
-  "unique_results": 428,
-  "alert_attempts": 10,
-  "hours_since_previous_run": 9.1,
-  "state_bytes": 836849,
+  "source_ok": 40,
+  "source_errors": 14,
+  "unique_results": 405,
+  "alert_attempts": 1,
+  "hours_since_previous_run": 6.04,
+  "state_bytes": 825013,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 121,
-    "raw_posts": 543,
-    "errors": 0,
+    "qualified_posts": 177,
+    "raw_posts": 376,
+    "errors": 14,
     "by_query_language": {
       "en": {
-        "attempts": 21,
-        "raw_posts": 324,
-        "qualified_posts": 40,
-        "review_only_high_engagement": 31
+        "attempts": 20,
+        "raw_posts": 376,
+        "qualified_posts": 177,
+        "review_only_high_engagement": 9
       },
       "ja": {
-        "attempts": 3,
-        "raw_posts": 90,
-        "qualified_posts": 35,
-        "review_only_high_engagement": 3
+        "attempts": 0,
+        "raw_posts": 0,
+        "qualified_posts": 0,
+        "review_only_high_engagement": 0
       },
       "es": {
         "attempts": 0,
@@ -41,15 +41,15 @@
         "review_only_high_engagement": 0
       },
       "ko": {
-        "attempts": 3,
-        "raw_posts": 39,
-        "qualified_posts": 8,
+        "attempts": 0,
+        "raw_posts": 0,
+        "qualified_posts": 0,
         "review_only_high_engagement": 0
       },
       "zh": {
-        "attempts": 3,
-        "raw_posts": 90,
-        "qualified_posts": 38,
+        "attempts": 0,
+        "raw_posts": 0,
+        "qualified_posts": 0,
         "review_only_high_engagement": 0
       },
       "eu": {
@@ -63,21 +63,21 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 42,
-        "qualified_posts": 16,
-        "errors": 0
+        "raw_posts": 0,
+        "qualified_posts": 0,
+        "errors": 4
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 94,
-        "qualified_posts": 0,
+        "raw_posts": 196,
+        "qualified_posts": 9,
         "errors": 0
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 80,
+    "posts": 84,
     "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
