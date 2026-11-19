@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-18T19:34:40Z",
+  "at": "2026-11-19T01:28:26Z",
   "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,46 +10,46 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 51,
-  "source_errors": 0,
-  "unique_results": 524,
-  "alert_attempts": 5,
-  "hours_since_previous_run": 8.05,
-  "state_bytes": 858419,
+  "source_ok": 41,
+  "source_errors": 1,
+  "unique_results": 343,
+  "alert_attempts": 6,
+  "hours_since_previous_run": 5.9,
+  "state_bytes": 838462,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 260,
-    "raw_posts": 645,
+    "qualified_posts": 138,
+    "raw_posts": 431,
     "errors": 0,
     "by_query_language": {
       "en": {
         "attempts": 21,
-        "raw_posts": 424,
-        "qualified_posts": 187,
-        "review_only_high_engagement": 30
+        "raw_posts": 261,
+        "qualified_posts": 109,
+        "review_only_high_engagement": 29
       },
       "ja": {
         "attempts": 3,
         "raw_posts": 90,
-        "qualified_posts": 33,
-        "review_only_high_engagement": 0
+        "qualified_posts": 14,
+        "review_only_high_engagement": 1
       },
       "es": {
-        "attempts": 0,
-        "raw_posts": 0,
-        "qualified_posts": 0,
+        "attempts": 3,
+        "raw_posts": 80,
+        "qualified_posts": 15,
         "review_only_high_engagement": 0
       },
       "ko": {
         "attempts": 3,
-        "raw_posts": 41,
-        "qualified_posts": 8,
+        "raw_posts": 0,
+        "qualified_posts": 0,
         "review_only_high_engagement": 0
       },
       "zh": {
-        "attempts": 3,
-        "raw_posts": 90,
-        "qualified_posts": 32,
+        "attempts": 0,
+        "raw_posts": 0,
+        "qualified_posts": 0,
         "review_only_high_engagement": 0
       },
       "eu": {
@@ -63,21 +63,21 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 14,
-        "qualified_posts": 1,
+        "raw_posts": 24,
+        "qualified_posts": 11,
         "errors": 0
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 201,
-        "qualified_posts": 11,
+        "raw_posts": 109,
+        "qualified_posts": 0,
         "errors": 0
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 99,
+    "posts": 96,
     "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
