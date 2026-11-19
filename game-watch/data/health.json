@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-19T01:28:26Z",
+  "at": "2026-11-19T09:29:28Z",
   "status": "partial_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,35 +10,35 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 41,
+  "source_ok": 49,
   "source_errors": 1,
-  "unique_results": 343,
-  "alert_attempts": 6,
-  "hours_since_previous_run": 5.9,
-  "state_bytes": 838462,
+  "unique_results": 341,
+  "alert_attempts": 4,
+  "hours_since_previous_run": 8.02,
+  "state_bytes": 862864,
   "fx_x_search": {
     "attempts": 30,
-    "qualified_posts": 138,
-    "raw_posts": 431,
+    "qualified_posts": 111,
+    "raw_posts": 545,
     "errors": 0,
     "by_query_language": {
       "en": {
         "attempts": 21,
-        "raw_posts": 261,
-        "qualified_posts": 109,
-        "review_only_high_engagement": 29
+        "raw_posts": 359,
+        "qualified_posts": 69,
+        "review_only_high_engagement": 14
       },
       "ja": {
         "attempts": 3,
         "raw_posts": 90,
-        "qualified_posts": 14,
-        "review_only_high_engagement": 1
+        "qualified_posts": 34,
+        "review_only_high_engagement": 0
       },
       "es": {
         "attempts": 3,
-        "raw_posts": 80,
-        "qualified_posts": 15,
-        "review_only_high_engagement": 0
+        "raw_posts": 96,
+        "qualified_posts": 8,
+        "review_only_high_engagement": 1
       },
       "ko": {
         "attempts": 3,
@@ -63,21 +63,21 @@
     "overseas_discovery_routes": {
       "global-video": {
         "attempts": 4,
-        "raw_posts": 24,
-        "qualified_posts": 11,
+        "raw_posts": 23,
+        "qualified_posts": 10,
         "errors": 0
       },
       "global-creator": {
         "attempts": 8,
-        "raw_posts": 109,
-        "qualified_posts": 0,
+        "raw_posts": 202,
+        "qualified_posts": 8,
         "errors": 0
       }
     }
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 96,
+    "posts": 83,
     "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
