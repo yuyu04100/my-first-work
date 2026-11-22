@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-22T15:40:02Z",
+  "at": "2026-11-22T21:15:54Z",
   "status": "degraded_x_search",
   "x_index": {
     "attempts": 4,
@@ -10,12 +10,12 @@
     "note": "No X metrics or complete X search API; zero indexed hits does not prove no virality"
   },
   "source_attempts": 66,
-  "source_ok": 27,
-  "source_errors": 31,
-  "unique_results": 220,
+  "source_ok": 28,
+  "source_errors": 30,
+  "unique_results": 256,
   "alert_attempts": 0,
-  "hours_since_previous_run": 8.23,
-  "state_bytes": 906507,
+  "hours_since_previous_run": 5.6,
+  "state_bytes": 913539,
   "fx_x_search": {
     "attempts": 30,
     "qualified_posts": 0,
@@ -77,8 +77,8 @@
   },
   "fx_x_media": {
     "accounts_attempted": 8,
-    "posts": 101,
-    "errors": 1,
+    "posts": 100,
+    "errors": 0,
     "limitation": "Only curated profile media feeds, not search across all X posts"
   }
 }
