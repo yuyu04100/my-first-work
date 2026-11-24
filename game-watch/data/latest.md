@@ -1,33 +1,33 @@
 # Game Signal Watch — Latest
 
-Last run (UTC): **2026-11-23T22:13:57Z**
+Last run (UTC): **2026-11-24T06:22:33Z**
 
-Sources OK: **26** / **66**
-Unique posts found this run: **219**
+Sources OK: **27** / **66**
+Unique posts found this run: **251**
 Alerts this run: **0**
 
 ## Top public-platform signals (not X views)
 
 | Source | Original link | Likes/points | Reposts | First seen |
 |---|---|---:|---:|---|
-| bluesky | https://bsky.app/profile/xenopavilia.bsky.social/post/3n2hwx4bie22v | 1005 | 164 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/gwenckatz.bsky.social/post/3n2q272k22s2g | 495 | 60 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/mischiefmakers.studio/post/3n2xbmppeq72d | 135 | 108 | 2026-11-23T22:13:57Z |
+| bluesky | https://bsky.app/profile/xenopavilia.bsky.social/post/3n2hwx4bie22v | 1010 | 166 | 2026-11-23T10:40:53Z |
+| bluesky | https://bsky.app/profile/gwenckatz.bsky.social/post/3n2q272k22s2g | 496 | 61 | 2026-11-23T10:40:53Z |
+| bluesky | https://bsky.app/profile/mischiefmakers.studio/post/3n2xbmppeq72d | 142 | 111 | 2026-11-23T22:13:57Z |
+| bluesky | https://bsky.app/profile/qaqelol.bsky.social/post/3n2wmu2njbs26 | 161 | 50 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/doricdream.bsky.social/post/3n2pbjbn3xk2p | 140 | 55 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/qaqelol.bsky.social/post/3n2wmu2njbs26 | 150 | 49 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/nightmargin.bsky.social/post/3n2umyvjpns2q | 127 | 36 | 2026-11-22T07:25:58Z |
 | bluesky | https://bsky.app/profile/murgoten.bsky.social/post/3n2t5tnkenk2e | 183 | 17 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/kbash.bsky.social/post/3n2muw5uyzk24 | 149 | 28 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/cameroncorduroy.bsky.social/post/3n2q5w75blc2o | 192 | 10 | 2026-11-20T23:20:07Z |
-| bluesky | https://bsky.app/profile/silverspookguy.bsky.social/post/3n2rtctwnpk2r | 72 | 32 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/bojustbo.bsky.social/post/3n2r6kqauz225 | 98 | 15 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/solarboycustom.bsky.social/post/3n2hwmmdbjc2g | 91 | 16 | 2026-11-23T01:57:43Z |
+| bluesky | https://bsky.app/profile/silverspookguy.bsky.social/post/3n2rtctwnpk2r | 73 | 33 | 2026-11-23T10:40:53Z |
+| bluesky | https://bsky.app/profile/bojustbo.bsky.social/post/3n2r6kqauz225 | 99 | 15 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/milph.mom/post/3n2vbyc3k6k2u | 113 | 8 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/chadstanton.blacksky.app/post/3n2ourk4eus2u | 104 | 11 | 2026-11-20T00:54:55Z |
-| bluesky | https://bsky.app/profile/triplesahur.bsky.social/post/3n2wjqwgcv22s | 68 | 19 | 2026-11-23T10:40:53Z |
+| bluesky | https://bsky.app/profile/triplesahur.bsky.social/post/3n2wjqwgcv22s | 69 | 19 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/gassybeasts.bsky.social/post/3n2wro4td5c2c | 69 | 18 | 2026-11-23T01:57:43Z |
-| bluesky | https://bsky.app/profile/woahmaaandev.bsky.social/post/3n2wiatpefk2f | 70 | 16 | 2026-11-23T10:40:53Z |
+| bluesky | https://bsky.app/profile/woahmaaandev.bsky.social/post/3n2wiatpefk2f | 71 | 16 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/tylerfromtheinternet.com/post/3n2os6vqwmc2k | 117 | 0 | 2026-11-20T17:15:03Z |
+| bluesky | https://bsky.app/profile/breadmastermsg.bsky.social/post/3n2yfsyfd6s2k | 48 | 22 | 2026-11-23T22:13:57Z |
 | bluesky | https://bsky.app/profile/morgangd.com/post/3n2opf2dors2p | 66 | 16 | 2026-11-20T00:54:55Z |
 | bluesky | https://bsky.app/profile/crushbort.bsky.social/post/3n2tvdes7ws2u | 103 | 2 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/pixelbutts.bsky.social/post/3n2kbm7d2es2d | 45 | 21 | 2026-11-23T10:40:53Z |
@@ -36,10 +36,10 @@ Alerts this run: **0**
 | bluesky | https://bsky.app/profile/geftokingmongoose.bsky.social/post/3n2s5dzlzqk2g | 67 | 13 | 2026-11-23T22:13:57Z |
 | bluesky | https://bsky.app/profile/pmrd.net/post/3n2rtkdoetc24 | 43 | 20 | 2026-11-22T21:15:54Z |
 | bluesky | https://bsky.app/profile/wednesdays-game.bsky.social/post/3n2qeyt3ay22o | 42 | 20 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/thezestiestbone.bsky.social/post/3n2d3pkimy223 | 87 | 4 | 2026-11-23T01:57:43Z |
+| bluesky | https://bsky.app/profile/seven.eurosky.social/post/3n2strpletc2c | 57 | 13 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/felipepepe.bsky.social/post/3n2pfiahc522o | 83 | 4 | 2026-11-23T10:40:53Z |
-| bluesky | https://bsky.app/profile/seven.eurosky.social/post/3n2strpletc2c | 54 | 13 | 2026-11-23T10:40:53Z |
 | bluesky | https://bsky.app/profile/vyletbunni.com/post/3n2srykkqss2j | 49 | 14 | 2026-11-21T20:03:47Z |
+| bluesky | https://bsky.app/profile/jackitsune.bsky.social/post/3n2yctjxums2t | 56 | 11 | 2026-11-23T22:13:57Z |
 
 ## X media leads from watched accounts (no X metrics)
 
@@ -81,69 +81,69 @@ No game identity or game-related virality has been verified for these posts.
 
 | Source | Query | Status | Qualified | Raw RSS items |
 |---|---|---|---:|---:|
-| bluesky | game prototype/latest | ok | 19 | — |
-| bluesky | game prototype/top | ok | 20 | — |
-| bluesky | indie game/latest | ok | 5 | — |
-| bluesky | indie game/top | ok | 7 | — |
-| bluesky | I made a game/latest | ok | 28 | — |
-| bluesky | I made a game/top | ok | 48 | — |
+| bluesky | game prototype/latest | ok | 20 | — |
+| bluesky | game prototype/top | ok | 22 | — |
+| bluesky | indie game/latest | ok | 6 | — |
+| bluesky | indie game/top | ok | 9 | — |
+| bluesky | I made a game/latest | ok | 25 | — |
+| bluesky | I made a game/top | ok | 45 | — |
 | bluesky | physics sandbox/latest | ok | 2 | — |
 | bluesky | physics sandbox/top | ok | 2 | — |
 | bluesky | viral indie game/latest | ok | 8 | — |
 | bluesky | viral indie game/top | ok | 10 | — |
-| bluesky | ゲーム アイデア/latest | ok | 5 | — |
-| bluesky | ゲーム アイデア/top | ok | 5 | — |
-| bluesky | 新作ゲーム/latest | ok | 1 | — |
-| bluesky | 新作ゲーム/top | ok | 1 | — |
-| fx-x-search | "co-op game" since:2026-11-22/latest | error | — | — |
-| fx-x-search | "co-op game" since:2026-11-20/media | error | — | — |
-| fx-x-search | "co-op game" since:2026-11-16/top | error | — | — |
-| fx-x-search | "gameplay footage" since:2026-11-22/latest | error | — | — |
-| fx-x-search | "gameplay footage" since:2026-11-20/media | error | — | — |
-| fx-x-search | "gameplay footage" since:2026-11-16/top | error | — | — |
-| fx-x-search | "experimental game" since:2026-11-22/latest | error | — | — |
-| fx-x-search | "experimental game" since:2026-11-20/media | error | — | — |
-| fx-x-search | "experimental game" since:2026-11-16/top | error | — | — |
-| fx-x-search | ゲーム試作 since:2026-11-22/latest | error | — | — |
-| fx-x-search | ゲーム試作 since:2026-11-20/media | error | — | — |
-| fx-x-search | ゲーム試作 since:2026-11-16/top | error | — | — |
-| fx-x-search | 게임 개발 중 since:2026-11-22/latest | error | — | — |
-| fx-x-search | 게임 개발 중 since:2026-11-20/media | error | — | — |
-| fx-x-search | 게임 개발 중 since:2026-11-16/top | error | — | — |
-| fx-x-search | 独立游戏开发 since:2026-11-22/latest | error | — | — |
-| fx-x-search | 独立游戏开发 since:2026-11-20/media | error | — | — |
-| fx-x-search | 独立游戏开发 since:2026-11-16/top | error | — | — |
-| fx-x-search | new gameplay filter:videos min_faves:500 since:2026-11-22/latest | error | — | — |
-| fx-x-search | new gameplay filter:videos min_faves:500 since:2026-11-16/top | error | — | — |
-| fx-x-search | physics gameplay filter:videos min_faves:500 since:2026-11-22/latest | error | — | — |
-| fx-x-search | physics gameplay filter:videos min_faves:500 since:2026-11-16/top | error | — | — |
-| fx-x-search | from:felixrieseberg since:2026-11-22/latest | error | — | — |
-| fx-x-search | from:felixrieseberg since:2026-11-16/top | error | — | — |
-| fx-x-search | from:xikhar since:2026-11-22/latest | error | — | — |
-| fx-x-search | from:xikhar since:2026-11-16/top | error | — | — |
-| fx-x-search | from:thsottiaux since:2026-11-22/latest | error | — | — |
-| fx-x-search | from:thsottiaux since:2026-11-16/top | error | — | — |
-| fx-x-search | from:BlendiByl since:2026-11-22/latest | error | — | — |
-| fx-x-search | from:BlendiByl since:2026-11-16/top | error | — | — |
+| bluesky | ゲーム開発/latest | ok | 3 | — |
+| bluesky | ゲーム開発/top | ok | 4 | — |
+| bluesky | ゲーム制作/latest | ok | 10 | — |
+| bluesky | ゲーム制作/top | ok | 11 | — |
+| fx-x-search | "procedural game" since:2026-11-23/latest | error | — | — |
+| fx-x-search | "procedural game" since:2026-11-21/media | error | — | — |
+| fx-x-search | "procedural game" since:2026-11-17/top | error | — | — |
+| fx-x-search | "viral indie game" since:2026-11-23/latest | error | — | — |
+| fx-x-search | "viral indie game" since:2026-11-21/media | error | — | — |
+| fx-x-search | "viral indie game" since:2026-11-17/top | error | — | — |
+| fx-x-search | "game prototype" since:2026-11-23/latest | error | — | — |
+| fx-x-search | "game prototype" since:2026-11-21/media | error | — | — |
+| fx-x-search | "game prototype" since:2026-11-17/top | error | — | — |
+| fx-x-search | ゲーム開発 since:2026-11-23/latest | error | — | — |
+| fx-x-search | ゲーム開発 since:2026-11-21/media | error | — | — |
+| fx-x-search | ゲーム開発 since:2026-11-17/top | error | — | — |
+| fx-x-search | 游戏实机演示 since:2026-11-23/latest | error | — | — |
+| fx-x-search | 游戏实机演示 since:2026-11-21/media | error | — | — |
+| fx-x-search | 游戏实机演示 since:2026-11-17/top | error | — | — |
+| fx-x-search | fiz um jogo since:2026-11-23/latest | error | — | — |
+| fx-x-search | fiz um jogo since:2026-11-21/media | error | — | — |
+| fx-x-search | fiz um jogo since:2026-11-17/top | error | — | — |
+| fx-x-search | physics gameplay filter:videos min_faves:500 since:2026-11-23/latest | error | — | — |
+| fx-x-search | physics gameplay filter:videos min_faves:500 since:2026-11-17/top | error | — | — |
+| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-23/latest | error | — | — |
+| fx-x-search | game prototype filter:videos min_faves:500 since:2026-11-17/top | error | — | — |
+| fx-x-search | from:kevin_t_ngo since:2026-11-23/latest | error | — | — |
+| fx-x-search | from:kevin_t_ngo since:2026-11-17/top | error | — | — |
+| fx-x-search | from:aniketjart since:2026-11-23/latest | error | — | — |
+| fx-x-search | from:aniketjart since:2026-11-17/top | error | — | — |
+| fx-x-search | from:IndieGameJoe since:2026-11-23/latest | error | — | — |
+| fx-x-search | from:IndieGameJoe since:2026-11-17/top | error | — | — |
+| fx-x-search | from:GameZoneHQ since:2026-11-23/latest | error | — | — |
+| fx-x-search | from:GameZoneHQ since:2026-11-17/top | error | — | — |
 | fx-x-media | ID_XBOX | ok | 15 | 15 |
 | fx-x-media | Steam | ok | 15 | 15 |
-| fx-x-media | pandorioltd | error | — | — |
-| fx-x-media | IGN | ok | 7 | 15 |
+| fx-x-media | pandorioltd | ok | 15 | 15 |
+| fx-x-media | IGN | ok | 9 | 15 |
 | fx-x-media | Roblox | ok | 15 | 15 |
 | fx-x-media | FortniteGame | error | — | — |
 | fx-x-media | UnrealEngine | ok | 15 | 15 |
-| fx-x-media | itchio | error | — | — |
+| fx-x-media | itchio | ok | 15 | 15 |
 | bing-x-index | site:x.com "ゲーム開発" 動画 | limited | 0 | 10 |
 | bing-x-index | site:x.com "ゲーム作った" | limited | 0 | 10 |
 | bing-x-index | site:twitter.com "indie game" prototype | limited | 0 | 10 |
 | bing-x-index | "x.com" "new game" video | limited | 0 | 10 |
-| google-news | "new game" "X post" viral when:7d | limited | 0 | 4 |
-| google-news | "Roblox" "viral" "game" when:3d | limited | 0 | 8 |
-| google-news | "indie game" "viral" when:3d | limited | 0 | 1 |
-| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 6 | 22 |
-| reddit-index | site:reddit.com/r/gamedev "gameplay" when:7d | ok | 14 | 85 |
-| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 3 | — |
-| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 1 | — |
+| google-news | "indie game" "viral" when:3d | limited | 0 | 2 |
+| google-news | "game prototype" "viral" when:7d | limited | 0 | 0 |
+| google-news | "game dev" "twitter" when:7d | limited | 0 | 0 |
+| reddit-index | site:reddit.com/r/IndieDev "game" when:7d | limited | 0 | 0 |
+| reddit-index | site:reddit.com/r/indiegames "prototype" when:7d | ok | 7 | 24 |
+| mastodon | https://mastodon.gamedev.place/tags/indiedev.rss | ok | 1 | — |
+| mastodon | https://mastodon.gamedev.place/tags/gamedev.rss | ok | 0 | — |
 | hacker-news | game prototype | ok | 0 | — |
 | hacker-news | indie game | ok | 3 | — |
 | hacker-news | roblox | ok | 2 | — |
@@ -159,7 +159,7 @@ Raw search results help diagnose search providers returning unrelated pages.
 | site:x.com "ゲーム作った" | 無料オンライン ゲームをプレイする / MSN のゲーム | https://msn.com/ja-jp/play |
 | site:x.com "ゲーム作った" | CrazyGamesで無料オンラインゲーム / 今すぐプレイ！ | https://crazygames.com/jp |
 | site:twitter.com "indie game" prototype | INDIE Definition & Meaning - Merriam-Webster | https://merriam-webster.com/dictionary/indie |
-| site:twitter.com "indie game" prototype | Indie music - Wikipedia | https://en.wikipedia.org/wiki/Indie_music |
+| site:twitter.com "indie game" prototype | indie / Physical AI and Automotive Sensing Semiconductors | https://indie.inc |
 | "x.com" "new game" video | X. It’s what’s happening / X | https://x.com |
 | "x.com" "new game" video | X (@X) / X | https://x.com/X |
 
